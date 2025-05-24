@@ -19,6 +19,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 150px;
   scroll-snap-align: start; /* parte do snap */
 }
 
@@ -62,6 +63,7 @@
     justify-content: space-around;
     z-index: 2;
     cursor: pointer;
+    padding: 10px;
 }
 
 .tec-ia-button img {
@@ -155,9 +157,9 @@
     color: #fff;
     font-size: 18px;
     padding-top: 66px;
+    padding-bottom: 80px;
     z-index: 2;
 }
-
 
 .entrar-devagar {
   z-index: 2;
@@ -267,7 +269,7 @@
     z-index: 1;
   }
   .tela {
-    padding: 45px;
+    padding: 100px;
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
   }
@@ -290,7 +292,7 @@
     z-index: 1;
   }
   .tela {
-    padding: 45px;
+    padding: 100px;
     height: auto;
     background-color: rgba(0, 0, 0, 0.5);
   }

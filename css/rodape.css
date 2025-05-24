@@ -11,7 +11,6 @@
 
 .legacy {
     position: relative;
-    /* Necessário para posicionar o ::before corretamente */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +20,6 @@
     height: 50%;
     background: linear-gradient(to right, #18A5F8, #9A1794);
     overflow: hidden;
-    /* Garante que a sombra não ultrapasse os limites */
 }
 
 .legacy::before {
@@ -32,9 +30,7 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.25);
-    /* Ajuste a opacidade conforme necessário */
     pointer-events: none;
-    /* Garante que o usuário ainda possa interagir com o conteúdo */
     z-index: 1;
 }
 
@@ -228,5 +224,5 @@ input:not(:placeholder-shown)+label {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 68px auto;
+    padding: 20px;
 }

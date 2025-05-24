@@ -74,8 +74,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    gap: 20px;
     width: 80%;
 }
+
 .card-sobre-nos > .card-aval:nth-child(odd) hgroup span {
     color: #18A5F8;
 }
@@ -139,4 +141,80 @@
     height: 56px;
     border-radius: 28px;
     z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .section-info {
+    height: auto;
+  }
+
+  .cards-zone,
+  .card-sobre-nos {
+    flex-direction: column;
+    width: 100%;
+    gap: 40px; /* Espaço entre os cards */
+  }
+
+  .card,
+  .card-aval {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    padding: 24px 16px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    gap: 20px;
+  }
+
+  .card-aval {
+    padding-bottom: 32px;
+  }
+
+  .image-person {
+    padding: 0 16px 16px;
+    gap: 12px;
+  }
+
+  .comment {
+    margin: 0 16px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .what-say {
+    padding: 50px 16px;
+    gap: 16px;
+  }
+
+  .what-say h1 {
+    font-size: 26px;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .what-say span {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .card h3 {
+    font-size: 20px;
+  }
+
+  .card p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .card-aval hgroup p,
+  .card-aval hgroup span {
+    font-size: 14px;
+  }
+
+  .circle-gradient {
+    width: 56px;
+    height: 56px;
+  }
 }
