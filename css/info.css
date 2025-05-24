@@ -1,0 +1,142 @@
+
+.section-info {
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.what-say {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    z-index: 2;
+}
+.what-say h1 {
+    background: linear-gradient(to right, #9A1794, #18A5F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 36px;
+    font-weight: bold;
+}
+.what-say span {
+    color: #fff;
+}
+.circle-gradient {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+    background: linear-gradient(to right, #18A5F8, #9A1794);
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+    padding: 0px;
+}
+.cards-zone {
+    display: flex;
+    height: auto;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.card {
+    z-index: 2;
+    width: 379px;
+    height: 208px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 28px;
+
+}
+
+.card h3 {
+    font-size: 24px;
+}
+
+.card-sobre-nos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+.card-sobre-nos > .card-aval:nth-child(odd) hgroup span {
+    color: #18A5F8;
+}
+
+.card-sobre-nos > .card-aval:nth-child(even) hgroup span {
+    color: #9A1794;
+}
+
+.card-aval {
+    width: 390px;
+    height: 250px;
+    background: linear-gradient(to right, #18A5F8, #9A1794);
+    border-radius: 13px;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card-aval::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25); /* Ajuste a opacidade conforme necessário */
+    pointer-events: none; /* Garante que o usuário ainda possa interagir com o conteúdo */
+    z-index: 1;
+}
+
+.comment{
+    font-size: 16px;
+    color: #fff;
+    margin-left: 33px;
+    z-index: 2;
+}
+.card-aval hgroup p {
+    font-size: 16px;
+    color: #fff;
+    z-index: 2;
+}
+.card-aval hgroup span {
+    font-size: 16px;
+    color: #18A5F8;
+    z-index: 2;
+
+}
+
+.image-person {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 33px;
+    z-index: 2;
+
+}
+.image-person img{
+    width: 56px;
+    height: 56px;
+    border-radius: 28px;
+    z-index: 2;
+}

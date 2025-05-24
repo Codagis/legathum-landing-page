@@ -1,0 +1,106 @@
+
+header {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 65px;
+    border-bottom: solid 1px #fff;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 2;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    max-width: 80%;
+    height: 65px;
+}
+
+.header-content img {
+    cursor: pointer;
+}
+
+.header-content nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    margin: 16px;
+}   
+
+/* ------------------ MEDIA QUERIES ------------------ */
+
+/* Tablets e menores (até 1024px) */
+@media (max-width: 1024px) {
+    .header-content {
+        max-width: 90%;
+    }
+
+    .header-content nav a {
+        margin: 12px;
+        font-size: 15px;
+    }
+}
+
+/* Smartphones (até 768px) */
+@media (max-width: 768px) {
+
+    header {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+
+    .header-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 0px auto;
+        padding: 10px 0;
+        background-color: #000;
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .header-content img {
+        margin-bottom: 10px;
+    }
+
+    .header-content nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-content nav a {
+        margin: 8px 0;
+        font-size: 14px;
+    }
+}
+
+/* Telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+    header {
+        width: 100%;
+        position: relative;
+        height: auto;
+    }
+    .header-content {
+        width: 100%;
+        margin: 0px auto;
+        background-color: #000;
+    }
+
+    .header-content nav a {
+        font-size: 13px;
+    }
+
+    .header-content img {
+        height: 36px;
+    }
+}

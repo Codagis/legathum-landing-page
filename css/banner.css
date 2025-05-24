@@ -1,0 +1,464 @@
+
+.main-block {
+  background-image: url('../resources/background.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: auto;
+  
+
+  overflow: hidden;
+  margin: 0;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.tela {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start; /* parte do snap */
+}
+
+.main-block::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* shorthand para top, right, bottom, left = 0 */
+  background-color: rgba(0, 0, 0, 0.5); /* sombra preta translúcida */
+  z-index: 1;
+}
+
+.section-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px auto;
+    height: 100vh;
+    gap: 16px;
+    z-index: 2;
+    scroll-snap-align: start;
+}
+
+.span-transforme{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    z-index: 2;
+    margin-top: 16px;
+}
+
+.tec-ia-button {
+    width: 397px;
+    height: 42px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 13px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.tec-ia-button img {
+    height: 18px;
+}
+
+.tec-ia-button a {
+    font-size: 16px;
+}
+.tec-ia-button span {
+    font-size: 16px;
+    color: #18A5F8;
+}
+
+.meta-homo-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 7px;
+    z-index: 2;
+}
+
+.white {
+    color: #fff;
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.gradiente {
+    background: linear-gradient(to right, #18A5F8, #9A1794);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 78px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.pink {
+    background: linear-gradient(to right, #9A1794, #6F0F6B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 72px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.buttons-demo-start-div {
+    margin-top: 81px;
+    z-index: 2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.start-button {
+    background: linear-gradient(to right, #18A5F8, #9A1794);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 315px;
+    height: 58px;
+    border-radius: 32px;
+    color: #fff;
+    font-size: 20px;
+    gap: 7px;
+    cursor: pointer;
+}
+.demo-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 171px;
+    height: 58px;
+    gap: 7px;
+    border-radius: 32px;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icons-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 66px;
+    z-index: 2;
+}
+
+
+.entrar-devagar {
+  z-index: 2;
+  animation: slideFadeIn 1.5s ease forwards;
+}
+
+.botao-esquerda {
+  z-index: 2;
+  animation: virDaEsquerda 1.5s ease-out forwards;
+}
+
+.botao-direita {
+  z-index: 2;
+  animation: virDaDireita 1.5s ease-out forwards;
+}
+
+.anima-scroll {
+  opacity: 0;
+  clip-path: inset(20% 0 20% 0);
+  animation: revelarSuave 0.8s ease-out forwards;
+  animation-play-state: paused;
+}
+
+.anima-scroll.visivel {
+  animation-play-state: running;
+}
+
+.anima-scroll:nth-child(1) { animation-delay: 0s; }
+.anima-scroll:nth-child(2) { animation-delay: 0.2s; }
+.anima-scroll:nth-child(3) { animation-delay: 0.4s; }
+.anima-scroll:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes revelarSuave {
+  from {
+    opacity: 0;
+    clip-path: inset(40% 0 40% 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes subirDevagar {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px); /* começa mais embaixo */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes virDaEsquerda {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes virDaDireita {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+/* ==================== TABLETS MAIORES E NOTEBOOKS (≤1280px) ==================== */
+@media (max-width: 1280px) { 
+  .main-block {
+    background-image: url('../resources/background.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+  .main-block::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: none;
+    z-index: 1;
+  }
+  .tela {
+    padding: 45px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+/* ==================== TABLET (≤1024px) ==================== */
+@media (max-width: 1024px) {
+  .main-block {
+    background-image: url('../resources/background.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+  .main-block::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: none;
+    z-index: 1;
+  }
+  .tela {
+    padding: 45px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .white {
+    font-size: 56px;
+  }
+
+  .gradiente {
+    font-size: 60px;
+  }
+
+  .pink {
+    font-size: 56px;
+  }
+
+  .span-transforme {
+    font-size: 18px;
+    padding: 0 20px;
+  }
+
+  .buttons-demo-start-div {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 48px;
+  }
+
+  .start-button, .demo-button {
+    width: 80%;
+    max-width: 90%;
+  }
+
+  .icons-div {
+    flex-direction: column;
+    gap: 16px;
+    font-size: 16px;
+    padding-top: 40px;
+  }
+
+  .tec-ia-button {
+    width: 80%;
+    max-width: 360px;
+  }
+}
+
+/* ==================== MOBILE (≤768px) ==================== */
+@media (max-width: 768px) {
+  
+  .main-block {
+    background-image: url('../resources/background.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+  .main-block::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: none;
+    z-index: 1;
+  }
+  .tela {
+    padding: 16px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .white {
+    font-size: 40px;
+  }
+
+  .gradiente {
+    font-size: 44px;
+  }
+
+  .pink {
+    font-size: 40px;
+  }
+
+  .span-transforme {
+    font-size: 16px;
+  }
+
+  .start-button, .demo-button {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .tec-ia-button {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .tec-ia-button span {
+    font-size: 14px;
+  }
+
+  .buttons-demo-start-div {
+    gap: 12px;
+  }
+
+  .icons-div {
+    font-size: 14px;
+  }
+}
+
+/* ==================== CELULARES PEQUENOS (≤480px) ==================== */
+@media (max-width: 480px) {
+
+  .main-block {
+    background-image: url('../resources/background.svg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: auto;
+  }
+  .main-block::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: none;
+    z-index: 1;
+  }
+
+  .section-main {
+    padding: 0px;
+    margin: 0px auto;
+  }
+
+  .tela {
+    padding: 16px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .white {
+    font-size: 20px;
+  }
+
+  .gradiente {
+    font-size: 20px;
+  }
+
+  .pink {
+    font-size: 20px;
+  }
+
+  .span-transforme {
+    font-size: 14px;
+  }
+
+  .start-button, .demo-button {
+    width: 320px;
+    font-size: 15px;
+    height: 46px;
+  }
+
+  .tec-ia-button {
+    width: 320px;
+    font-size: 13px;
+  }
+
+  .tec-ia-button img {
+    height: 14px;
+  }
+
+  .icons-div {
+    font-size: 13px;
+    gap: 12px;
+  }
+}
