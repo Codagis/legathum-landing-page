@@ -26,13 +26,13 @@
     "txt_oque_dizem_sobre_nos": "Entdecke, wie Legathum die Art und Weise verändert,<br/>wie Menschen ihre Erinnerungen und ihr Wissen bewahren.",
     "nome_maria_silva": "Maria Silva",
     "prof": "Lehrerin",
-    "texto_maria": "Eine unglaubliche Möglichkeit, Wissen und Erfahrungen<br/>für kommende Generationen zu bewahren. Die Technologie ist einfach faszinierend!",
+    "texto_maria": "Eine erstaunliche Möglichkeit, Wissen und Erfahrungen<br/>für kommende Generationen zu bewahren.<br/>Technologie ist einfach faszinierend!",
     "nome_joao_santos": "João Santos",
     "empresario": "Unternehmer",
-    "texto_joao": "Eine unglaubliche Möglichkeit, Wissen und Erfahrungen<br/>für kommende Generationen zu bewahren. Die Technologie ist einfach faszinierend!",
+    "texto_joao": "Legathum hat mir ermöglicht, eine<br />digitale Version von mir selbst zu erstellen, die<br />Wissen weitergeben kann,<br />auch nachdem ich gegangen bin.",
     "nome_ana_oliveira": "Ana Oliveira",
     "escritora": "Schriftstellerin",
-    "texto_ana_oliv": "Eine unglaubliche Möglichkeit, Wissen und Erfahrungen<br/>für kommende Generationen zu bewahren. Die Technologie ist einfach faszinierend!",
+    "texto_ana_oliv": "Die Benutzeroberfläche ist intuitiv und der Prozess,<br />mein 'digitales Ich' zu erschaffen, war eine<br />faszinierende Reise der Selbstentdeckung.",
 
     "title_pronto_para_criar": "Bereit, dein digitales<br/>Vermächtnis zu erschaffen?",
     "texto_comece_agora_transforme": "Starte jetzt und verwandle deine Erfahrungen in eine einzigartige, personalisierte KI.",
@@ -49,5 +49,6 @@
     "lbl_seu_email": "Deine E-Mail",
     "lbl_newsletter": "Newsletter",
     "btn_inscrever_se": "Abonnieren",
-    "lbl_copy": "© 2025 Legathum. Alle Rechte vorbehalten."
+    "lbl_copy": "© 2025 Legathum. Alle Rechte vorbehalten.",
+    "lbl_back": "&lt; Zurückgehen"
 }

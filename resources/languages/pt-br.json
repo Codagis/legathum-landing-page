@@ -17,22 +17,22 @@
     "lbl_suporte": "Suporte 24/7",
 
     "title_oque_e": "O que é?",
-    "resp_oque_e": "Uma plataforma revolucionária que utiliza IA<br/>avançada para criar uma representação digital da<br/>sua mente e personalidade.",
+    "resp_oque_e": "Uma plataforma revolucionária que utiliza IA avançada para criar uma representação digital da sua mente e personalidade.",
     "title_como_funciona": "Como Funciona?",
-    "resp_como_funciona": "Interaja com nossa IA, compartilhe suas<br/>experiências e deixe que ela aprenda e evolua<br/>com base em suas informações.",
+    "resp_como_funciona": "Interaja com nossa IA, compartilhe suas experiências e deixe que ela aprenda e evolua com base em suas informações.",
     "title_para_quem": "Para quem é?",
-    "resp_para_quem": "Para todos que desejam preservar seu legado e<br/>compartilhar suas experiências com futuras<br/>gerações.",
+    "resp_para_quem": "Para todos que desejam preservar seu legado e compartilhar suas experiências com futuras gerações.",
     "title_oque_dizem_sobre_nos":"O que dizem sobre nós",
-    "txt_oque_dizem_sobre_nos": "Descubra como o Legathum está transformando a maneira como as pessoas<br/>preservam suas memórias e conhecimentos.",
+    "txt_oque_dizem_sobre_nos": "Descubra como o Legathum está transformando a maneira como as pessoas preservam suas memórias e conhecimentos.",
     "nome_maria_silva":"Maria Silva",
     "prof": "Professora",
     "texto_maria": "Uma forma incrível de preservar<br/>conhecimento e experiências para as<br/>próximas gerações. A tecnologia é<br/>simplesmente fascinante!",
     "nome_joao_santos": "João Santos",
     "empresario": "Empresário",
-    "texto_joao": "Uma forma incrível de preservar<br/>conhecimento e experiências para as<br/>próximas gerações. A tecnologia é<br/>simplesmente fascinante!",
+    "texto_joao": "O Legathum me permitiu criar uma <br /> versão digital de mim mesmo que poderá<br /> continuar compartilhando conhecimento<br />mesmo depois que eu partir.",
     "nome_ana_oliveira": "Ana Oliveira",
     "escritora": "Escritora",
-    "texto_ana_oliv": "Uma forma incrível de preservar<br/> conhecimento e experiências para as<br/> próximas gerações. A tecnologia é<br/> simplesmente fascinante!",
+    "texto_ana_oliv": "A interface é intuitiva e o processo de <br />criar meu 'eu digital' foi uma jornada de<br /> autodescoberta fascinante.",
 
     "title_pronto_para_criar": "Pronto para criar seu legado<br/>digital?",
     "texto_comece_agora_transforme": "Começe agora e transforme suas experiências em uma IA única e personalizada.",
@@ -49,5 +49,6 @@
     "lbl_seu_email": "Seu E-mail",
     "lbl_newsletter":"Newsletter",
     "btn_inscrever_se": "Inscrever-se",
-    "lbl_copy": "© 2025 Legathum. Todos os direitos reservados."
+    "lbl_copy": "© 2025 Legathum. Todos os direitos reservados.",
+    "lbl_back": "&lt; Voltar"
 }

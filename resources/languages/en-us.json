@@ -21,18 +21,18 @@
     "title_como_funciona": "How Does It Work?",
     "resp_como_funciona": "Interact with our AI, share your<br/>experiences, and let it learn and evolve<br/>based on your information.",
     "title_para_quem": "Who Is It For?",
-    "resp_para_quem": "For everyone who wants to preserve their legacy and<br/>share their experiences with future<br/>generations.",
+    "resp_para_quem": "For everyone who wants to preserve their legacy and share their experiences with future generations.",
     "title_oque_dizem_sobre_nos": "What They Say About Us",
     "txt_oque_dizem_sobre_nos": "Discover how Legathum is transforming the way people<br/>preserve their memories and knowledge.",
     "nome_maria_silva": "Maria Silva",
     "prof": "Teacher",
-    "texto_maria": "An incredible way to preserve<br/>knowledge and experiences for<br/>future generations. The technology is<br/>simply fascinating!",
+    "texto_maria": "An amazing way to preserve<br/>knowledge and experiences for<br/>future generations. Technology is<br/>simply fascinating!",
     "nome_joao_santos": "João Santos",
     "empresario": "Entrepreneur",
-    "texto_joao": "An incredible way to preserve<br/>knowledge and experiences for<br/>future generations. The technology is<br/>simply fascinating!",
+    "texto_joao": "Legathum allowed me to create a<br />digital version of myself that will be able to<br />keep sharing knowledge<br />even after I'm gone.",
     "nome_ana_oliveira": "Ana Oliveira",
     "escritora": "Writer",
-    "texto_ana_oliv": "An incredible way to preserve<br/>knowledge and experiences for<br/>future generations. The technology is<br/>simply fascinating!",
+    "texto_ana_oliv": "The interface is intuitive, and the process of<br />creating my 'digital self' was a fascinating<br />journey of self-discovery.",
 
     "title_pronto_para_criar": "Ready to build your<br/>digital legacy?",
     "texto_comece_agora_transforme": "Start now and turn your experiences into a unique and personalized AI.",
@@ -49,5 +49,6 @@
     "lbl_seu_email": "Your Email",
     "lbl_newsletter": "Newsletter",
     "btn_inscrever_se": "Subscribe",
-    "lbl_copy": "© 2025 Legathum. All rights reserved."
+    "lbl_copy": "© 2025 Legathum. All rights reserved.",
+    "lbl_back": "&lt; Back"
 }
