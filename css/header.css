@@ -18,7 +18,6 @@ header {
     height: 65px;
 }
 
-
 .header-content img {
     cursor: pointer;
 }
@@ -186,7 +185,7 @@ header {
     header {
         width: 100%;
         position: relative;
-        height: auto;
+
     }
     .header-content {
         width: 100%;

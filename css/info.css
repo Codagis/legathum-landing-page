@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
+    margin-top: 20%;
 }
 
 .what-say {
@@ -229,4 +230,11 @@
     width: 56px;
     height: 56px;
   }
+}
+
+
+@media (max-width: 480px) {
+    .p-cards{
+        text-align: center;
+    }
 }

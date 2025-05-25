@@ -99,7 +99,7 @@
                         <img src="./resources/brain.svg" alt="Ícone de um cérebro humano" />
                     </div>
                     <h3 data-i18n="title_oque_e">O que é?</h3>
-                    <p data-i18n="resp_oque_e">Uma plataforma revolucionária que utiliza IA<br /> avançada para criar
+                    <p data-i18n="resp_oque_e" class="p-cards">Uma plataforma revolucionária que utiliza IA<br /> avançada para criar
                         uma representação digital
                         da<br /> sua mente e personalidade.</p>
                 </div>
@@ -109,7 +109,7 @@
                         <img src="./resources/enginners.svg" alt="Ícone de uma engrenagem" />
                     </div>
                     <h3 data-i18n="title_como_funciona">Como Funciona?</h3>
-                    <p data-i18n="resp_como_funciona">Interaja com nossa IA, compartilhe suas<br /> experiências e deixe
+                    <p data-i18n="resp_como_funciona" class="p-cards">Interaja com nossa IA, compartilhe suas<br /> experiências e deixe
                         que ela aprenda e evolua<br />
                         com base em suas informações.</p>
                 </div>
@@ -119,7 +119,7 @@
                         <img src="./resources/peoples.svg" alt="Ícone de pessoas" />
                     </div>
                     <h3 data-i18n="title_para_quem">Para quem é?</h3>
-                    <p data-i18n="resp_para_quem">Para todos que desejam preservar seu legado e<br /> compartilhar suas
+                    <p data-i18n="resp_para_quem" class="p-cards">Para todos que desejam preservar seu legado e<br /> compartilhar suas
                         experiências com
                         futuras<br /> gerações.</p>
                 </div>
@@ -285,16 +285,10 @@
     </main>
 
 <script>
-        // Espera o DOM carregar
         document.addEventListener('DOMContentLoaded', function() {
             const header = document.querySelector('header');
-            
-            // Verifica imediatamente a posição do scroll
             checkScroll();
-            
-            // Adiciona o listener de scroll
             window.addEventListener('scroll', checkScroll);
-            
             function checkScroll() {
                 if (window.scrollY > 10) {
                     header.classList.add('scrolled');

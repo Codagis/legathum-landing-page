@@ -75,9 +75,11 @@
 }
 
 .master-options-container {
-    width: 80%;
+    width: 90%;
     margin: 46px auto;
 }
+
+
 .line {
     background: solid 1px #ADAEBC;
     width: 80%;
@@ -230,4 +232,114 @@ input:not(:placeholder-shown)+label {
     align-items: center;
     justify-content: center;
     padding: 20px;
+}
+
+
+/* --- ADIÇÃO DE RESPONSIVIDADE --- */
+@media (max-width: 1100px) {
+    .footer {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .master-options-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .opcoes {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .logo-social,
+    .navegacao,
+    .news {
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo-social p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .news {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .social-block {
+        justify-content: center;
+    }
+
+    .news p,
+    .navegacao p {
+        font-size: 20px;
+
+    }
+
+    .navegacao nav {
+        align-items: baseline;
+    }
+
+    .navegacao nav span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .navegacao nav span img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .navegacao nav span a {
+        font-size: 14px;
+    }
+
+    .buttons-div-rodape {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .input-group,
+    input,
+    .reset-size-buttons-rodape {
+        width: 100% !important;
+        max-width: 300px;
+    }
+
+    input {
+        font-size: 0.9rem;
+    }
+
+    .start-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    .copy {
+        text-align: center;
+        font-size: 14px;
+        padding: 20px 10px;
+
+    }
+
+    .line {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .legacy {
+        padding: 30px;
+    }
+
+    .buttons-legacy {
+        display: grid;
+    }
 }
