@@ -6,7 +6,7 @@
     background-color: #000;
     scroll-snap-type: y mandatory;
     overflow: hidden;
-    height: 100vh;
+    width: 100%;
 }
 
 .legacy {
@@ -15,12 +15,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 36px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     width: 100%;
     height: 50%;
     background: linear-gradient(to right, #18A5F8, #9A1794);
     overflow: hidden;
-    padding: 20px;
     box-sizing: border-box;
 }
 

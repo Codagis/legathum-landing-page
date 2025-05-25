@@ -15,7 +15,7 @@
 </head>
 
 <body class="anima-scroll">
-    <header>
+    <header class="s-header">
         <div class="header-content">
             <img src="./resources/logo-colorida.svg" alt="Logo Legathum" class="botao-esquerda" />
 
@@ -155,8 +155,10 @@
                         </hgroup>
                     </div>
                     <p class="comment" data-i18n="texto_joao">
-                        "Uma forma incrível de preservar<br /> conhecimento e experiências para as<br /> próximas
-                        gerações. A tecnologia é<br /> simplesmente fascinante!"
+                        O Legathum me permitiu criar uma <br />
+                        versão digital de mim mesmo que poderá<br />
+                        continuar compartilhando conhecimento<br />
+                        mesmo depois que eu partir.
                     </p>
                 </div>
 
@@ -169,8 +171,9 @@
                         </hgroup>
                     </div>
                     <p class="comment" data-i18n="texto_ana_oliv">
-                        "Uma forma incrível de preservar<br /> conhecimento e experiências para as<br /> próximas
-                        gerações. A tecnologia é<br /> simplesmente fascinante!"
+                        "A interface é intuitiva e o processo de <br />
+                        criar meu 'eu digital' foi uma jornada de<br />
+                        autodescoberta fascinante."
                     </p>
                 </div>
             </div>
@@ -279,6 +282,28 @@
             </footer>
         </section>
     </main>
+
+<script>
+        // Espera o DOM carregar
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('header');
+            
+            // Verifica imediatamente a posição do scroll
+            checkScroll();
+            
+            // Adiciona o listener de scroll
+            window.addEventListener('scroll', checkScroll);
+            
+            function checkScroll() {
+                if (window.scrollY > 10) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            }
+        });
+    </script>
+
 
     <script>
         const demo = document.getElementById('demo-button');
@@ -476,9 +501,9 @@
         renderLangList();
         loadLanguage(currentLang);
 
+
     </script>
-
-
+    
 </body>
 
 </html>

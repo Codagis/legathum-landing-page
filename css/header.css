@@ -6,7 +6,7 @@ header {
     position: fixed;
     display: flex;
     width: 100%;
-    z-index: 3;
+    z-index: 10;
 }
 
 .header-content {
@@ -16,8 +16,8 @@ header {
     margin: auto 50px;
     max-width: 80%;
     height: 65px;
-    
 }
+
 
 .header-content img {
     cursor: pointer;
@@ -65,7 +65,7 @@ header {
   list-style: none;
   position: absolute;
   right: 0;
-  background: linear-gradient(to left, #18A5F8, #9A1794);
+  background-color: #1E1E1E;
   border: 1px solid #fff;
   border-radius: 8px; 
   max-height: 200px;
@@ -73,7 +73,7 @@ header {
   display: none;
   min-width: 150px;
   border:0px;
-  z-index: 3;
+  z-index: 10;
 }
 
 #lang-list li {

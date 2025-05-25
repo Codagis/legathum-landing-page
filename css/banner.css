@@ -16,7 +16,6 @@
 }
 
 .tela {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,8 +158,8 @@
     gap: 36px;
     color: #fff;
     font-size: 18px;
-    padding-top: 55px;
-    padding-bottom: 70px;
+    padding-top: 20px;
+    padding-bottom: 40px;
     z-index: 3;
 }
 
