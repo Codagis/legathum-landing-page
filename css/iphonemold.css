@@ -1,0 +1,54 @@
+/*Estilizacao do iphone*/
+.iphone {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 4;
+	width: 368px;
+	height: 682px;
+	border-radius: 40px;
+	background: #000;
+	border: 10px solid #333;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.iphone .notch {
+	position: absolute;
+	top: 0;
+	left: 140px;
+	width: 80px;
+	height: 30px;
+	background: #000;
+	border-radius: 0 0 10px 10px;
+	z-index: 2;
+}
+
+.iphone .notch .speaker {
+	position: absolute;
+	top: 7px;
+	left: 30px;
+	width: 20px;
+	height: 6px;
+	background: #333;
+	border-radius: 3px;
+}
+
+.screen {
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	width: 330px;
+	height: 632px;
+	background: #111;
+	border-radius: 20px;
+	overflow: hidden;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-family: sans-serif;
+	padding: 10px;
+	box-sizing: border-box;
+}

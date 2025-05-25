@@ -6,7 +6,7 @@ header {
     position: fixed;
     display: flex;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header-content {
@@ -35,7 +35,7 @@ header {
   position: fixed;
   top: 10px;
   right: 20px;
-  z-index: 1000;
+  z-index: 3;
   font-size: 12px;
   font-family: sans-serif;
 }
@@ -73,7 +73,7 @@ header {
   display: none;
   min-width: 150px;
   border:0px;
-  z-index: 2000;
+  z-index: 3;
 }
 
 #lang-list li {

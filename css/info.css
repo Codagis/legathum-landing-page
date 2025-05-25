@@ -5,7 +5,7 @@
     height: 100vh;
     scroll-snap-align: start;
     scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -36,7 +36,7 @@
     height: 64px;
     border-radius: 32px;
     background: linear-gradient(to right, #18A5F8, #9A1794);
-    z-index: 2;
+    z-index: 3;
 
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@
 }
 
 .card {
-    z-index: 2;
+    z-index: 3;
     width: 379px;
     height: 208px;
     color: #fff;
@@ -91,7 +91,7 @@
     height: 250px;
     background: linear-gradient(to right, #18A5F8, #9A1794);
     border-radius: 13px;
-    z-index: 2;
+    z-index: 1;
 
     display: flex;
     flex-direction: column;
@@ -107,24 +107,24 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.25); /* Ajuste a opacidade conforme necessário */
     pointer-events: none; /* Garante que o usuário ainda possa interagir com o conteúdo */
-    z-index: 1;
+    
 }
 
 .comment{
     font-size: 16px;
     color: #fff;
     margin-left: 33px;
-    z-index: 2;
+    z-index: 3;
 }
 .card-aval hgroup p {
     font-size: 16px;
     color: #fff;
-    z-index: 2;
+    z-index: 3;
 }
 .card-aval hgroup span {
     font-size: 16px;
     color: #18A5F8;
-    z-index: 2;
+    z-index: 3;
 
 }
 
@@ -133,14 +133,14 @@
     align-items: center;
     gap: 16px;
     padding: 33px;
-    z-index: 2;
+    z-index: 3;
 
 }
 .image-person img{
     width: 56px;
     height: 56px;
     border-radius: 28px;
-    z-index: 2;
+    z-index: 3;
 }
 
 @media (max-width: 768px) {
@@ -170,17 +170,20 @@
 
   .card-aval {
     padding-bottom: 32px;
+    z-index: 3;
   }
 
   .image-person {
     padding: 0 16px 16px;
     gap: 12px;
+    z-index: 3;
   }
 
   .comment {
     margin: 0 16px;
     font-size: 15px;
     line-height: 1.5;
+    z-index: 3;
   }
 
   .what-say {

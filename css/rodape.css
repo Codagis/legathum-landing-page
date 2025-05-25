@@ -5,7 +5,7 @@
     flex-direction: column;
     background-color: #000;
     scroll-snap-type: y mandatory;
-    overflow-y: scroll;
+    overflow: hidden;
     height: 100vh;
 }
 
@@ -20,6 +20,8 @@
     height: 50%;
     background: linear-gradient(to right, #18A5F8, #9A1794);
     overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .legacy::before {
@@ -42,7 +44,8 @@
     justify-content: center;
     flex-direction: column;
     gap: 33px;
-    z-index: 2;
+    padding: 10px;
+    z-index: 3;
 }
 
 .legacy hgroup span {
@@ -56,7 +59,9 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
-    z-index: 2;
+    padding: 10px;
+    z-index: 3;
+    box-sizing: border-box;
 }
 
 .reset-size-buttons {
@@ -71,7 +76,7 @@
 
 .master-options-container {
     width: 80%;
-    margin: 68px auto;
+    margin: 46px auto;
 }
 .line {
     background: solid 1px #ADAEBC;

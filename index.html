@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,7 @@
     <title>Legathum</title>
 </head>
 
-<body>
+<body class="anima-scroll">
     <header>
         <div class="header-content">
             <img src="./resources/logo-colorida.svg" alt="Logo Legathum" class="botao-esquerda" />
@@ -39,12 +39,12 @@
 
     <main class="main-block">
 
-        <section class="section-main tela">
+        <section class="section-main tela" id="tela-banner">
             <div class="tec-ia-button entrar-devagar">
                 <img src="./resources/icon-star.png" alt="Ícone de estrelas para clicar em novo" />
-                <span data-i18n="lbl_novo">Novo</span>
-                <p>|</p>
-                <p data-i18n="btn_tec_rev_ia">Tecnologia revolucionária de IA</p>
+                <span data-i18n="lbl_novo">Novo </span>
+                <p> | </p>
+                <p data-i18n="btn_tec_rev_ia"> Tecnologia revolucionária de IA</p>
             </div>
             <div class="meta-homo-div entrar-devagar">
                 <span class="white" data-i18n="title_meta">Meta Homo Sapiens:</span>
@@ -61,7 +61,7 @@
                     <p data-i18n="lbl_comecar_gratuitamente">Começar Gratuitamente</p>
                     <img src="./resources/arow-rigth-icon.svg" alt="Seta apontando para a direita" />
                 </div>
-                <div class="demo-button botao-direita">
+                <div class="demo-button botao-direita" id="demo-button">
                     <img src="./resources/play-icon.svg" alt="Ícone de play" />
                     <p data-i18n="lbl_ver_demo">Ver Demo</p>
                 </div>
@@ -76,9 +76,24 @@
             </div>
         </section>
 
+        <section class="ocultado" id="iphone">
+            <div class="iphone">
+                <div class="notch">
+                    <div class="speaker"></div>
+                </div>
+                <div class="screen">
+                    <video width="330px" height="632px" controls>
+                        <source src="./resources/videos/demo-video.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+
         <section class="section-info tela">
             <div class="cards-zone">
-                <div class="card anima-scroll">
+                <div class="card">
                     <div class="circle-gradient">
                         <img src="./resources/brain.svg" alt="Ícone de um cérebro humano" />
                     </div>
@@ -88,7 +103,7 @@
                         da<br /> sua mente e personalidade.</p>
                 </div>
 
-                <div class="card anima-scroll">
+                <div class="card">
                     <div class="circle-gradient">
                         <img src="./resources/enginners.svg" alt="Ícone de uma engrenagem" />
                     </div>
@@ -98,7 +113,7 @@
                         com base em suas informações.</p>
                 </div>
 
-                <div class="card anima-scroll">
+                <div class="card">
                     <div class="circle-gradient">
                         <img src="./resources/peoples.svg" alt="Ícone de pessoas" />
                     </div>
@@ -109,7 +124,7 @@
                 </div>
             </div>
 
-            <div class="what-say anima-scroll">
+            <div class="what-say">
                 <h1 data-i18n="title_oque_dizem_sobre_nos">O que dizem sobre nós</h1>
                 <span data-i18n="txt_oque_dizem_sobre_nos">Descubra como o Legathum está transformando a maneira como as
                     pessoas<br /> preservam suas
@@ -117,7 +132,7 @@
             </div>
 
             <div class="card-sobre-nos">
-                <div class="card-aval anima-scroll">
+                <div class="card-aval">
                     <div class="image-person">
                         <img src="./resources/maria-silva.png" alt="Imagem de uma mulher de cabelo curto e castanho." />
                         <hgroup>
@@ -131,7 +146,7 @@
                     </p>
                 </div>
 
-                <div class="card-aval anima-scroll">
+                <div class="card-aval">
                     <div class="image-person">
                         <img src="./resources/JoaoSantos.png" alt="Um homem careca de óculos e camisa verde." />
                         <hgroup>
@@ -145,7 +160,7 @@
                     </p>
                 </div>
 
-                <div class="card-aval anima-scroll">
+                <div class="card-aval">
                     <div class="image-person">
                         <img src="./resources/AnaOliveira.png" alt="Imagem de uma mulher de cabelo loiro, sorrindo." />
                         <hgroup>
@@ -265,8 +280,17 @@
         </section>
     </main>
 
-    </div>
-
+    <script>
+        const demo = document.getElementById('demo-button');
+        const telaBanner = document.getElementById('tela-banner');
+        const iphoneBlock = document.getElementById('iphone');
+        demo.addEventListener('click', () => {
+            telaBanner.classList.add('ocultado');
+            iphoneBlock.classList.remove('ocultado');
+            iphoneBlock.classList.add('tela');
+            iphoneBlock.classList.add('none-background');
+        })
+    </script>
 
     <script>
         const flags = {
