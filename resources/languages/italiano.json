@@ -21,18 +21,18 @@
     "title_como_funciona": "Come Funziona?",
     "resp_como_funciona": "Interagisci con la nostra IA, condividi le tue<br/>esperienze e lascia che impari ed evolva<br/>sulla base delle tue informazioni.",
     "title_para_quem": "Per chi è?",
-    "resp_para_quem": "Per tutti coloro che vogliono preservare il proprio lascito e<br/>condividere le proprie esperienze con le generazioni future.",
+    "resp_para_quem": "Per tutti coloro che vogliono preservare il proprio lascito e condividere le proprie esperienze con le generazioni future.",
     "title_oque_dizem_sobre_nos": "Cosa dicono di noi",
     "txt_oque_dizem_sobre_nos": "Scopri come Legathum sta trasformando il modo<br/>in cui le persone conservano i loro ricordi e conoscenze.",
     "nome_maria_silva": "Maria Silva",
     "prof": "Insegnante",
-    "texto_maria": "Un modo incredibile per conservare<br/>conoscenze ed esperienze per<br/>le generazioni future. La tecnologia è<br/>semplicemente affascinante!",
+    "texto_maria": "Un modo incredibile per preservare<br/>conoscenze ed esperienze per le<br/>prossime generazioni. La tecnologia è<br/>semplicemente affascinante!",
     "nome_joao_santos": "João Santos",
     "empresario": "Imprenditore",
-    "texto_joao": "Un modo incredibile per conservare<br/>conoscenze ed esperienze per<br/>le generazioni future. La tecnologia è<br/>semplicemente affascinante!",
+    "texto_joao": "Legathum mi ha permesso di creare una<br />versione digitale di me stesso che potrà<br />continuare a condividere conoscenza<br />anche dopo la mia partenza.",
     "nome_ana_oliveira": "Ana Oliveira",
     "escritora": "Scrittrice",
-    "texto_ana_oliv": "Un modo incredibile per conservare<br/>conoscenze ed esperienze per<br/>le generazioni future. La tecnologia è<br/>semplicemente affascinante!",
+    "texto_ana_oliv": "L'interfaccia è intuitiva e il processo di<br />creare il mio 'io digitale' è stato un viaggio di<br />autoscoperta affascinante.",
 
     "title_pronto_para_criar": "Pronto a creare il tuo lascito<br/>digitale?",
     "texto_comece_agora_transforme": "Inizia ora e trasforma le tue esperienze in un'IA unica e personalizzata.",
@@ -49,5 +49,6 @@
     "lbl_seu_email": "La tua e-mail",
     "lbl_newsletter": "Newsletter",
     "btn_inscrever_se": "Iscriviti",
-    "lbl_copy": "© 2025 Legathum. Tutti i diritti riservati."
+    "lbl_copy": "© 2025 Legathum. Tutti i diritti riservati.",
+    "lbl_back": "&lt; Per tornare indietro"
 }

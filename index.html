@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
@@ -14,8 +14,8 @@
     <title>Legathum</title>
 </head>
 
-<body>
-    <header>
+<body class="anima-scroll">
+    <header class="s-header">
         <div class="header-content">
             <img src="./resources/logo-colorida.svg" alt="Logo Legathum" class="botao-esquerda" />
 
@@ -25,16 +25,26 @@
                 <a href="#" data-i18n="btn_precos">Preços</a>
                 <a href="#" data-i18n="btn_login">Login</a>
             </nav>
+
+            <div id="lang-dropdown" class="lang-dropdown">
+                <button id="lang-button" aria-haspopup="listbox" aria-expanded="false" aria-label="Selecionar idioma">
+                    <!-- Bandeira selecionada será inserida aqui via JS -->
+                </button>
+                <ul id="lang-list" role="listbox" tabindex="-1" aria-label="Lista de idiomas">
+                    <!-- Opções serão inseridas por JS -->
+                </ul>
+            </div>
         </div>
     </header>
+
     <main class="main-block">
 
-        <section class="section-main tela">
+        <section class="section-main tela" id="tela-banner">
             <div class="tec-ia-button entrar-devagar">
                 <img src="./resources/icon-star.png" alt="Ícone de estrelas para clicar em novo" />
-                <span data-i18n="lbl_novo">Novo</span>
-                <p>|</p>
-                <p data-i18n="btn_tec_rev_ia">Tecnologia revolucionária de IA</p>
+                <span data-i18n="lbl_novo">Novo </span>
+                <p> | </p>
+                <p data-i18n="btn_tec_rev_ia"> Tecnologia revolucionária de IA</p>
             </div>
             <div class="meta-homo-div entrar-devagar">
                 <span class="white" data-i18n="title_meta">Meta Homo Sapiens:</span>
@@ -51,7 +61,7 @@
                     <p data-i18n="lbl_comecar_gratuitamente">Começar Gratuitamente</p>
                     <img src="./resources/arow-rigth-icon.svg" alt="Seta apontando para a direita" />
                 </div>
-                <div class="demo-button botao-direita">
+                <div class="demo-button botao-direita" id="demo-button">
                     <img src="./resources/play-icon.svg" alt="Ícone de play" />
                     <p data-i18n="lbl_ver_demo">Ver Demo</p>
                 </div>
@@ -66,40 +76,56 @@
             </div>
         </section>
 
+        <section class="ocultado" id="iphone">
+            <div class="iphone">
+                <div class="notch">
+                    <div class="speaker"></div>
+                </div>
+                <div class="screen">
+                    <button class="back-button" id="back-button" data-i18n="lbl_back"></button>
+                    <video width="230px" height="432px" controls>
+                        <source src="./resources/videos/demo-video.mp4" type="video/mp4">
+                        Seu navegador não suporta a tag de vídeo.
+                    </video>
+                </div>
+            </div>
+        </section>
+
+
         <section class="section-info tela">
             <div class="cards-zone">
-                <div class="card anima-scroll">
+                <div class="card">
                     <div class="circle-gradient">
                         <img src="./resources/brain.svg" alt="Ícone de um cérebro humano" />
                     </div>
                     <h3 data-i18n="title_oque_e">O que é?</h3>
-                    <p data-i18n="resp_oque_e">Uma plataforma revolucionária que utiliza IA<br /> avançada para criar
+                    <p data-i18n="resp_oque_e" class="p-cards">Uma plataforma revolucionária que utiliza IA<br /> avançada para criar
                         uma representação digital
                         da<br /> sua mente e personalidade.</p>
                 </div>
 
-                <div class="card anima-scroll">
+                <div class="card">
                     <div class="circle-gradient">
                         <img src="./resources/enginners.svg" alt="Ícone de uma engrenagem" />
                     </div>
                     <h3 data-i18n="title_como_funciona">Como Funciona?</h3>
-                    <p data-i18n="resp_como_funciona">Interaja com nossa IA, compartilhe suas<br /> experiências e deixe
+                    <p data-i18n="resp_como_funciona" class="p-cards">Interaja com nossa IA, compartilhe suas<br /> experiências e deixe
                         que ela aprenda e evolua<br />
                         com base em suas informações.</p>
                 </div>
 
-                <div class="card anima-scroll">
+                <div class="card">
                     <div class="circle-gradient">
                         <img src="./resources/peoples.svg" alt="Ícone de pessoas" />
                     </div>
                     <h3 data-i18n="title_para_quem">Para quem é?</h3>
-                    <p data-i18n="resp_para_quem">Para todos que desejam preservar seu legado e<br /> compartilhar suas
+                    <p data-i18n="resp_para_quem" class="p-cards">Para todos que desejam preservar seu legado e<br /> compartilhar suas
                         experiências com
                         futuras<br /> gerações.</p>
                 </div>
             </div>
 
-            <div class="what-say anima-scroll">
+            <div class="what-say">
                 <h1 data-i18n="title_oque_dizem_sobre_nos">O que dizem sobre nós</h1>
                 <span data-i18n="txt_oque_dizem_sobre_nos">Descubra como o Legathum está transformando a maneira como as
                     pessoas<br /> preservam suas
@@ -107,7 +133,7 @@
             </div>
 
             <div class="card-sobre-nos">
-                <div class="card-aval anima-scroll">
+                <div class="card-aval">
                     <div class="image-person">
                         <img src="./resources/maria-silva.png" alt="Imagem de uma mulher de cabelo curto e castanho." />
                         <hgroup>
@@ -121,7 +147,7 @@
                     </p>
                 </div>
 
-                <div class="card-aval anima-scroll">
+                <div class="card-aval">
                     <div class="image-person">
                         <img src="./resources/JoaoSantos.png" alt="Um homem careca de óculos e camisa verde." />
                         <hgroup>
@@ -130,12 +156,14 @@
                         </hgroup>
                     </div>
                     <p class="comment" data-i18n="texto_joao">
-                        "Uma forma incrível de preservar<br /> conhecimento e experiências para as<br /> próximas
-                        gerações. A tecnologia é<br /> simplesmente fascinante!"
+                        O Legathum me permitiu criar uma <br />
+                        versão digital de mim mesmo que poderá<br />
+                        continuar compartilhando conhecimento<br />
+                        mesmo depois que eu partir.
                     </p>
                 </div>
 
-                <div class="card-aval anima-scroll">
+                <div class="card-aval">
                     <div class="image-person">
                         <img src="./resources/AnaOliveira.png" alt="Imagem de uma mulher de cabelo loiro, sorrindo." />
                         <hgroup>
@@ -144,8 +172,9 @@
                         </hgroup>
                     </div>
                     <p class="comment" data-i18n="texto_ana_oliv">
-                        "Uma forma incrível de preservar<br /> conhecimento e experiências para as<br /> próximas
-                        gerações. A tecnologia é<br /> simplesmente fascinante!"
+                        "A interface é intuitiva e o processo de <br />
+                        criar meu 'eu digital' foi uma jornada de<br />
+                        autodescoberta fascinante."
                     </p>
                 </div>
             </div>
@@ -255,131 +284,272 @@
         </section>
     </main>
 
-    <!-- Botão para ativar o tooltip -->
-    <button id="tooltipToggle">🌐</button>
-
-    <div id="tooltip">
-        <select id="langSelector">
-            <option value="pt-br">
-                <div style="background-image: url('./resources/bandeiras/brasil.svg');">
-                    
-                </div>
-            </option>
-            <option value="en-us">English</option>
-            <option value="japones">Japonês</option>
-            <option value="italiano">Italiano</option>
-            <option value="holandes">Holandês</option>
-            <option value="frances">Francês</option>
-            <option value="coreano">Coreano</option>
-            <option value="chines">Chinês</option>
-            <option value="alemao">Alemão</option>
-        </select>
-    </div>
-
-    <!-- Tooltip com o select -->
-    <!--<div id="tooltip">
-        <select id="langSelector">
-            <option value="pt-br">Português</option>
-            <option value="en-us">English</option>
-            <option value="japones">Japonês</option>
-            <option value="italiano">Italiano</option>
-            <option value="holandes">Holandês</option>
-            <option value="frances">Francês</option>
-            <option value="coreano">Coreano</option>
-            <option value="chines">Chinês</option>
-            <option value="alemao">Alemão</option>
-        </select>
-    </div>
-
-    <div id="tooltip" style="display: flex; align-items: center; gap: 10px;">
-        <div id="flag" style="width: 24px; height: 16px;"></div>
-        <select id="langSelector" style="font-size: 16px;">
-            <option value="pt-br" data-flag="br">Português</option>
-            <option value="en-us" data-flag="us">English</option>
-            <option value="japones" data-flag="jp">Japonês</option>
-            <option value="italiano" data-flag="it">Italiano</option>
-            <option value="holandes" data-flag="nl">Holandês</option>
-            <option value="frances" data-flag="fr">Francês</option>
-            <option value="coreano" data-flag="kr">Coreano</option>
-            <option value="chines" data-flag="cn">Chinês</option>
-            <option value="alemao" data-flag="de">Alemão</option>
-        </select>-->
-    </div>
-
-    <script>
-        const flags = {
-            br: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"><rect width="24" height="16" fill="#00A859"/><circle cx="12" cy="8" r="6" fill="#FEDF00"/></svg>`,
-            us: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"><rect width="24" height="16" fill="#B22234"/><rect y="2" width="24" height="2" fill="#FFFFFF"/><rect y="6" width="24" height="2" fill="#FFFFFF"/></svg>`,
-            jp: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"><rect width="24" height="16" fill="#FFFFFF"/><circle cx="12" cy="8" r="5" fill="#BC002D"/></svg>`,
-            it: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"><rect width="8" height="16" fill="#009246"/><rect x="8" width="8" height="16" fill="#FFFFFF"/><rect x="16" width="8" height="16" fill="#CE2B37"/></svg>`,
-            nl: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"><rect width="24" height="5.33" fill="#21468B"/><rect y="5.33" width="24" height="5.33" fill="#FFFFFF"/><rect y="10.66" width="24" height="5.33" fill="#AE1C28"/></svg>`,
-            fr: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"><rect width="8" height="16" fill="#0055A4"/><rect x="8" width="8" height="16" fill="#FFFFFF"/><rect x="16" width="8" height="16" fill="#EF4135"/></svg>`,
-            kr: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"><rect width="24" height="16" fill="#FFFFFF"/><circle cx="12" cy="8" r="5" fill="none" stroke="#CD2E3A" stroke-width="2"/><path d="M7 6 L9 10 M9 6 L7 10" stroke="#000" stroke-width="1"/></svg>`,
-            cn: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"><rect width="24" height="16" fill="#DE2910"/><polygon points="4,4 5.5,7 3,7" fill="#FFDE00"/><circle cx="6" cy="6" r="2" fill="#FFDE00"/></svg>`,
-            de: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"><rect width="24" height="5.33" fill="#000000"/><rect y="5.33" width="24" height="5.33" fill="#DD0000"/><rect y="10.66" width="24" height="5.33" fill="#FFCE00"/></svg>`
-        };
-
-        const flagContainer = document.getElementById('flag');
-        const select = document.getElementById('langSelector');
-
-        function updateFlag() {
-            const selectedOption = select.options[select.selectedIndex];
-            const flagCode = selectedOption.getAttribute('data-flag');
-            flagContainer.innerHTML = flags[flagCode] || '';
-        }
-
-        select.addEventListener('change', updateFlag);
-        updateFlag(); // Inicializa a bandeira
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const toggleButton = document.getElementById("tooltipToggle");
-            const tooltip = document.getElementById("tooltip");
-            const langSelector = document.getElementById("langSelector");
-
-            window.addEventListener('DOMContentLoaded', () => {
-                langSelector.value = localStorage.getItem('lang') || 'pt-br';
-            });
-
-            langSelector.addEventListener('change', () => {
-                localStorage.setItem('lang', langSelector.value);
-            });
-
-            if (toggleButton && tooltip) {
-                toggleButton.addEventListener("click", () => {
-                    tooltip.style.display = (tooltip.style.display === "none" || tooltip.style.display === "") ? "block" : "none";
-                });
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const header = document.querySelector('header');
+            checkScroll();
+            window.addEventListener('scroll', checkScroll);
+            function checkScroll() {
+                if (window.scrollY > 10) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
             }
-
-            if (langSelector) {
-                langSelector.addEventListener("change", function () {
-                    loadLanguage(this.value);
-                });
-            }
-
-            function loadLanguage(lang) {
-                fetch(`./resources/languages/${lang}.json`)
-                    .then(response => {
-                        if (!response.ok) throw new Error(`Erro ao carregar o idioma: ${lang}`);
-                        return response.json();
-                    })
-                    .then(translations => {
-                        document.querySelectorAll("[data-i18n]").forEach(el => {
-                            const key = el.getAttribute("data-i18n");
-                            if (translations[key]) {
-                                el.innerHTML = translations[key];
-                            }
-                        });
-                    })
-                    .catch(error => console.error(error));
-            }
-
-            loadLanguage("pt-br");
         });
     </script>
 
 
+    <script>
+        const demo = document.getElementById('demo-button');
+        const voltar = document.getElementById('back-button');
+
+        const telaBanner = document.getElementById('tela-banner');
+        const iphoneBlock = document.getElementById('iphone');
+
+        voltar.addEventListener('click', () => {
+            recondicionandoRenderizacao();
+        })
+
+        demo.addEventListener('click', () => {
+            recondicionandoRenderizacao();
+        })
+
+        function recondicionandoRenderizacao() {
+
+            if (!telaBanner.classList.contains('ocultado')) {
+                telaBanner.classList.add('ocultado');
+
+            } else {
+                telaBanner.classList.remove('ocultado');
+            }
+
+            if (iphoneBlock.classList.contains('ocultado')) {
+                iphoneBlock.classList.remove('ocultado');
+                iphoneBlock.classList.add('tela');
+                iphoneBlock.classList.add('none-background');
+            } else {
+                iphoneBlock.classList.add('ocultado');
+
+                iphoneBlock.classList.remove('tela');
+                iphoneBlock.classList.remove('none-background');
+            }
+        }
+
+    </script>
+
+    <script>
+        const flags = {
+            "en-us": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 1235 650">
+            <rect width="1235" height="650" fill="#b22234"/>
+            <g fill="#fff">
+            <rect y="50" width="1235" height="50"/>
+            <rect y="150" width="1235" height="50"/>
+            <rect y="250" width="1235" height="50"/>
+            <rect y="350" width="1235" height="50"/>
+            <rect y="450" width="1235" height="50"/>
+            <rect y="550" width="1235" height="50"/>
+            </g>
+            <rect width="494" height="350" fill="#3c3b6e"/>
+            <g fill="#fff">
+            <!-- Stars pattern omitted for brevity -->
+            </g>
+        </svg>`,
+            "pt-br": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 720 504">
+            <rect width="720" height="504" fill="#009b3a"/>
+            <polygon points="360,72 648,252 360,432 72,252" fill="#ffdf00"/>
+            <circle cx="360" cy="252" r="100" fill="#002776"/>
+            <path d="M 260 252 a 100 100 0 0 1 200 0 a 100 100 0 0 1 -200 0" fill="none" stroke="#fff" stroke-width="10"/>
+        </svg>`,
+            "japones": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 900 600">
+            <rect width="900" height="600" fill="#fff"/>
+            <circle cx="450" cy="300" r="180" fill="#bc002d"/>
+        </svg>`,
+            "italiano": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 900 600">
+            <rect width="300" height="600" fill="#009246"/>
+            <rect x="300" width="300" height="600" fill="#fff"/>
+            <rect x="600" width="300" height="600" fill="#ce2b37"/>
+        </svg>`,
+            "holandes": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 900 600">
+            <rect width="900" height="200" fill="#ae1c28"/>
+            <rect y="200" width="900" height="200" fill="#fff"/>
+            <rect y="400" width="900" height="200" fill="#21468b"/>
+        </svg>`,
+            "frances": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 900 600">
+            <rect width="300" height="600" fill="#0055a4"/>
+            <rect x="300" width="300" height="600" fill="#fff"/>
+            <rect x="600" width="300" height="600" fill="#ef4135"/>
+        </svg>`,
+            "coreano": `<svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_180_13850)">
+                    <path d="M49.2218 42.1258H0.946092C0.470019 42.1258 0.0839844 41.7398 0.0839844 41.2637V10.2293C0.0839844 9.75322 0.470019 9.36719 0.946092 9.36719H49.2219C49.698 9.36719 50.084 9.75322 50.084 10.2293V41.2637C50.0839 41.7399 49.6979 42.1258 49.2218 42.1258Z" fill="#F5F5F5"/>
+                    <path d="M29.8699 18.5721C25.9086 15.9314 20.5584 17.0109 17.9193 20.9652C16.5956 22.939 17.1337 25.6209 19.1141 26.9413C21.0931 28.2617 23.7665 27.7255 25.0869 25.7448C26.4073 23.7643 29.0824 23.2347 31.0613 24.5481C33.0435 25.8685 33.5766 28.5505 32.2543 30.5242C34.8951 26.5633 33.8277 21.2129 29.8699 18.5721Z" fill="#FF4B55"/>
+                    <path d="M17.9193 20.9653C16.5955 22.9391 17.1336 25.621 19.1141 26.9414C21.0931 28.2618 23.7664 27.7256 25.0868 25.7449C26.4072 23.7644 29.0823 23.2348 31.0612 24.5482C33.0435 25.8686 33.5766 28.5506 32.2543 30.5243C29.617 34.4923 24.2685 35.5584 20.3073 32.9176C16.3496 30.2769 15.2786 24.9266 17.9193 20.9653Z" fill="#41479B"/>
+                    <path d="M34.2573 15.3163L35.8232 17.6701C35.9548 17.8678 35.9016 18.1348 35.7042 18.2669L35.3071 18.5328C35.109 18.6655 34.8408 18.6121 34.7086 18.4137L33.1407 16.0606C33.0088 15.8626 33.0623 15.5952 33.2602 15.463L33.6592 15.1966C33.8574 15.0643 34.1253 15.1179 34.2573 15.3163Z" fill="#464655"/>
+                    <path d="M36.6738 18.9451L38.2448 21.2973C38.3774 21.496 38.3232 21.7647 38.124 21.8964L37.7251 22.1599C37.5273 22.2908 37.2609 22.237 37.1291 22.0398L35.559 19.69C35.4268 19.4922 35.4799 19.2245 35.6779 19.0922L36.0757 18.8262C36.2737 18.6938 36.5415 18.7471 36.6738 18.9451Z" fill="#464655"/>
+                    <path d="M35.9339 14.1974L39.9211 20.1811C40.0532 20.3791 39.9996 20.6467 39.8015 20.7787L39.4009 21.0457C39.2029 21.1779 38.9352 21.1242 38.8032 20.9262L34.8146 14.9429C34.6825 14.7448 34.7362 14.477 34.9344 14.3451L35.3363 14.0776C35.5344 13.9458 35.8019 13.9994 35.9339 14.1974Z" fill="#464655"/>
+                    <path d="M37.6061 13.0801L39.1754 15.4384C39.3076 15.637 39.2533 15.9052 39.0542 16.0367L38.6552 16.3004C38.4571 16.4312 38.1906 16.3774 38.059 16.1799L36.4885 13.8247C36.3564 13.6266 36.41 13.359 36.608 13.2269L37.0083 12.9601C37.2063 12.828 37.474 12.8816 37.6061 13.0801Z" fill="#464655"/>
+                    <path d="M40.0237 16.7166L41.5906 19.0701C41.7224 19.2679 41.669 19.5351 41.4714 19.6672L41.0735 19.9332C40.8753 20.0658 40.6072 20.0122 40.4751 19.8138L38.9082 17.4604C38.7765 17.2625 38.8298 16.9954 39.0274 16.8632L39.4253 16.5972C39.6234 16.4647 39.8915 16.5181 40.0237 16.7166Z" fill="#464655"/>
+                    <path d="M13.0464 29.4561L17.0331 35.4333C17.1652 35.6313 17.1118 35.8988 16.9138 36.031L16.5146 36.2976C16.3165 36.4298 16.0489 36.3764 15.9166 36.1782L11.9299 30.201C11.7979 30.003 11.8512 29.7355 12.0492 29.6033L12.4485 29.3367C12.6465 29.2045 12.9143 29.258 13.0464 29.4561Z" fill="#464655"/>
+                    <path d="M11.3722 30.5743L12.9375 32.922C13.0694 33.1199 13.0162 33.387 12.8186 33.5193L12.4216 33.7851C12.2236 33.9176 11.9556 33.8644 11.8233 33.6663L10.2562 31.3191C10.124 31.1212 10.1773 30.8535 10.3754 30.7213L10.7744 30.4549C10.9723 30.3227 11.2401 30.3761 11.3722 30.5743Z" fill="#464655"/>
+                    <path d="M13.7907 34.2044L15.3577 36.5581C15.4896 36.756 15.4361 37.0233 15.2384 37.1553L14.8401 37.4215C14.642 37.5539 14.3741 37.5005 14.2419 37.3023L12.6739 34.949C12.542 34.7511 12.5955 34.4836 12.7933 34.3515L13.1925 34.0849C13.3907 33.9525 13.6586 34.0061 13.7907 34.2044Z" fill="#464655"/>
+                    <path d="M9.69796 31.692L13.6821 37.6695C13.8141 37.8673 13.7606 38.1347 13.5631 38.2669L13.1649 38.5332C12.9669 38.6656 12.699 38.6123 12.5668 38.414L8.58028 32.4373C8.44816 32.2392 8.50177 31.9715 8.69982 31.8394L9.1004 31.5724C9.29825 31.4404 9.56593 31.4939 9.69796 31.692Z" fill="#464655"/>
+                    <path d="M11.9298 21.2977L15.9159 15.3156C16.048 15.1174 16.3158 15.0639 16.5139 15.1961L16.9131 15.4626C17.111 15.5947 17.1643 15.8623 17.0324 16.0603L13.0447 22.0391C12.9129 22.2366 12.6462 22.2903 12.4482 22.1593L12.0507 21.8961C11.8516 21.7644 11.7975 21.4962 11.9298 21.2977Z" fill="#464655"/>
+                    <path d="M10.256 20.1812L14.2428 14.1979C14.3749 13.9997 14.6429 13.9461 14.841 14.0786L15.2392 14.3448C15.4368 14.4769 15.4902 14.7441 15.3583 14.942L11.3726 20.9256C11.2405 21.1239 10.9727 21.1775 10.7745 21.0452L10.3753 20.7787C10.1775 20.6466 10.1241 20.3791 10.256 20.1812Z" fill="#464655"/>
+                    <path d="M8.58003 19.0696L12.5672 13.0804C12.6994 12.8821 12.9674 12.8284 13.1656 12.9609L13.5637 13.2271C13.7614 13.3592 13.8147 13.6262 13.683 13.8241L9.69829 19.8143C9.56635 20.0126 9.29848 20.0663 9.10034 19.9342L8.69975 19.6672C8.5018 19.5352 8.44829 19.2677 8.58003 19.0696Z" fill="#464655"/>
+                    <path d="M33.141 35.4334L34.7081 33.0863C34.8404 32.8881 35.1084 32.8349 35.3063 32.9674L35.7034 33.2333C35.901 33.3656 35.9541 33.6327 35.8222 33.8306L34.257 36.1782C34.1249 36.3764 33.8571 36.4299 33.6591 36.2977L33.26 36.0313C33.0621 35.899 33.0088 35.6315 33.141 35.4334Z" fill="#464655"/>
+                    <path d="M35.5585 31.8152L37.1282 29.4564C37.2602 29.2582 37.528 29.2045 37.7261 29.3366L38.1261 29.6032C38.3243 29.7353 38.3778 30.0032 38.2455 30.2012L36.6726 32.5563C36.5407 32.7539 36.274 32.8074 36.076 32.6761L35.6793 32.4132C35.4806 32.2815 35.4265 32.0135 35.5585 31.8152Z" fill="#464655"/>
+                    <path d="M34.8146 36.5571L36.3826 34.2038C36.5146 34.0057 36.7823 33.9521 36.9805 34.0842L37.3812 34.3515C37.5792 34.4835 37.6327 34.7509 37.5009 34.949L35.9338 37.3025C35.8019 37.5007 35.5344 37.5544 35.3361 37.4225L34.9343 37.155C34.7362 37.023 34.6825 36.7553 34.8146 36.5571Z" fill="#464655"/>
+                    <path d="M37.2329 32.9208L38.8018 30.5729C38.9341 30.3752 39.2014 30.3218 39.3994 30.4538L39.8 30.7208C39.9981 30.8529 40.0516 31.1208 39.9192 31.3188L38.3504 33.6667C38.2182 33.8644 37.9508 33.9177 37.7529 33.7858L37.3522 33.5188C37.1539 33.3869 37.1005 33.1189 37.2329 32.9208Z" fill="#464655"/>
+                    <path d="M36.4888 37.6687L38.0586 35.3195C38.1904 35.1223 38.4567 35.0686 38.6546 35.1994L39.0536 35.4631C39.2527 35.5947 39.307 35.8632 39.1746 36.0618L37.606 38.4141C37.4739 38.6122 37.2062 38.6656 37.0082 38.5337L36.6079 38.2669C36.4098 38.1346 36.3563 37.8668 36.4888 37.6687Z" fill="#464655"/>
+                    <path d="M38.9083 34.0447L40.4742 31.6927C40.6063 31.4943 40.8744 31.4407 41.0725 31.5732L41.4702 31.8391C41.6679 31.9713 41.7211 32.2388 41.5891 32.4366L40.0218 34.7855C39.8901 34.9832 39.6231 35.0368 39.4252 34.9056L39.0287 34.6429C38.8301 34.5112 38.7761 34.2432 38.9083 34.0447Z" fill="#464655"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_180_13850">
+                    <rect width="50" height="50" fill="white" transform="translate(0.0820312 0.746582)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    `,
+            "chines": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 900 600">
+            <rect width="900" height="600" fill="#de2910"/>
+            <polygon points="150,100 170,150 120,120 180,120 130,150" fill="#ffde00"/>
+            <!-- Additional stars omitted for brevity -->
+        </svg>`,
+            "alemao": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 900 600">
+            <rect width="900" height="200" fill="#000"/>
+            <rect y="200" width="900" height="200" fill="#dd0000"/>
+            <rect y="400" width="900" height="200" fill="#ffce00"/>
+        </svg>`
+        };
+
+
+        const languageNames = {
+            "en-us": "English",
+            "pt-br": "Portuguese",
+            "japones": "日本語",
+            "italiano": "Italiano",
+            "holandes": "Nederlands",
+            "frances": "Français",
+            "coreano": "한국어",
+            "chines": "中文",
+            "alemao": "Deutsch"
+        };
+
+        const langButton = document.getElementById('lang-button');
+        const langList = document.getElementById('lang-list');
+
+        let currentLang = localStorage.getItem('lang') || 'en-us';
+
+        function renderLangButton() {
+            langButton.innerHTML = flags[currentLang];
+            langButton.setAttribute('aria-label', `Idioma selecionado: ${languageNames[currentLang]}`);
+        }
+
+        function renderLangList() {
+            langList.innerHTML = '';
+            for (const [key, name] of Object.entries(languageNames)) {
+                const li = document.createElement('li');
+                li.setAttribute('role', 'option');
+                li.setAttribute('tabindex', '0');
+                li.dataset.lang = key;
+                li.innerHTML = `${flags[key]}<span>${name}</span>`;
+                if (key === currentLang) {
+                    li.style.backgroundColor = 'rgba(255,255,255,0.3)';
+                }
+                langList.appendChild(li);
+            }
+        }
+
+        function toggleLangList() {
+            const isShown = langList.classList.toggle('show');
+            langButton.setAttribute('aria-expanded', isShown);
+            if (isShown) {
+                langList.focus();
+            }
+        }
+
+        function changeLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('lang', lang);
+            renderLangButton();
+            renderLangList();
+            langList.classList.remove('show');
+            // Chama sua função de troca de idioma
+            loadLanguage(lang);
+        }
+
+        // Eventos
+        langButton.addEventListener('click', () => {
+            toggleLangList();
+        });
+
+        langList.addEventListener('click', (e) => {
+            if (e.target.closest('li')) {
+                const selectedLang = e.target.closest('li').dataset.lang;
+                changeLanguage(selectedLang);
+            }
+        });
+
+        // Fechar dropdown ao clicar fora
+        document.addEventListener('click', (e) => {
+            if (!langButton.contains(e.target) && !langList.contains(e.target)) {
+                langList.classList.remove('show');
+                langButton.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Teclado para acessibilidade
+        langList.addEventListener('keydown', (e) => {
+            const focusableItems = Array.from(langList.querySelectorAll('li'));
+            const index = focusableItems.indexOf(document.activeElement);
+
+            if (e.key === 'ArrowDown') {
+                e.preventDefault();
+                const nextIndex = (index + 1) % focusableItems.length;
+                focusableItems[nextIndex].focus();
+            } else if (e.key === 'ArrowUp') {
+                e.preventDefault();
+                const prevIndex = (index - 1 + focusableItems.length) % focusableItems.length;
+                focusableItems[prevIndex].focus();
+            } else if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                if (document.activeElement.tagName === 'LI') {
+                    changeLanguage(document.activeElement.dataset.lang);
+                }
+            } else if (e.key === 'Escape') {
+                langList.classList.remove('show');
+                langButton.setAttribute('aria-expanded', 'false');
+                langButton.focus();
+            }
+        });
+
+        // Função loadLanguage que você já tem
+        function loadLanguage(lang) {
+            fetch(`./resources/languages/${lang}.json`)
+                .then(response => {
+                    if (!response.ok) throw new Error(`Erro ao carregar o idioma: ${lang}`);
+                    return response.json();
+                })
+                .then(translations => {
+                    document.querySelectorAll("[data-i18n]").forEach(el => {
+                        const key = el.getAttribute("data-i18n");
+                        if (translations[key]) {
+                            el.innerHTML = translations[key];
+                        }
+                    });
+                })
+                .catch(error => console.error(error));
+        }
+
+        // Inicializa
+        renderLangButton();
+        renderLangList();
+        loadLanguage(currentLang);
+
+
+    </script>
+    
 </body>
 
 </html>

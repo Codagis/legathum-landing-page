@@ -26,13 +26,13 @@
     "txt_oque_dizem_sobre_nos": "Ontdek hoe Legathum de manier verandert waarop mensen<br/>hun herinneringen en kennis bewaren.",
     "nome_maria_silva": "Maria Silva",
     "prof": "Lerares",
-    "texto_maria": "Een geweldige manier om kennis en ervaringen<br/>voor toekomstige generaties te behouden. De technologie is gewoon fascinerend!",
+    "texto_maria": "Een geweldige manier om kennis en ervaringen<br/>te behouden voor toekomstige generaties.<br/>Technologie is gewoonweg fascinerend!",
     "nome_joao_santos": "João Santos",
     "empresario": "Ondernemer",
-    "texto_joao": "Een geweldige manier om kennis en ervaringen<br/>voor toekomstige generaties te behouden. De technologie is gewoon fascinerend!",
+    "texto_joao": "Legathum heeft mij in staat gesteld een<br />digitale versie van mezelf te creëren die<br />kennis kan blijven delen<br />zelfs nadat ik er niet meer ben.",
     "nome_ana_oliveira": "Ana Oliveira",
     "escritora": "Schrijfster",
-    "texto_ana_oliv": "Een geweldige manier om kennis en ervaringen<br/>voor toekomstige generaties te behouden. De technologie is gewoon fascinerend!",
+    "texto_ana_oliv": "De interface is intuïtief en het proces van<br />het creëren van mijn 'digitale ik' was een<br />fascinerende reis van zelfontdekking.",
 
     "title_pronto_para_criar": "Klaar om je digitale<br/>nalatenschap te creëren?",
     "texto_comece_agora_transforme": "Begin nu en transformeer je ervaringen in een unieke, gepersonaliseerde AI.",
@@ -49,5 +49,6 @@
     "lbl_seu_email": "Je e-mail",
     "lbl_newsletter": "Nieuwsbrief",
     "btn_inscrever_se": "Abonneren",
-    "lbl_copy": "© 2025 Legathum. Alle rechten voorbehouden."
+    "lbl_copy": "© 2025 Legathum. Alle rechten voorbehouden.",
+    "lbl_back": "&lt; Om terug te gaan"
 }
