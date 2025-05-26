@@ -160,7 +160,8 @@
     font-size: 14px;
 }
 
-.tittle-witing-list, .navegacao p {
+.tittle-witing-list,
+.navegacao p {
     font-size: 18px;
     color: #fff;
 }
@@ -191,7 +192,7 @@
 
 input {
     width: 272px;
-    padding: 1.2rem 1rem 0.4rem;
+    padding: 1.6rem 1rem 0.4rem;
     font-size: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 7px;
