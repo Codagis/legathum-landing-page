@@ -10,13 +10,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <script src="./javascript/scroll-script.js"></script>
+
     <link rel="icon" href="./resources/legathum_icon.png" type="image/jpeg">
     <title>Legathum</title>
 </head>
 
 <body>
-    <header class="s-header">
+    <header class="s-header" id="main-header">
         <div class="header-content">
             <img src="./resources/logo-colorida.svg" alt="Logo Legathum" class="botao-esquerda" />
 
@@ -39,7 +39,7 @@
         </div>
     </header>
     <main class="main-block">
-        <section class="section-main" id="tela-banner">
+        <section class="section-main anima-scroll" id="tela-banner">
             <div class="tec-ia-button entrar-devagar">
                 <img src="./resources/icon-star.png" alt="Ícone de estrelas para clicar em novo" />
                 <span data-i18n="lbl_novo">Novo </span>
@@ -75,7 +75,6 @@
                         data-i18n="lbl_parceria_global">Parceria Global</span></span>
             </div>
         </section>
-        <br /><br /><br /><br /><br /><br /><br /><br />
 
         <section class="ocultado" id="iphone">
             <div class="iphone">
@@ -84,7 +83,7 @@
                 </div>
                 <div class="screen">
                     <button class="back-button" id="back-button" data-i18n="lbl_back"></button>
-                    <video width="230px" height="432px" controls>
+                    <video id="demo-video" width="230px" height="432px" controls>
                         <source src="./resources/videos/demo-video.mp4" type="video/mp4">
                         Seu navegador não suporta a tag de vídeo.
                     </video>
@@ -92,7 +91,8 @@
             </div>
         </section>
 
-        <section class="section-info tela">
+
+        <section class="section-info anima-scroll" id="oculta-com-iphone-um">
             <div class="cards-zone">
                 <div class="card" id="sobre">
                     <div class="circle-gradient">
@@ -128,7 +128,7 @@
                 </div>
             </div>
 
-            <div class="what-say">
+            <div class="mapeamento">
                 <h1 data-i18n="title_software_mapeamento_cognitivo">Software de Mapeamento Cognitivo Comportamental</h1>
                 <span data-i18n="txt_do_cerebro_a_nuvem">Descubra como o Legathum está transformando a maneira como as
                     pessoas<br /> preservam suas
@@ -183,10 +183,9 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section class="section-info tela">
+        <section class="section-mento-jobs anima-scroll" id="oculta-com-iphone-dois">
 
             <div class="success-case-card">
                 <img src="./resources/apple.svg" alt="Apple Logo" class="apple-logo">
@@ -207,7 +206,7 @@
         </section>
 
 
-        <section class="section-info tela">
+        <section class="section-parcerias anima-scroll" id="oculta-com-iphone-tres">
 
             <div class="what-say">
                 <h1 data-i18n="title_parcerias_impactos">Parcerias & Impacto</h1>
@@ -264,7 +263,7 @@
 
         </section>
 
-        <section class="section-info tela">
+        <section class="section-blog anima-scroll" id="oculta-com-iphone-quatro">
 
             <div class="what-say">
                 <h1 data-i18n="title_fronteiras_consciencia">Blog "Fronteiras da Consciência"</h1>
@@ -338,13 +337,13 @@
         </section>
 
 
-        <section class="section-info tela">
+        <section class="section-revolution anima-scroll" id="oculta-com-iphone-cinco">
 
             <div class="what-say">
                 <h1 data-i18n="title_junte_revolucao">Junte-se à Revolução</h1>
             </div>
 
-            <div class="card-sobre-nos">
+            <div class="card-para-investidores">
 
                 <div class="card-aval-revolucao">
                     <div class="image-person">
@@ -398,7 +397,7 @@
         </section>
 
 
-        <section class="final tela">
+        <section class="final anima-scroll" id="oculta-com-iphone-seis">
             <div class="legacy">
                 <hgroup class="entrar-devagar">
                     <span data-i18n="title_pronto_para_criar">Pronto para criar seu legado<br /> digital?</span>
@@ -487,7 +486,8 @@
 
                                 <button id="submitButton"
                                     class="start-button reset-size-buttons-rodape inscrever botao-direita">
-                                    <span id="spanButaoSubmit" class="button-text" data-i18n="btn_inscrever_se">Inscrever-se</span>
+                                    <span id="spanButaoSubmit" class="button-text"
+                                        data-i18n="btn_inscrever_se">Inscrever-se</span>
                                     <div class="spinner hidden ml-2"></div>
                                 </button>
                             </div>
@@ -503,6 +503,7 @@
     </main>
     <script src="./javascript/iphone-script.js"></script>
     <script src="./javascript/bandeiras-script.js"></script>
+    <script src="./javascript/scroll-script.js"></script>
 </body>
 
 </html>
