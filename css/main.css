@@ -94,7 +94,7 @@ video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font-family: "Inter", sans-serif;
+	font-family: "Poppins", sans-serif;
 	vertical-align: baseline;
 	box-sizing: border-box;
 }
@@ -121,7 +121,8 @@ body {
 	scrollbar-width: thin;
 	scrollbar-color: #888 #f0f0f0;
 	scroll-behavior: smooth;
-  	overflow-x: hidden;
+	font-family: "Poppins", sans-serif;
+	overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -257,12 +258,12 @@ select {
 }
 
 .all-zindex-one::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  /* shorthand para top, right, bottom, left = 0 */
-  background-color: rgba(0, 0, 0, 0.8);
-  /* sombra preta translúcida */
-  height: 100vh;
-  z-index: 1;
+	content: "";
+	position: absolute;
+	inset: 0;
+	/* shorthand para top, right, bottom, left = 0 */
+	background-color: rgba(0, 0, 0, 0.8);
+	/* sombra preta translúcida */
+	height: 100vh;
+	z-index: 1;
 }
