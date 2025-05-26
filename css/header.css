@@ -36,7 +36,7 @@ header {
   right: 20px;
   z-index: 3;
   font-size: 12px;
-  font-family: sans-serif;
+  font: "poppins", sans-serif;
 }
 
 #lang-button {
