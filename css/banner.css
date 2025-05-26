@@ -2,23 +2,16 @@
   background-image: url('../resources/background.svg');
   background-size: 100%;
   background-repeat: no-repeat;
+  position: relative;
   width: auto;
   overflow: hidden;
   margin: 0;
-  scroll-behavior: smooth;
+  /*scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
+  overflow-y: scroll;*/
+  overflow: hidden;
+  height: 100%;
   box-sizing: border-box;
-}
-
-.tela {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-  scroll-snap-align: start;
-  /* parte do snap */
 }
 
 .main-block::after {
@@ -28,28 +21,32 @@
   /* shorthand para top, right, bottom, left = 0 */
   background-color: rgba(0, 0, 0, 0.5);
   /* sombra preta translúcida */
-  height: 100vh;
+  height: 100%;
   z-index: 1;
 }
 
+.tela {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+}
+
+
+
+/* Estilização principal dos componentes */
 .section-main {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 0px auto;
-  height: 100vh;
-  gap: 10px;
-  z-index: 3;
+  max-height: 100vh;
+  padding-top: 20%;
+  gap: 0px;
+  z-index: 2;
   scroll-snap-align: start;
-}
-
-.span-transforme {
-  color: #fff;
-  font-size: 20px;
-  text-align: center;
-  z-index: 3;
-  margin-top: 10px;
 }
 
 .tec-ia-button {
@@ -63,9 +60,8 @@
   align-items: center;
   gap: 5px;
   justify-content: space-around;
-  z-index: 3;
+  z-index: 2;
   cursor: pointer;
-  margin-top: 40%;
   padding: 10px;
 }
 
@@ -82,6 +78,15 @@
   color: #18A5F8;
 }
 
+.span-transforme {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  z-index: 2;
+  margin-top: 10px;
+}
+
+
 .meta-homo-div {
   display: flex;
   flex-direction: column;
@@ -89,14 +94,7 @@
   justify-content: center;
   box-sizing: border-box;
   margin: 7px;
-  z-index: 3;
-}
-
-.white {
-  color: #fff;
-  font-size: 64px;
-  font-weight: bold;
-  line-height: 1.2;
+  z-index: 2;
 }
 
 .gradiente {
@@ -108,18 +106,15 @@
   line-height: 1.2;
 }
 
-.pink {
-  background: linear-gradient(to right, #9A1794, #6F0F6B);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 64px;
-  font-weight: bold;
-  line-height: 1.2;
+
+.white {
+  color: #fff;
 }
+
 
 .buttons-demo-start-div {
   margin-top: 40px;
-  z-index: 3;
+  z-index: 2;
 
   display: flex;
   align-items: center;
@@ -163,22 +158,23 @@
   color: #fff;
   font-size: 18px;
   padding-top: 50px;
-  padding-bottom: 20%;
-  z-index: 3;
+  padding-bottom: 200px;
+  z-index: 2;
+
 }
 
 .entrar-devagar {
-  z-index: 3;
+  z-index: 2;
   animation: slideFadeIn 1.5s ease forwards;
 }
 
 .botao-esquerda {
-  z-index: 3;
+  z-index: 2;
   animation: virDaEsquerda 1.5s ease-out forwards;
 }
 
 .botao-direita {
-  z-index: 3;
+  z-index: 2;
   animation: virDaDireita 1.5s ease-out forwards;
 }
 
@@ -271,15 +267,13 @@
   }
 }
 
-
-
-
 /* ==================== TABLETS MAIORES E NOTEBOOKS (≤1280px) ==================== */
 @media (max-width: 1280px) {
   .main-block {
     background-image: url('../resources/background.svg');
     background-size: auto;
     background-repeat: no-repeat;
+    position: relative;
     width: auto;
     margin: 0px;
     padding: 0px;
@@ -289,7 +283,10 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: none;
+    /* shorthand para top, right, bottom, left = 0 */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* sombra preta translúcida */
+    height: 100vh;
     z-index: 1;
   }
 
@@ -299,12 +296,28 @@
   }
 }
 
-/* ==================== TABLET (≤1024px) ==================== */
+@media (max-width: 1101px) {
+  .buttons-demo-start-div {
+
+    gap: 16px;
+    margin-top: 48px;
+    font-size: 12px;
+  }
+
+  .start-button,
+  .demo-button {
+    width: 320px;
+    font-size: 15px;
+    height: 46px;
+  }
+}
+
 @media (max-width: 1024px) {
   .main-block {
     background-image: url('../resources/background.svg');
     background-size: auto;
     background-repeat: no-repeat;
+    position: relative;
     width: auto;
     margin: 0px;
     padding: 0px;
@@ -314,8 +327,16 @@
     content: "";
     position: absolute;
     inset: 0;
-    background-color: none;
+    /* shorthand para top, right, bottom, left = 0 */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* sombra preta translúcida */
+    height: 100vh;
     z-index: 1;
+  }
+
+  .tec-ia-button {
+    width: 80%;
+    max-width: 360px;
   }
 
   .tela {
@@ -324,16 +345,8 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .white {
-    font-size: 56px;
-  }
-
   .gradiente {
     font-size: 60px;
-  }
-
-  .pink {
-    font-size: 56px;
   }
 
   .span-transforme {
@@ -349,8 +362,9 @@
 
   .start-button,
   .demo-button {
-    width: 80%;
-    max-width: 90%;
+    width: 320px;
+    font-size: 15px;
+    height: 46px;
   }
 
   .icons-div {
@@ -358,20 +372,7 @@
     gap: 16px;
     font-size: 16px;
     padding-top: 40px;
-  }
-
-  .tec-ia-button {
-    width: 80%;
-    max-width: 360px;
-  }
-
-  .main-block::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background-color: transparent;
-    /* sombra preta translúcida */
+    padding-bottom: 5%;
   }
 }
 
@@ -387,12 +388,13 @@
     padding: 0px;
   }
 
-  .main-block::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: none;
-    z-index: 1;
+  .tec-ia-button {
+    height: 40px;
+    font-size: 14px;
+  }
+
+  .tec-ia-button span {
+    font-size: 14px;
   }
 
   .tela {
@@ -401,16 +403,8 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .white {
-    font-size: 40px;
-  }
-
   .gradiente {
     font-size: 44px;
-  }
-
-  .pink {
-    font-size: 40px;
   }
 
   .span-transforme {
@@ -419,17 +413,9 @@
 
   .start-button,
   .demo-button {
-    height: 50px;
-    font-size: 16px;
-  }
-
-  .tec-ia-button {
-    height: 40px;
-    font-size: 14px;
-  }
-
-  .tec-ia-button span {
-    font-size: 14px;
+    width: 320px;
+    font-size: 15px;
+    height: 46px;
   }
 
   .buttons-demo-start-div {
@@ -448,12 +434,35 @@
     background-image: url('../resources/background.svg');
     background-size: auto;
     background-repeat: no-repeat;
-    width: auto;
+    position: relative;
+    width: 100%;
+  }
+
+  .main-block::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* shorthand para top, right, bottom, left = 0 */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* sombra preta translúcida */
+    height: 100vh;
+    z-index: 1;
   }
 
   .section-main {
-    padding: 0px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
     margin: 0px auto;
+  }
+
+  .tec-ia-button {
+    max-width: 90%;
+    font-size: 10px;
+  }
+
+  .tec-ia-button img {
+    height: 14px;
   }
 
   .tela {
@@ -462,15 +471,7 @@
     background-color: rgba(0, 0, 0, 0.5);
   }
 
-  .white {
-    font-size: 20px;
-  }
-
   .gradiente {
-    font-size: 20px;
-  }
-
-  .pink {
     font-size: 20px;
   }
 
@@ -480,19 +481,12 @@
 
   .start-button,
   .demo-button {
-    width: 320px;
+    width: 300px;
     font-size: 15px;
     height: 46px;
   }
 
-  .tec-ia-button {
-    width: 320px;
-    font-size: 13px;
-  }
 
-  .tec-ia-button img {
-    height: 14px;
-  }
 
   .icons-div {
     font-size: 13px;
