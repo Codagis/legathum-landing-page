@@ -1,0 +1,18 @@
+<svg width="600" height="400" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Corpo do iPhone -->
+  <rect x="0" y="0" width="200" height="400" rx="30" ry="30" fill="#f2f2f2" stroke="#ccc" stroke-width="2" />
+
+  <!-- Câmeras traseiras -->
+  <circle cx="35" cy="35" r="10" fill="#000" />
+  <circle cx="35" cy="65" r="10" fill="#000" />
+  <!-- Maçã estilizada (logo atrás do iPhone) -->
+  <g transform="translate(55, 150) scale(1.5)">
+    <path d="M43.7 21.1c-1.9-2.3-4.5-3.6-7.4-3.6-2.5 0-4.4 1-5.6 1.7-1.1-0.8-2.8-1.7-4.8-1.7-3.1 0-6.1 1.7-8 4.5-2.3 3.3-2.9 7.9-1.6 12.1 1.3 4.1 4.4 9.2 9.4 9.2 1.9 0 3.3-0.6 4.5-1.2 0.7-0.3 1.4-0.3 2.1 0 1.2 0.6 2.6 1.2 4.5 1.2 5 0 8.1-5.1 9.4-9.2 1.4-4.3 0.9-8.8-1.5-12z" fill="#fff"/>
+    <path d="M35.2 13.6c1.4-1.7 2.4-4.1 2.1-6.5-2.2 0.1-4.7 1.5-6.2 3.3-1.3 1.5-2.5 3.9-2.1 6.2 2.4 0.1 4.7-1.3 6.2-3z" fill="#fff"/>
+  </g>
+   <!-- Tela (lado direito) -->
+  <rect x="110" y="0" width="200" height="400" rx="30" ry="30" fill="#f2f2f2" stroke="#ccc" stroke-width="2" />
+  <rect x="112" y="4" width="196" height="394" rx="30" ry="30" fill="#1a1a1a" />
+  <rect x="116" y="6" width="188" height="388" rx="30" ry="30" fill="#fff" />
+  <rect x="180" y="8" width="60" height="20" rx="10" ry="10" fill="#000" />
+</svg>

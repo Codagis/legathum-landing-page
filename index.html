@@ -10,35 +10,36 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <script src="./javascript/scroll-script.js"></script>
+
     <link rel="icon" href="./resources/legathum_icon.png" type="image/jpeg">
     <title>Legathum</title>
 </head>
 
-<body class="anima-scroll">
-    <header class="s-header">
+<body>
+    <header class="s-header" id="main-header">
         <div class="header-content">
             <img src="./resources/logo-colorida.svg" alt="Logo Legathum" class="botao-esquerda" />
 
-            <nav class="botao-direita">
-                <a href="#sobre" data-i18n="btn_sobre">Sobre</a>
-                <a href="#comoFunciona" data-i18n="btn_como_funciona">Como Funciona</a>
-                <a href="#listaEspera" data-i18n="btn_login">Lista de espera</a>
-            </nav>
-
-            <div id="lang-dropdown" class="lang-dropdown">
-                <button id="lang-button" aria-haspopup="listbox" aria-expanded="false" aria-label="Selecionar idioma">
-                    <!-- Bandeira selecionada será inserida aqui via JS -->
-                </button>
-                <ul id="lang-list" role="listbox" tabindex="-1" aria-label="Lista de idiomas">
-                    <!-- Opções serão inseridas por JS -->
-                </ul>
+            <div class="menu-e-bandeiras">
+                <nav class="botao-direita">
+                    <a href="#sobre" data-i18n="btn_sobre">Sobre</a>
+                    <a href="#comoFunciona" data-i18n="btn_como_funciona">Como Funciona</a>
+                    <a href="#listaEspera" data-i18n="btn_login">Lista de espera</a>
+                </nav>
+                <div id="lang-dropdown" class="lang-dropdown">
+                    <button id="lang-button" aria-haspopup="listbox" aria-expanded="false"
+                        aria-label="Selecionar idioma">
+                        <!-- Bandeira selecionada será inserida aqui via JS -->
+                    </button>
+                    <ul id="lang-list" role="listbox" tabindex="-1" aria-label="Lista de idiomas">
+                        <!-- Opções serão inseridas por JS -->
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
     <main class="main-block">
-
-        <section class="section-main" style="padding-top: 200px; padding-bottom: 100px;" id="tela-banner">
+        <section class="section-main anima-scroll" id="tela-banner">
             <div class="tec-ia-button entrar-devagar">
                 <img src="./resources/icon-star.png" alt="Ícone de estrelas para clicar em novo" />
                 <span data-i18n="lbl_novo">Novo </span>
@@ -46,13 +47,12 @@
                 <p data-i18n="btn_tec_rev_ia"> Tecnologia revolucionária de IA</p>
             </div>
             <div class="meta-homo-div entrar-devagar">
-                <span class="gradiente" data-i18n="title_meta">Eternize sua essência.</span>
-                <span class="gradiente" data-i18n="title_construa_legado">Conecte-se ao futuro</span>
-                <span class="pink" data-i18n="title_digital">Digital</span>
+                <span class="gradiente" data-i18n="lbl_eternize_essencia">Eternize sua essência.</span>
+                <span class="gradiente" data-i18n="lbl_conecte_se_ao_futuro">Conecte-se ao futuro</span>
             </div>
-            <span class="span-transforme entrar-devagar" data-i18n="text_transforme_experiencias">
-                Imagine preservar suas memórias, conhecimentos e personalidade para as gerações futuras. Com a
-                neurotecnologia Legathum, a consciência humana transcende o tempo.
+            <span class="span-transforme entrar-devagar" data-i18n="text_imagine">
+                Imagine preservar suas memórias, conhecimentos e personalidade para as<br /> gerações futuras. Com a
+                neurotecnologia Legathum, a consciência humana<br /> transcende o tempo.
             </span>
             <div class="buttons-demo-start-div">
                 <div class="start-button botao-esquerda">
@@ -65,16 +65,16 @@
                     <p data-i18n="lbl_ver_demo">Ver Demo</p>
                 </div>
             </div>
+
             <div class="icons-div entrar-devagar">
                 <span><img src="./resources/help-icon.svg" alt="Ícone do sinal de interrogação" /> <span
-                        data-i18n="lbl_privacidade_garantida">Privacidade Garantida</span></span>
+                        data-i18n="lbl_tecnologia_neuro_sync">Tecnologia NeuroSync</span></span>
                 <span><img src="./resources/power-icon.svg" alt="Ícone de um raio" /> <span
-                        data-i18n="lbl_ia_ultima_geracao">IA de Última Geração</span> </span>
+                        data-i18n="lbl_clone_virtual">lbl_clone_virtual</span> </span>
                 <span><img src="./resources/clock-icon.svg" alt="Ícone de um relógio" /> <span
-                        data-i18n="lbl_suporte">Suporte 24/7</span></span>
+                        data-i18n="lbl_parceria_global">Parceria Global</span></span>
             </div>
         </section>
-        <br /><br /><br /><br /><br /><br /><br /><br />
 
         <section class="ocultado" id="iphone">
             <div class="iphone">
@@ -83,7 +83,7 @@
                 </div>
                 <div class="screen">
                     <button class="back-button" id="back-button" data-i18n="lbl_back"></button>
-                    <video width="230px" height="432px" controls>
+                    <video id="demo-video" width="230px" height="432px" controls>
                         <source src="./resources/videos/demo-video.mp4" type="video/mp4">
                         Seu navegador não suporta a tag de vídeo.
                     </video>
@@ -92,7 +92,7 @@
         </section>
 
 
-        <section class="section-info tela">
+        <section class="section-info " id="oculta-com-iphone-um">
             <div class="cards-zone">
                 <div class="card" id="sobre">
                     <div class="circle-gradient">
@@ -128,7 +128,7 @@
                 </div>
             </div>
 
-            <section class="section-info tela">
+            <section class="section-info espacing-vertical tela anima-scroll">
                 <div class="legathum-science-container">
                     <div class="what-say">
                         <h1 data-i18n="legathum_title">O que é o Legathum</h1>
@@ -146,9 +146,9 @@
 
                 </div>
                 <div class="card-sobre-nos">
-                    <div class="card-aval" style="height: 400px;">
+                    <div class="card-aval secao-2" >
                         <div class="image-person">
-                            <img src="./resources/alvo.svg"  alt="Uma imagem de uma nuvem azul" />
+                            <img src="./resources/alvo.svg" alt="Uma imagem de uma nuvem azul" />
                         </div>
                         <div class="card-text-detail">
                             <span class="white" style="font-size: 24px; margin-bottom: 15px;"
@@ -161,8 +161,8 @@
                         </div>
 
                     </div>
-                    <div class="card-aval" style="height: 400px;">
-                        <div class="image-person" >
+                    <div class="card-aval secao-2" >
+                        <div class="image-person">
                             <img src="./resources/missoes.svg" alt="Uma imagem de uma nuvem azul" />
                         </div>
                         <div class="card-text-detail">
@@ -180,7 +180,7 @@
 
             </section>
 
-            <section class="section-info tela">
+            <section class="section-info espacing-vertical tela anima-scroll" >
                 <div class="legathum-science-container">
                     <h1 data-i18n="legathum_science">O que é o <span class="highlight">Legathum Science?</span></h1>
 
@@ -228,23 +228,18 @@
                 </div>
             </section>
 
-            <section class="section-info"
-                style="background: linear-gradient(90deg, #000000 0%, #0A0712 50%, #000000 100%);">
-                <div class="what-say">
-                    <h1 data-i18n="title_ecossistema_legathum">Ecossistema Legathum</h1>
-                    <span data-i18n="txt_ecossistema_legathum">
-                        Descubra tudo o que o universo Legathum pode oferecer para transformar sua presença digital e
-                        sua<br />
-                        experiência com IA.
-                    </span>
-                </div>
+            <section class="section-info anima-scroll">
+
                 <div class="legathum-container">
-                    <header class="ecosystem-header">
-                        <h1 data-i18n="title_ecosystem_legathum_main">Ecossistema Legathum</h1>
-                        <p data-i18n="text_ecosystem_legathum_discover">Descubra tudo o que o universo Legathum pode
-                            oferecer para transformar sua presença digital e
-                            sua experiência com IA.</p>
-                    </header>
+                    <div class="what-say">
+                        <h1 data-i18n="title_ecossistema_legathum">Ecossistema Legathum</h1>
+                        <span data-i18n="txt_ecossistema_legathum">
+                            Descubra tudo o que o universo Legathum pode oferecer para transformar sua presença digital
+                            e
+                            sua<br />
+                            experiência com IA.
+                        </span>
+                    </div>
 
                     <div class="ecosystem-features">
                         <article class="feature-card">
@@ -292,7 +287,7 @@
 
             </section>
 
-            <div class="what-say">
+            <div class="mapeamento">
                 <h1 data-i18n="title_software_mapeamento_cognitivo">Software de Mapeamento Cognitivo Comportamental</h1>
                 <span data-i18n="txt_do_cerebro_a_nuvem">Descubra como o Legathum está transformando a maneira como as
                     pessoas<br /> preservam suas
@@ -300,7 +295,7 @@
             </div>
 
             <div class="card-sobre-nos">
-                <div class="card-aval">
+                <div class="card-aval secao-4">
                     <div class="image-person">
                         <img src="./resources/cloud.svg" alt="Uma imagem de uma nuvem azul" />
                     </div>
@@ -316,7 +311,7 @@
 
                 </div>
 
-                <div class="card-aval">
+                <div class="card-aval secao-4">
                     <div class="image-person">
                         <img src="./resources/vector.svg" alt="Uma imagem de um vetor" />
                     </div>
@@ -331,7 +326,7 @@
                     </div>
                 </div>
 
-                <div class="card-aval">
+                <div class="card-aval secao-4">
                     <div class="image-person">
                         <img src="./resources/ampulheta.svg" alt="Uma imagem de uma ampulheta azul" />
                     </div>
@@ -347,10 +342,9 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section class="section-info tela">
+        <section class="section-mento-jobs anima-scroll" id="oculta-com-iphone-dois">
 
             <div class="success-case-card">
                 <img src="./resources/apple.svg" alt="Apple Logo" class="apple-logo">
@@ -370,16 +364,13 @@
 
         </section>
 
-
-        <section class="section-info tela"
-            style="background: linear-gradient(90deg, #000000 0%, #0A0712 50%, #0D0613 64%, #000000 100%);">
-
+        <section class="section-parcerias anima-scroll" id="oculta-com-iphone-tres">
             <div class="what-say">
                 <h1 data-i18n="title_parcerias_impactos">Parcerias & Impacto</h1>
             </div>
 
             <div class="card-sobre-nos">
-                <div class="card-aval">
+                <div class="card-aval secao-4">
                     <div class="image-person">
                         <img src="./resources/universidade.svg" alt="Uma imagem de uma nuvem azul" />
                     </div>
@@ -395,7 +386,7 @@
 
                 </div>
 
-                <div class="card-aval">
+                <div class="card-aval secao-4">
                     <div class="image-person">
                         <img src="./resources/universidade_ceara.svg" alt="Uma imagem de um vetor" />
                     </div>
@@ -410,7 +401,7 @@
                     </div>
                 </div>
 
-                <div class="card-aval">
+                <div class="card-aval secao-4">
                     <div class="image-person">
                         <img src="./resources/tiktok.svg" alt="Uma imagem de uma ampulheta azul" />
                     </div>
@@ -429,8 +420,7 @@
 
         </section>
 
-        <section class="section-info tela" style="padding-bottom: 70px;">
-
+        <section class="section-blog anima-scroll" id="oculta-com-iphone-quatro">
             <div class="what-say">
                 <h1 data-i18n="title_fronteiras_consciencia">Blog "Fronteiras da Consciência"</h1>
             </div>
@@ -448,7 +438,8 @@
                         </span>
 
                         <p class="comment" data-i18n="texto_black_mirror_comment">
-                            Como o NeuroSync UpTransfer pode superar a ficção. Comparativo entre o episódio "Be Right
+                            Como o NeuroSync UpTransfer pode superar a ficção. Comparativo entre o episódio "Be
+                            Right
                             Back" e os griefbots da Super Brain.
                         </p>
                     </div>
@@ -469,7 +460,8 @@
                         </span>
 
                         <p class="comment" data-i18n="texto_etica_comment">
-                            Brasileiro cria startup ao lado de cientistas da Universidade da Califórnia em Berkley para
+                            Brasileiro cria startup ao lado de cientistas da Universidade da Califórnia em Berkley
+                            para
                             recriar a mentalidade de pessoas vivas ou mortas.
                         </p>
                     </div>
@@ -491,7 +483,8 @@
                         </span>
 
                         <p class="comment" data-i18n="texto_cultura_digital_comment">
-                            Como o TikToker está popularizando a IA pelo mundo com mais de 8 milhões de visualizações.
+                            Como o TikToker está popularizando a IA pelo mundo com mais de 8 milhões de
+                            visualizações.
                         </p>
                     </div>
                     <p class="p-footer-card-secao-4 color-blue-footer-card" data-i18n="texto_footer_cultura_comment">
@@ -503,14 +496,12 @@
         </section>
 
 
-        <section class="section-info tela"
-            style="padding-bottom: 50px; background: linear-gradient(90deg, #12091A 0%, #000000 50%, #161829 100%);">
-
+        <section class="section-revolution anima-scroll" id="oculta-com-iphone-cinco">
             <div class="what-say">
                 <h1 data-i18n="title_junte_revolucao">Junte-se à Revolução</h1>
             </div>
 
-            <div class="card-sobre-nos">
+            <div class="card-para-investidores">
 
                 <div class="card-aval-revolucao">
                     <div class="image-person">
@@ -563,13 +554,12 @@
 
         </section>
 
-
-        <section class="final"
-            style="padding-bottom: 50px; background: linear-gradient(90deg, #12091A 0%, #000000 50%, #161829 100%);">
+        <section class="final anima-scroll" id="oculta-com-iphone-seis">
             <div class="legacy">
                 <hgroup class="entrar-devagar">
                     <span data-i18n="title_pronto_para_criar">Pronto para criar seu legado<br /> digital?</span>
-                    <p data-i18n="texto_comece_agora_transforme">Começe agora e transforme suas experiências em uma IA
+                    <p data-i18n="texto_comece_agora_transforme">Começe agora e transforme suas experiências em uma
+                        IA
                         única e personalizada.</p>
                 </hgroup>
                 <div class="buttons-legacy">
@@ -595,7 +585,8 @@
                                 artificial.</p>
 
                             <div class="social-block">
-                                <div class="social-block-icon"><img src="/resources/twitter.svg" alt="Twitter" /></div>
+                                <div class="social-block-icon"><img src="/resources/twitter.svg" alt="Twitter" />
+                                </div>
                                 <div class="social-block-icon"><img src="/resources/instagram.svg" alt="Instagram" />
                                 </div>
                                 <div class="social-block-icon"><img src="/resources/linkedin.svg" alt="Linkedin" />
@@ -673,375 +664,10 @@
         </section>
     </main>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const submitButton = document.getElementById('submitButton');
-            const emailInput = document.getElementById('emailInput');
-            const messageArea = document.getElementById('messageArea');
-            const buttonText = submitButton.querySelector('.button-text');
-            const spinner = submitButton.querySelector('.spinner');
-            messageArea.classList.remove('message-area');
-
-            if (!submitButton) {
-                console.error("Elemento 'submitButton' não encontrado!");
-                return;
-            }
-            if (!emailInput) {
-                console.error("Elemento 'emailInput' não encontrado!");
-                return;
-            }
-            if (!messageArea) {
-                console.error("Elemento 'messageArea' não encontrado!");
-                return;
-            }
-            if (!buttonText) {
-                console.error("Elemento 'buttonText' (dentro do botão) não encontrado!");
-                return;
-            }
-            if (!spinner) {
-                console.error("Elemento 'spinner' (dentro do botão) não encontrado!");
-                return;
-            }
-
-            function clearMessages() {
-                messageArea.classList.remove('message-area');
-                messageArea.textContent = '';
-
-            }
-
-            function showMessage(message, type = 'success') {
-                clearMessages();
-                messageArea.textContent = message;
-                if (type === 'error') {
-                    messageArea.classList.add('message-error');
-                    emailInput.classList.add('input-error');
-                } else if (type === 'success') {
-                    messageArea.classList.remove('message-error');
-                    messageArea.classList.add('message-success');
-                }
-            }
-
-            function setLoadingState(isLoading) {
-                if (isLoading) {
-                    submitButton.disabled = true;
-                    buttonText.classList.add('hidden');
-                    spinner.classList.remove('hidden');
-                } else {
-                    submitButton.disabled = false;
-                    buttonText.classList.remove('hidden');
-                    spinner.classList.add('hidden');
-                }
-            }
-
-            submitButton.addEventListener('click', async () => {
-                clearMessages();
-                const email = emailInput.value.trim();
-
-                if (!email) {
-                    showMessage('Por favor, insira seu e-mail.', 'error');
-                    return;
-                }
-
-                if (!/^\S+@\S+\.\S+$/.test(email)) {
-                    showMessage('Por favor, insira um e-mail válido.', 'error');
-                    emailInput.focus();
-                    return;
-                }
-
-                setLoadingState(true);
-
-                try {
-                    await new Promise(resolve => setTimeout(resolve, 1500));
-                    const response = await fetch('http://localhost:8080/server/api/lista-espera', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({ email: email })
-                    });
-
-                    const data = await response.json();
-
-                    if (response.ok) {
-                        showMessage('Inscrição realizada. Aguarde e entraremos em contato em breve pelo e-mail!', 'success');
-                        emailInput.value = '';
-                    } else {
-                        if (response.status === 409 || (data.message && data.message.toLowerCase().includes('email já cadastrado'))) {
-                            showMessage('Este e-mail já está cadastrado.', 'error');
-                        } else {
-                            showMessage('Ocorreu um erro ao realizar a inscrição.');
-                        }
-                        emailInput.focus();
-                    }
-                } catch (error) {
-                    console.error('Erro na requisição:', error);
-                    showMessage('Não foi possível conectar ao servidor. Tente novamente mais tarde.', 'error');
-                    emailInput.focus();
-                } finally {
-                    setLoadingState(false);
-                }
-            });
-
-            emailInput.addEventListener('input', () => {
-                if (emailInput.classList.contains('input-error')) {
-                    clearMessages();
-                    messageArea.classList.remove('message-area');
-                    emailInput.classList.remove('input-error');
-                }
-            });
-        });
-    </script>
-
-    <script>
-        const demo = document.getElementById('demo-button');
-        const voltar = document.getElementById('back-button');
-
-        const telaBanner = document.getElementById('tela-banner');
-        const iphoneBlock = document.getElementById('iphone');
-
-        voltar.addEventListener('click', () => {
-            recondicionandoRenderizacao();
-        })
-
-        demo.addEventListener('click', () => {
-            recondicionandoRenderizacao();
-        })
-
-        function recondicionandoRenderizacao() {
-
-            if (!telaBanner.classList.contains('ocultado')) {
-                telaBanner.classList.add('ocultado');
-
-            } else {
-                telaBanner.classList.remove('ocultado');
-            }
-
-            if (iphoneBlock.classList.contains('ocultado')) {
-                iphoneBlock.classList.remove('ocultado');
-                iphoneBlock.classList.add('tela');
-                iphoneBlock.classList.add('none-background');
-            } else {
-                iphoneBlock.classList.add('ocultado');
-
-                iphoneBlock.classList.remove('tela');
-                iphoneBlock.classList.remove('none-background');
-            }
-        }
-
-    </script>
-
-    <script>
-        const flags = {
-            "en-us": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 1235 650">
-            <rect width="1235" height="650" fill="#b22234"/>
-            <g fill="#fff">
-            <rect y="50" width="1235" height="50"/>
-            <rect y="150" width="1235" height="50"/>
-            <rect y="250" width="1235" height="50"/>
-            <rect y="350" width="1235" height="50"/>
-            <rect y="450" width="1235" height="50"/>
-            <rect y="550" width="1235" height="50"/>
-            </g>
-            <rect width="494" height="350" fill="#3c3b6e"/>
-            <g fill="#fff">
-            <!-- Stars pattern omitted for brevity -->
-            </g>
-        </svg>`,
-            "pt-br": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 720 504">
-            <rect width="720" height="504" fill="#009b3a"/>
-            <polygon points="360,72 648,252 360,432 72,252" fill="#ffdf00"/>
-            <circle cx="360" cy="252" r="100" fill="#002776"/>
-            <path d="M 260 252 a 100 100 0 0 1 200 0 a 100 100 0 0 1 -200 0" fill="none" stroke="#fff" stroke-width="10"/>
-        </svg>`,
-            "japones": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 900 600">
-            <rect width="900" height="600" fill="#fff"/>
-            <circle cx="450" cy="300" r="180" fill="#bc002d"/>
-        </svg>`,
-            "italiano": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 900 600">
-            <rect width="300" height="600" fill="#009246"/>
-            <rect x="300" width="300" height="600" fill="#fff"/>
-            <rect x="600" width="300" height="600" fill="#ce2b37"/>
-        </svg>`,
-            "holandes": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 900 600">
-            <rect width="900" height="200" fill="#ae1c28"/>
-            <rect y="200" width="900" height="200" fill="#fff"/>
-            <rect y="400" width="900" height="200" fill="#21468b"/>
-        </svg>`,
-            "frances": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 900 600">
-            <rect width="300" height="600" fill="#0055a4"/>
-            <rect x="300" width="300" height="600" fill="#fff"/>
-            <rect x="600" width="300" height="600" fill="#ef4135"/>
-        </svg>`,
-            "coreano": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 900 600">
-            <rect width="900" height="600" fill="#fff"/>
-            <g transform="translate(450,300)">
-                <circle r="150" fill="#CD2E3A"/>
-                <path d="M0,150A150,150 0 0,0 0,-150A75,75 0 0,1 0,0A75,75 0 0,0 0,150Z" fill="#0047A0"/>
-            </g>
-            <g fill="#000">
-                <g transform="translate(175,125)">
-                <rect width="125" height="37.5"/>
-                <rect y="62.5" width="125" height="37.5"/>
-                <rect y="125" width="125" height="37.5"/>
-                </g>
-                <g transform="translate(600,125)">
-                <rect width="125" height="37.5"/>
-                <rect y="62.5" width="50" height="37.5"/>
-                <rect x="75" y="62.5" width="50" height="37.5"/>
-                <rect y="125" width="125" height="37.5"/>
-                </g>
-                <g transform="translate(175,387.5)">
-                <rect width="50" height="37.5"/>
-                <rect x="75" y="0" width="50" height="37.5"/>
-                <rect y="62.5" width="125" height="37.5"/>
-                <rect y="125" width="50" height="37.5"/>
-                <rect x="75" y="125" width="50" height="37.5"/>
-                </g>
-                <g transform="translate(600,387.5)">
-                <rect width="125" height="37.5"/>
-                <rect y="62.5" width="125" height="37.5"/>
-                <rect y="125" width="125" height="37.5"/>
-                </g>
-            </g>
-            </svg>`,
-            "chines": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 900 600">
-            <rect width="900" height="600" fill="#de2910"/>
-            <polygon points="150,100 170,150 120,120 180,120 130,150" fill="#ffde00"/>
-            <!-- Additional stars omitted for brevity -->
-        </svg>`,
-            "alemao": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="16" viewBox="0 0 900 600">
-            <rect width="900" height="200" fill="#000"/>
-            <rect y="200" width="900" height="200" fill="#dd0000"/>
-            <rect y="400" width="900" height="200" fill="#ffce00"/>
-        </svg>`
-        };
-
-
-        const languageNames = {
-            "en-us": "English",
-            "pt-br": "Português",
-            "japones": "日本語",
-            "italiano": "Italiano",
-            "holandes": "Nederlands",
-            "frances": "Français",
-            "coreano": "한국어",
-            "chines": "中文",
-            "alemao": "Deutsch"
-        };
-
-        const langButton = document.getElementById('lang-button');
-        const langList = document.getElementById('lang-list');
-
-        let currentLang = localStorage.getItem('lang') || 'en-us';
-
-        function renderLangButton() {
-            langButton.innerHTML = flags[currentLang];
-            langButton.setAttribute('aria-label', `Idioma selecionado: ${languageNames[currentLang]}`);
-        }
-
-        function renderLangList() {
-            langList.innerHTML = '';
-            for (const [key, name] of Object.entries(languageNames)) {
-                const li = document.createElement('li');
-                li.setAttribute('role', 'option');
-                li.setAttribute('tabindex', '0');
-                li.dataset.lang = key;
-                li.innerHTML = `${flags[key]}<span>${name}</span>`;
-                if (key === currentLang) {
-                    li.style.backgroundColor = 'rgba(255,255,255,0.3)';
-                }
-                langList.appendChild(li);
-            }
-        }
-
-        function toggleLangList() {
-            const isShown = langList.classList.toggle('show');
-            langButton.setAttribute('aria-expanded', isShown);
-            if (isShown) {
-                langList.focus();
-            }
-        }
-
-        function changeLanguage(lang) {
-            currentLang = lang;
-            localStorage.setItem('lang', lang);
-            renderLangButton();
-            renderLangList();
-            langList.classList.remove('show');
-            // Chama sua função de troca de idioma
-            loadLanguage(lang);
-        }
-
-        // Eventos
-        langButton.addEventListener('click', () => {
-            toggleLangList();
-        });
-
-        langList.addEventListener('click', (e) => {
-            if (e.target.closest('li')) {
-                const selectedLang = e.target.closest('li').dataset.lang;
-                changeLanguage(selectedLang);
-            }
-        });
-
-        // Fechar dropdown ao clicar fora
-        document.addEventListener('click', (e) => {
-            if (!langButton.contains(e.target) && !langList.contains(e.target)) {
-                langList.classList.remove('show');
-                langButton.setAttribute('aria-expanded', 'false');
-            }
-        });
-
-        // Teclado para acessibilidade
-        langList.addEventListener('keydown', (e) => {
-            const focusableItems = Array.from(langList.querySelectorAll('li'));
-            const index = focusableItems.indexOf(document.activeElement);
-
-            if (e.key === 'ArrowDown') {
-                e.preventDefault();
-                const nextIndex = (index + 1) % focusableItems.length;
-                focusableItems[nextIndex].focus();
-            } else if (e.key === 'ArrowUp') {
-                e.preventDefault();
-                const prevIndex = (index - 1 + focusableItems.length) % focusableItems.length;
-                focusableItems[prevIndex].focus();
-            } else if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                if (document.activeElement.tagName === 'LI') {
-                    changeLanguage(document.activeElement.dataset.lang);
-                }
-            } else if (e.key === 'Escape') {
-                langList.classList.remove('show');
-                langButton.setAttribute('aria-expanded', 'false');
-                langButton.focus();
-            }
-        });
-
-        // Função loadLanguage que você já tem
-        function loadLanguage(lang) {
-            fetch(`./resources/languages/${lang}.json`)
-                .then(response => {
-                    if (!response.ok) throw new Error(`Erro ao carregar o idioma: ${lang}`);
-                    return response.json();
-                })
-                .then(translations => {
-                    document.querySelectorAll("[data-i18n]").forEach(el => {
-                        const key = el.getAttribute("data-i18n");
-                        if (translations[key]) {
-                            el.innerHTML = translations[key];
-                        }
-                    });
-                })
-                .catch(error => console.error(error));
-        }
-
-        // Inicializa
-        renderLangButton();
-        renderLangList();
-        loadLanguage(currentLang);
-
-
-    </script>
+    <script src="./javascript/iphone-script.js"></script>
+    <script src="./javascript/bandeiras-script.js"></script>
+    <script src="./javascript/scroll-script.js"></script>
+    <script src="./javascript/wainting-list.js"></script>
 
 </body>
 
