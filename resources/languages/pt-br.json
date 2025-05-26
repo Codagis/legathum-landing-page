@@ -4,12 +4,15 @@
     "btn_precos": "Preços",
     "btn_login": "Lista de espera",
 
+    "lbl_eternize_essencia": "Eternize sua essência.",
+    "lbl_conecte_se_ao_futuro": "Conecte-se ao futuro",
     "lbl_novo": "Novo",
     "btn_tec_rev_ia": "Tecnologia revolucionária de IA",
     "title_meta": "Eternize sua essência.",
     "title_construa_legado": "Conecte-se ao futuro",
     "title_digital": "Digital",
-    "text_transforme_experiencias": "Imagine preservar suas memórias, conhecimentos e personalidade para as<br/> gerações futuras. Com a neurotecnologia Legathum, a consciência humana<br/> transcende o tempo.",
+    "text_imagine": "Imagine preservar suas memórias, conhecimentos e personalidade para as<br/> gerações futuras. Com a neurotecnologia Legathum, a consciência humana<br/> transcende o tempo.", 
+    "text_transforme_experiencias": "Transforme suas experiências, conhecimentos e memórias em uma IA personalizada<br/>que preservará seu legado para sempre. ",
     "lbl_comecar_gratuitamente": "Começar Gratuitamente",
     "lbl_ver_demo": "Ver Demo",
     "lbl_privacidade_garantida": "Tecnologia NeuroSync",
@@ -72,6 +75,10 @@
     "texto_investidores_comment": "Financie o futuro da neurociência e inteligência artificial.", 
     "btn_investidores": "Quero Investir",
     
+    "lbl_tecnologia_neuro_sync": "Tecnologia NeuroSync",
+    "lbl_clone_virtual": "Clone Virtual",
+    "lbl_parceria_global": "Parceria Global",
+
     "title_oque_e": "O que é?",
     "resp_oque_e": "Uma plataforma revolucionária que utiliza IA avançada para criar uma representação digital da sua mente e personalidade.",
     "title_como_funciona": "Como Funciona?",

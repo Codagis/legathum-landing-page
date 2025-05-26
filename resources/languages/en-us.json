@@ -4,11 +4,15 @@
     "btn_precos": "Prices",
     "btn_login": "Waiting List",
 
+    "lbl_eternize_essencia": "Eternalize your essence.",
+    "lbl_conecte_se_ao_futuro": "Connect to the future.",
+
     "lbl_novo": "New",
     "btn_tec_rev_ia": "Revolutionary AI Technology",
     "title_meta": "Eternalize your essence.",
     "title_construa_legado": "Connect to the future",
     "title_digital": "Digital",
+    "text_imagine": "Imagine preserving your memories, knowledge, and personality for<br/> future generations. With Legathum's neurotechnology, human consciousness<br/> transcends time.",
     "text_transforme_experiencias": "Imagine preserving your memories, knowledge, and personality for future<br/> generations. With Legathum neurotechnology, human consciousness<br/> transcends time.",
     "lbl_comecar_gratuitamente": "Start for Free",
     "lbl_ver_demo": "See Demo",
@@ -71,7 +75,12 @@
     "title_card_investidores": "For Investors",
     "texto_investidores_comment": "Finance the future of neuroscience and artificial intelligence.",
     "btn_investidores": "I Want to Invest",
-    
+        
+    "lbl_tecnologia_neuro_sync": "NeuroSync Technology",
+    "lbl_clone_virtual": "Virtual Clone",
+    "lbl_parceria_global": "Global Partnership",
+
+
     "title_oque_e": "What is it?",
     "resp_oque_e": "A revolutionary platform that uses advanced AI to create a digital representation of your mind and personality.",
     "title_como_funciona": "How does it work?",
