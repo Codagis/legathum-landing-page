@@ -270,10 +270,10 @@
 
                             <div class="buttons-div-rodape">
                                 <div class="input-group">
-                                    <input class="input-newsletter" type="text" id="nome" placeholder=" " />
+                                    <input class="input-newsletter" type="text" id="emailInput" placeholder=" " />
                                     <label for="nome" data-i18n="lbl_seu_email">Seu E-mail</label>
                                 </div>
-                                <div class="start-button reset-size-buttons-rodape inscrever botao-direita">
+                                <div id="submitButton" class="start-button reset-size-buttons-rodape inscrever botao-direita">
                                     <p data-i18n="btn_inscrever_se">Inscrever-se</p>
                                 </div>
                             </div>
@@ -287,7 +287,87 @@
             </footer>
         </section>
     </main>
-    
+
+    <div id="toast" class="toast">Mensagem do Toast</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const submitButton = document.getElementById('submitButton');
+            const emailInput = document.getElementById('emailInput');
+            const toastElement = document.getElementById('toast');
+            let toastTimeout;
+
+            if (!submitButton) {
+                console.error("Elemento 'submitButton' não encontrado!");
+                return; 
+            }
+            if (!emailInput) {
+                console.error("Elemento 'emailInput' não encontrado!");
+                return;
+            }
+            if (!toastElement) {
+                console.error("Elemento 'toast' não encontrado!");
+                return;
+            }
+
+
+            function showToast(message, type = 'success') {
+                toastElement.textContent = message;
+                toastElement.className = 'toast show ' + type;
+
+                clearTimeout(toastTimeout);
+
+                toastTimeout = setTimeout(() => {
+                    toastElement.className = toastElement.className.replace('show', '');
+                }, 3000);
+            }
+
+            submitButton.addEventListener('click', async () => {
+                const email = emailInput.value.trim();
+
+                if (!email) {
+                    showToast('Por favor, insira seu e-mail.', 'error');
+                    return;
+                }
+
+                if (!/^\S+@\S+\.\S+$/.test(email)) {
+                    showToast('Por favor, insira um e-mail válido.', 'error');
+                    return;
+                }
+
+                try {
+                    const response = await fetch('http://localhost:8080/server/api/lista-espera', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ email: email })
+                    });
+
+                    const data = await response.json();
+
+                    if (response.ok) {
+                        showToast('Inscrição realizada com sucesso!', 'success');
+                        emailInput.value = '';
+                    } else {
+                        if (data.message && data.message.toLowerCase().includes('email já cadastrado')) {
+                            showToast('Este e-mail já está cadastrado.', 'error');
+                        } else if (data.message) {
+                            showToast(`Erro: ${data.message}`, 'error');
+                        } else {
+                            showToast('Ocorreu um erro ao realizar a inscrição.', 'error');
+                        }
+                    }
+                } catch (error) {
+                    console.error('Erro na requisição:', error);
+                    showToast('Não foi possível conectar ao servidor. Tente novamente mais tarde.', 'error');
+                }
+            });
+
+        }); // Feche o DOMContentLoaded aqui
+    </script>
+
+
     <script>
         const demo = document.getElementById('demo-button');
         const voltar = document.getElementById('back-button');
