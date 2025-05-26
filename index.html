@@ -24,7 +24,7 @@
                 <a href="#" data-i18n="btn_sobre">Sobre</a>
                 <a href="#" data-i18n="btn_como_funciona">Como Funciona</a>
                 <a href="#" data-i18n="btn_precos">Preços</a>
-                <a href="#" data-i18n="btn_login">Login</a>
+                <a href="#" data-i18n="btn_login">Lista de espera</a>
             </nav>
 
             <div id="lang-dropdown" class="lang-dropdown">
@@ -100,7 +100,8 @@
                         <img src="./resources/brain.svg" alt="Ícone de um cérebro humano" />
                     </div>
                     <h3 data-i18n="title_oque_e">O que é?</h3>
-                    <p data-i18n="resp_oque_e" class="p-cards">Uma plataforma revolucionária que utiliza IA<br /> avançada para criar
+                    <p data-i18n="resp_oque_e" class="p-cards">Uma plataforma revolucionária que utiliza IA<br />
+                        avançada para criar
                         uma representação digital
                         da<br /> sua mente e personalidade.</p>
                 </div>
@@ -110,7 +111,8 @@
                         <img src="./resources/enginners.svg" alt="Ícone de uma engrenagem" />
                     </div>
                     <h3 data-i18n="title_como_funciona">Como Funciona?</h3>
-                    <p data-i18n="resp_como_funciona" class="p-cards">Interaja com nossa IA, compartilhe suas<br /> experiências e deixe
+                    <p data-i18n="resp_como_funciona" class="p-cards">Interaja com nossa IA, compartilhe suas<br />
+                        experiências e deixe
                         que ela aprenda e evolua<br />
                         com base em suas informações.</p>
                 </div>
@@ -120,7 +122,8 @@
                         <img src="./resources/peoples.svg" alt="Ícone de pessoas" />
                     </div>
                     <h3 data-i18n="title_para_quem">Para quem é?</h3>
-                    <p data-i18n="resp_para_quem" class="p-cards">Para todos que desejam preservar seu legado e<br /> compartilhar suas
+                    <p data-i18n="resp_para_quem" class="p-cards">Para todos que desejam preservar seu legado e<br />
+                        compartilhar suas
                         experiências com
                         futuras<br /> gerações.</p>
                 </div>
@@ -267,7 +270,7 @@
 
                             <div class="buttons-div-rodape">
                                 <div class="input-group">
-                                    <input type="text" id="nome" placeholder=" " />
+                                    <input class="input-newsletter" type="text" id="nome" placeholder=" " />
                                     <label for="nome" data-i18n="lbl_seu_email">Seu E-mail</label>
                                 </div>
                                 <div class="start-button reset-size-buttons-rodape inscrever botao-direita">
@@ -284,23 +287,7 @@
             </footer>
         </section>
     </main>
-
-<script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const header = document.querySelector('header');
-            checkScroll();
-            window.addEventListener('scroll', checkScroll);
-            function checkScroll() {
-                if (window.scrollY > 10) {
-                    header.classList.add('scrolled');
-                } else {
-                    header.classList.remove('scrolled');
-                }
-            }
-        });
-    </script>
-
-
+    
     <script>
         const demo = document.getElementById('demo-button');
         const voltar = document.getElementById('back-button');
@@ -551,7 +538,7 @@
 
 
     </script>
-    
+
 </body>
 
 </html>
