@@ -1,155 +1,277 @@
-
 .section-info {
-    background-color: #000;
-    width: 100%;
-    overflow: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    margin-top: 20%;
+  background-color: #000;
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .what-say {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-    padding-bottom: 50px;
-    z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  padding-bottom: 50px;
+  z-index: 3;
 }
 
 .what-say h1 {
-    background: linear-gradient(to right, #9A1794, #18A5F8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 36px;
-    font-weight: bold;
+  background: linear-gradient(to right, #9A1794, #18A5F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 56px;
+  font-weight: bold;
 }
+
 .what-say span {
-    color: #fff;
+  color: #fff;
 }
+
 .circle-gradient {
-    width: 64px;
-    height: 64px;
-    border-radius: 32px;
-    background: linear-gradient(to right, #18A5F8, #9A1794);
-    z-index: 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px auto;
-    padding: 0px;
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background: linear-gradient(to right, #18A5F8, #9A1794);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  padding: 0px;
 }
+
 .cards-zone {
-    display: flex;
-    height: auto;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 50px;
+  display: flex;
+  height: auto;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
 .card {
-    z-index: 3;
-    width: 379px;
-    height: 208px;
-    color: #fff;
-    font-size: 16px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 28px;
+  z-index: 3;
+  width: 379px;
+  height: 208px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .card h3 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .card-sobre-nos {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 20px;
-    width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  width: 90%;
 }
 
-.card-sobre-nos > .card-aval:nth-child(odd) hgroup p {
-    margin-bottom: 10px;
+.card-sobre-nos>.card-aval:nth-child(odd) hgroup p {
+  margin-bottom: 10px;
 }
 
-.card-sobre-nos > .card-aval:nth-child(even) hgroup p {
-    margin-bottom: 10px;
+.card-sobre-nos>.card-aval:nth-child(even) hgroup p {
+  margin-bottom: 10px;
 }
 
-.card-sobre-nos > .card-aval:nth-child(odd) hgroup span {
-    color: #18A5F8;
-    margin-bottom: 10px;
+.card-sobre-nos>.card-aval:nth-child(odd) hgroup span {
+  color: #18A5F8;
+  margin-bottom: 10px;
 }
 
-.card-sobre-nos > .card-aval:nth-child(even) hgroup span {
-    color: #9A1794;
+.card-sobre-nos>.card-aval:nth-child(even) hgroup span {
+  color: #9A1794;
+}
+
+.card-text-detail,
+.card-text-detail p {
+  align-items: center;
+  text-align: center;
+}
+
+.color-blue-footer-card {
+  color: #18A5F8;
+}
+
+.color-purple-footer-card {
+  color: #9A1794;
+}
+
+.p-footer-card-secao-4 {
+  font-size: 12px;
+  margin-top: 20px;
 }
 
 .card-aval {
-    width: 450px;
-    height: 280px;
-    background-color: #1E1E1E;
-    border-radius: 13px;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-bottom: 80px;
+  width: 450px;
+  height: 250px;
+  background: linear-gradient(90deg, rgba(24, 165, 248, 0.2) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(154, 23, 148, 0.2) 100%);
+  border-radius: 13px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.card-aval-secao-4 {
+  width: 450px;
+  height: 300px;
+  background: linear-gradient(90deg, rgba(24, 165, 248, 0.2) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(154, 23, 148, 0.2) 100%);
+  border-radius: 13px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.card-aval-revolucao {
+  width: 450px;
+  height: 300px;
+  background: linear-gradient(90deg, rgba(24, 165, 248, 0.2) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(154, 23, 148, 0.2) 100%);
+  border-radius: 13px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
 }
 
 .card-aval::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none; 
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
 
-.comment{
-    font-size: 16px;
-    color: #fff;
-    margin-left: 33px;
-    z-index: 3;
-    line-height: 1.3;
+.tittle-card p {
+  font-size: 16px;
+  color: #9CA3AF;
+}
+
+.tittle-card {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.comment {
+  font-size: 16px;
+  color: #9CA3AF;
+  z-index: 3;
+  line-height: 1.3;
+  text-align: left;
+  margin-top: 15px;
 }
 
 .card-aval hgroup p {
-    font-size: 16px;
-    color: #fff;
-    z-index: 3;
+  font-size: 16px;
+  color: #fff;
+  z-index: 3;
 }
+
 .card-aval hgroup span {
-    font-size: 16px;
-    color: #18A5F8;
-    z-index: 3;
+  font-size: 16px;
+  color: #18A5F8;
+  z-index: 3;
 
 }
 
 .image-person {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 33px;
-    z-index: 3;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 3;
+  margin-bottom: 30px;
 }
-.image-person img{
-    width: 56px;
-    height: 56px;
-    border-radius: 28px;
-    z-index: 3;
+
+.image-person img {
+  width: 43px;
+  height: 43px;
+  border-radius: 28px;
+  z-index: 3;
+}
+
+.success-case-card {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(24, 165, 248, 0.2) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(154, 23, 148, 0.2) 100%);
+  color: white;
+  border-radius: 20px;
+  padding: 28px 35px;
+  max-width: 768px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  z-index: 3;
+}
+
+.success-case-card:hover {
+  transform: translateY(-5px);
+}
+
+.apple-logo {
+  width: 50px;
+  height: auto;
+  margin-right: 25px;
+  filter: brightness(0) invert(1);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info {
+  font-size: 0.8em;
+  font-weight: 500;
+  margin-bottom: 8px;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+
+.project-info .highlight {
+  font-weight: bold;
+  color: #18A5F8;
+}
+
+.main-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 0.95em;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+.botoes-revolucao {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -161,11 +283,14 @@
   .card-sobre-nos {
     flex-direction: column;
     width: 100%;
-    gap: 40px; /* Espaço entre os cards */
+    gap: 40px;
+    /* Espaço entre os cards */
   }
 
   .card,
-  .card-aval {
+  .card-aval,
+  .card-aval-secao-4,
+  .card-aval-revolucao {
     width: 100%;
     max-width: 360px;
     height: auto;
@@ -177,7 +302,9 @@
     gap: 20px;
   }
 
-  .card-aval {
+  .card-aval,
+  .card-aval-secao-4,
+  .card-aval-revolucao {
     padding-bottom: 32px;
     z-index: 3;
   }
@@ -221,7 +348,11 @@
   }
 
   .card-aval hgroup p,
-  .card-aval hgroup span {
+  .card-aval hgroup span,
+  .card-aval-secao-4 hgroup p,
+  .card-aval-secao-4 hgroup span,
+  .card-aval-revolucao hgroup p,
+  .card-aval-revolucao hgroup span {
     font-size: 14px;
   }
 
@@ -229,11 +360,47 @@
     width: 56px;
     height: 56px;
   }
+
+  .success-case-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px 20px;
+  }
+
+  .apple-logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 45px;
+  }
+
+  .main-title {
+    font-size: 1.5em;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+
+  .project-info {
+    font-size: 0.75em;
+  }
 }
 
 
 @media (max-width: 480px) {
-    .p-cards{
-        text-align: center;
-    }
+  .p-cards {
+    text-align: center;
+  }
+
+  .main-title {
+    font-size: 1.3em;
+  }
+
+  .description {
+    font-size: 0.85em;
+  }
+
+  .project-info {
+    font-size: 0.7em;
+  }
 }

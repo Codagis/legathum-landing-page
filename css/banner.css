@@ -3,7 +3,7 @@
   background-size: 100%;
   background-repeat: no-repeat;
   width: auto;
-  overflow: auto;
+  overflow: hidden;
   margin: 0;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
@@ -65,7 +65,7 @@
   justify-content: space-around;
   z-index: 3;
   cursor: pointer;
-  margin-top: 25%;
+  margin-top: 30%;
   padding: 10px;
 }
 
@@ -350,7 +350,6 @@
   .start-button,
   .demo-button {
     width: 80%;
-    max-width: 90%;
   }
 
   .icons-div {
@@ -499,3 +498,6 @@
     gap: 12px;
   }
 }
+
+
+

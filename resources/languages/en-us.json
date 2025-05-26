@@ -1,42 +1,101 @@
 {
     "btn_sobre": "About",
-    "btn_como_funciona": "How It Works",
-    "btn_precos": "Pricing",
-    "btn_login": "Waiting list",
+    "btn_como_funciona": "How it Works",
+    "btn_precos": "Prices",
+    "btn_login": "Waiting List",
 
     "lbl_novo": "New",
     "btn_tec_rev_ia": "Revolutionary AI Technology",
-    "title_meta": "Meta Homo Sapiens:",
-    "title_construa_legado": "Build Your Legacy",
+    "title_meta": "Eternalize your essence.",
+    "title_construa_legado": "Connect to the future",
     "title_digital": "Digital",
-    "text_transforme_experiencias": "Turn your experiences, knowledge, and memories into a personalized AI<br/>that will preserve your legacy forever.",
+    "text_transforme_experiencias": "Imagine preserving your memories, knowledge, and personality for future<br/> generations. With Legathum neurotechnology, human consciousness<br/> transcends time.",
     "lbl_comecar_gratuitamente": "Start for Free",
-    "lbl_ver_demo": "View Demo",
-    "lbl_privacidade_garantida": "Privacy Guaranteed",
-    "lbl_ia_ultima_geracao": "Next-Gen AI",
-    "lbl_suporte": "24/7 Support",
+    "lbl_ver_demo": "See Demo",
+    "lbl_privacidade_garantida": "NeuroSync Technology",
+    "lbl_ia_ultima_geracao": "Virtual Clone",
+    "lbl_suporte": "Global Partnership",
 
+    "title_software_mapeamento_cognitivo": "Cognitive Behavioral Mapping Software",
+    "txt_do_cerebro_a_nuvem": "From brain to cloud: your mind immortalized",
+
+    "title_card_cloud": "Legathum Cloud",
+    "texto_cloud_comment": "Store personality, memories, and expertise on encrypted servers.",
+
+    "title_vector_cloud": "Meta Legathum",
+    "texto_vector_comment": "Social network where virtual clones interact as mentors, artists, or family members.",
+
+    "title_ampulheta_cloud":"My Conscience",
+    "texto_ampulheta_comment":"Self-knowledge platform that eliminates limiting beliefs through dialogue with your best version",
+
+    "texto_project_info": "| 'Eternal Jobs' Project",
+    "texto_span_highlight": "Success Case",
+
+    "texto_main_title": "Mentorships with Digital Steve Jobs",
+    "texto_description": "Digital recreation of Steve Jobs, allowing mentorships based on his principles, knowledge, and personality.",
+
+    "title_parcerias_impactos": "Partnerships & Impact",
+
+    "title_universidade_california": "University of California",
+    "texto_universidade_california_comment": "Collaboration in research on neuroplasticity and ethics in AI.",
+
+    "title_universidade_ceara_cloud":"Federal University of Ceará",
+    "texto_universidade_ceara_comment":"Scientific validation with 98.8% accuracy in behavioral profile mapping.",
+
+    "title_kabhy_cloud":"Khaby Lame in Brazil",
+    "texto_kabhy_comment":"Educational campaign on neurotechnology with the influencer, including experiences in favelas.",
+
+    "title_fronteiras_consciencia": "Blog 'Frontiers of Consciousness'",
+
+    "text_title_card":"Comparative",
+    "title_black_mirror": "Black Mirror or Reality?",
+    "texto_black_mirror_comment": "How NeuroSync UpTransfer can overcome fiction. Comparison between the episode 'Be Right Back' and Super Brain's griefbots.",
+    "texto_footer_black_mirror": "Neurotech • 2025",
+
+    "text_title_etica": "Ethics",
+    "title_etica":"Ethics in the Digital Afterlife",
+    "texto_etica_comment":"Brazilian creates startup alongside scientists from the University of California at Berkeley to recreate the mentality of living or deceased people.",
+    "texto_footer_etica_comment":"Forbes • 2025",
+
+    "text_title_cultura_digital": "Digital Culture",
+    "title_title_kabhy_lame":"Khaby Lame and the Democratization of Neurotechnology",
+    "texto_cultura_digital_comment":"How the TikToker is popularizing AI around the world with over 8 million views.",
+    "texto_footer_cultura_comment": "Neurotech • 2025",
+
+    "title_junte_revolucao":"Join the Revolution",
+
+    "title_card_empresa":"For Companies",
+    "texto_empresa_comment":"Preserve the legacy of leaders and mentors with corporate clones.",
+    "btn_empresa_especialistas": "I Want to Talk",
+
+    "title_card_investidores": "For Investors",
+    "texto_investidores_comment": "Finance the future of neuroscience and artificial intelligence.",
+    "btn_investidores": "I Want to Invest",
+    
     "title_oque_e": "What is it?",
-    "resp_oque_e": "A revolutionary platform that uses<br/>advanced AI to create a digital<br/>representation of your mind and personality.",
-    "title_como_funciona": "How Does It Work?",
-    "resp_como_funciona": "Interact with our AI, share your<br/>experiences, and let it learn and evolve<br/>based on your information.",
-    "title_para_quem": "Who Is It For?",
+    "resp_oque_e": "A revolutionary platform that uses advanced AI to create a digital representation of your mind and personality.",
+    "title_como_funciona": "How does it work?",
+    "resp_como_funciona": "Interact with our AI, share your experiences, and let it learn and evolve based on your information.",
+    "title_para_quem": "Who is it for?",
     "resp_para_quem": "For everyone who wants to preserve their legacy and share their experiences with future generations.",
-    "title_oque_dizem_sobre_nos": "What They Say About Us",
-    "txt_oque_dizem_sobre_nos": "Discover how Legathum is transforming the way people<br/>preserve their memories and knowledge.",
-    "nome_maria_silva": "Maria Silva",
+    "title_oque_dizem_sobre_nos":"Cognitive Behavioral Mapping Software",
+    "txt_oque_dizem_sobre_nos": "From brain to cloud: your mind immortalized",
+    "nome_maria_silva":"Maria Silva",
     "prof": "Teacher",
-    "texto_maria": "An amazing way to preserve<br/>knowledge and experiences for<br/>future generations. Technology is<br/>simply fascinating!",
+    "texto_maria": "Store personality, memories, and expertise on encrypted servers.",
     "nome_joao_santos": "João Santos",
-    "empresario": "Entrepreneur",
-    "texto_joao": "Legathum allowed me to create a<br />digital version of myself that will be able to<br />keep sharing knowledge<br />even after I'm gone.",
+    "empresario": "Businessman",
+    "texto_joao": "Legathum allowed me to create a <br /> digital version of myself that can<br /> continue sharing knowledge<br />even after I'm gone.",
     "nome_ana_oliveira": "Ana Oliveira",
     "escritora": "Writer",
-    "texto_ana_oliv": "The interface is intuitive, and the process of<br />creating my 'digital self' was a fascinating<br />journey of self-discovery.",
+    "texto_ana_oliv": "The interface is intuitive and the process of <br />creating my 'digital self' was a fascinating journey of<br /> self-discovery.",
 
-    "title_pronto_para_criar": "Ready to build your<br/>digital legacy?",
-    "texto_comece_agora_transforme": "Start now and turn your experiences into a unique and personalized AI.",
-    "btn_comecar_agora": "Get Started",
+    "title_pronto_para_criar": "Ready to create your digital<br/>legacy?",
+    "texto_comece_agora_transforme": "Start now and transform your experiences into a unique and personalized AI.",
+    "btn_comecar_agora": "Start Now",
+
+    "title_lista_espera": "Waiting List",
+    
 
     "lbl_transforme_memorias": "Transforming memories into<br/>eternal digital legacies through<br/>artificial intelligence.",
     "lbl_nevegacao": "Navigation",
@@ -46,9 +105,9 @@
     "lbl_privacidade": "Privacy",
     "lbl_cookies": "Cookies",
     "lbl_licencas": "Licenses",
-    "lbl_seu_email": "Your Email",
-    "lbl_newsletter": "Newsletter",
-    "btn_inscrever_se": "Subscribe",
+    "lbl_seu_email": "Your E-mail",
+    "lbl_newsletter":"Newsletter",
+    "btn_inscrever_se": "Sign Up",
     "lbl_copy": "© 2025 Legathum. All rights reserved.",
     "lbl_back": "&lt; Back"
 }

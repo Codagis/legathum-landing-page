@@ -6,49 +6,108 @@
 
     "lbl_novo": "Nieuw",
     "btn_tec_rev_ia": "Revolutionaire AI-technologie",
-    "title_meta": "Meta Homo Sapiens:",
-    "title_construa_legado": "Bouw je nalatenschap",
+    "title_meta": "Vereeuwig uw essentie.",
+    "title_construa_legado": "Maak verbinding met de toekomst",
     "title_digital": "Digitaal",
-    "text_transforme_experiencias": "Transformeer je ervaringen, kennis en herinneringen in een gepersonaliseerde AI<br/>die je nalatenschap voor altijd zal behouden.",
-    "lbl_comecar_gratuitamente": "Gratis starten",
+    "text_transforme_experiencias": "Stel u voor dat u uw herinneringen, kennis en persoonlijkheid bewaart voor<br/> toekomstige generaties. Met Legathum neurotechnologie<br/> overstijgt het menselijk bewustzijn de tijd.",
+    "lbl_comecar_gratuitamente": "Begin gratis",
     "lbl_ver_demo": "Bekijk demo",
-    "lbl_privacidade_garantida": "Privacy gegarandeerd",
-    "lbl_ia_ultima_geracao": "AI van de nieuwste generatie",
-    "lbl_suporte": "24/7 ondersteuning",
+    "lbl_privacidade_garantida": "NeuroSync-technologie",
+    "lbl_ia_ultima_geracao": "Virtuele kloon",
+    "lbl_suporte": "Wereldwijd partnerschap",
 
+    "title_software_mapeamento_cognitivo": "Software voor cognitieve gedragskaarten",
+    "txt_do_cerebro_a_nuvem": "Van brein naar cloud: uw geest vereeuwigd",
+
+    "title_card_cloud": "Legathum Cloud",
+    "texto_cloud_comment": "Sla persoonlijkheid, herinneringen en expertise op versleutelde servers op.",
+
+    "title_vector_cloud": "Meta Legathum",
+    "texto_vector_comment": "Sociaal netwerk waar virtuele klonen interageren als mentoren, artiesten of familieleden.",
+
+    "title_ampulheta_cloud":"Mijn Geweten",
+    "texto_ampulheta_comment":"Platform voor zelfkennis dat beperkende overtuigingen elimineert door middel van dialoog met uw beste versie",
+
+    "texto_project_info": "| Project 'Eeuwige Jobs'",
+    "texto_span_highlight": "Succesverhaal",
+
+    "texto_main_title": "Mentorschappen met Digitale Steve Jobs",
+    "texto_description": "Digitale recreatie van Steve Jobs, waardoor mentorschappen mogelijk worden op basis van zijn principes, kennis en persoonlijkheid.",
+
+    "title_parcerias_impactos": "Partnerschappen & Impact",
+
+    "title_universidade_california": "Universiteit van Californië",
+    "texto_universidade_california_comment": "Samenwerking bij onderzoek naar neuroplasticiteit en ethiek in AI.",
+
+    "title_universidade_ceara_cloud":"Federale Universiteit van Ceará",
+    "texto_universidade_ceara_comment":"Wetenschappelijke validatie met 98,8% nauwkeurigheid bij het in kaart brengen van gedragsprofielen.",
+
+    "title_kabhy_cloud":"Khaby Lame in Brazilië",
+    "texto_kabhy_comment":"Educatieve campagne over neurotechnologie met de influencer, inclusief ervaringen in favela's.",
+
+    "title_fronteiras_consciencia": "Blog 'Grenzen van het Bewustzijn'",
+
+    "text_title_card":"Vergelijkend",
+    "title_black_mirror": "Black Mirror of Realiteit?",
+    "texto_black_mirror_comment": "Hoe NeuroSync UpTransfer fictie kan overtreffen. Vergelijking tussen de aflevering 'Be Right Back' en de griefbots van Super Brain.",
+    "texto_footer_black_mirror": "Neurotech • 2025",
+
+    "text_title_etica": "Ethiek",
+    "title_etica":"Ethiek in het digitale hiernamaals",
+    "texto_etica_comment":"Braziliaan richt startup op samen met wetenschappers van de Universiteit van Californië in Berkeley om de mentaliteit van levende of overleden mensen na te bootsen.",
+    "texto_footer_etica_comment":"Forbes • 2025",
+
+    "text_title_cultura_digital": "Digitale cultuur",
+    "title_title_kabhy_lame":"Khaby Lame en de democratisering van neurotechnologie",
+    "texto_cultura_digital_comment":"Hoe de TikToker AI wereldwijd populair maakt met meer dan 8 miljoen views.",
+    "texto_footer_cultura_comment": "Neurotech • 2025",
+
+    "title_junte_revolucao":"Sluit u aan bij de revolutie",
+
+    "title_card_empresa":"Voor bedrijven",
+    "texto_empresa_comment":"Behoud de nalatenschap van leiders en mentoren met bedrijfsklonen.",
+    "btn_empresa_especialistas": "Ik wil praten",
+
+    "title_card_investidores": "Voor investeerders",
+    "texto_investidores_comment": "Financier de toekomst van neurowetenschappen en kunstmatige intelligentie.",
+    "btn_investidores": "Ik wil investeren",
+    
     "title_oque_e": "Wat is het?",
-    "resp_oque_e": "Een revolutionair platform dat geavanceerde AI gebruikt<br/>om een digitale representatie van je geest en persoonlijkheid te creëren.",
+    "resp_oque_e": "Een revolutionair platform dat geavanceerde AI gebruikt om een digitale representatie van uw geest en persoonlijkheid te creëren.",
     "title_como_funciona": "Hoe werkt het?",
-    "resp_como_funciona": "Interageer met onze AI, deel je ervaringen<br/>en laat het leren en evolueren op basis van jouw informatie.",
+    "resp_como_funciona": "Interacteer met onze AI, deel uw ervaringen en laat het leren en evolueren op basis van uw informatie.",
     "title_para_quem": "Voor wie is het?",
-    "resp_para_quem": "Voor iedereen die zijn nalatenschap wil bewaren<br/>en zijn ervaringen met toekomstige generaties wil delen.",
-    "title_oque_dizem_sobre_nos": "Wat men over ons zegt",
-    "txt_oque_dizem_sobre_nos": "Ontdek hoe Legathum de manier verandert waarop mensen<br/>hun herinneringen en kennis bewaren.",
-    "nome_maria_silva": "Maria Silva",
+    "resp_para_quem": "Voor iedereen die zijn nalatenschap wil bewaren en zijn ervaringen wil delen met toekomstige generaties.",
+    "title_oque_dizem_sobre_nos":"Software voor cognitieve gedragskaarten",
+    "txt_oque_dizem_sobre_nos": "Van brein naar cloud: uw geest vereeuwigd",
+    "nome_maria_silva":"Maria Silva",
     "prof": "Lerares",
-    "texto_maria": "Een geweldige manier om kennis en ervaringen<br/>te behouden voor toekomstige generaties.<br/>Technologie is gewoonweg fascinerend!",
+    "texto_maria": "Sla persoonlijkheid, herinneringen en expertise op versleutelde servers op.",
     "nome_joao_santos": "João Santos",
     "empresario": "Ondernemer",
-    "texto_joao": "Legathum heeft mij in staat gesteld een<br />digitale versie van mezelf te creëren die<br />kennis kan blijven delen<br />zelfs nadat ik er niet meer ben.",
+    "texto_joao": "Legathum stelde me in staat een <br /> digitale versie van mezelf te creëren die<br /> kennis kan blijven delen<br />zelfs nadat ik er niet meer ben.",
     "nome_ana_oliveira": "Ana Oliveira",
     "escritora": "Schrijfster",
-    "texto_ana_oliv": "De interface is intuïtief en het proces van<br />het creëren van mijn 'digitale ik' was een<br />fascinerende reis van zelfontdekking.",
+    "texto_ana_oliv": "De interface is intuïtief en het proces van <br />het creëren van mijn 'digitale zelf' was een fascinerende reis van<br /> zelfontdekking.",
 
-    "title_pronto_para_criar": "Klaar om je digitale<br/>nalatenschap te creëren?",
-    "texto_comece_agora_transforme": "Begin nu en transformeer je ervaringen in een unieke, gepersonaliseerde AI.",
-    "btn_comecar_agora": "Nu beginnen",
+    "title_pronto_para_criar": "Klaar om uw digitale<br/>nalatenschap te creëren?",
+    "texto_comece_agora_transforme": "Begin nu en transformeer uw ervaringen in een unieke en gepersonaliseerde AI.",
+    "btn_comecar_agora": "Begin nu",
 
-    "lbl_transforme_memorias": "Herinneringen omzetten in eeuwige digitale<br/>nalatenschappen met behulp van kunstmatige intelligentie.",
+    "title_lista_espera": "Wachtlijst",
+    
+
+    "lbl_transforme_memorias": "Herinneringen transformeren in<br/>eeuwige digitale nalatenschappen door middel van<br/>kunstmatige intelligentie.",
     "lbl_nevegacao": "Navigatie",
     "lbl_blog": "Blog",
-    "lbl_legal": "Wettelijk",
+    "lbl_legal": "Juridisch",
     "lbl_termos_de_uso": "Gebruiksvoorwaarden",
     "lbl_privacidade": "Privacy",
     "lbl_cookies": "Cookies",
     "lbl_licencas": "Licenties",
-    "lbl_seu_email": "Je e-mail",
-    "lbl_newsletter": "Nieuwsbrief",
-    "btn_inscrever_se": "Abonneren",
+    "lbl_seu_email": "Uw e-mail",
+    "lbl_newsletter":"Nieuwsbrief",
+    "btn_inscrever_se": "Inschrijven",
     "lbl_copy": "© 2025 Legathum. Alle rechten voorbehouden.",
-    "lbl_back": "&lt; Om terug te gaan"
+    "lbl_back": "&lt; Terug"
 }

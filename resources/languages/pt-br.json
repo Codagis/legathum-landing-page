@@ -6,27 +6,83 @@
 
     "lbl_novo": "Novo",
     "btn_tec_rev_ia": "Tecnologia revolucionária de IA",
-    "title_meta": "Meta Homo Sapiens:",
-    "title_construa_legado": "Construa Seu Legado",
+    "title_meta": "Eternize sua essência.",
+    "title_construa_legado": "Conecte-se ao futuro",
     "title_digital": "Digital",
-    "text_transforme_experiencias": "Transforme suas experiências, conhecimentos e memórias em uma IA personalizada<br/>que preservará seu legado para sempre. ",
+    "text_transforme_experiencias": "Imagine preservar suas memórias, conhecimentos e personalidade para as<br/> gerações futuras. Com a neurotecnologia Legathum, a consciência humana<br/> transcende o tempo.",
     "lbl_comecar_gratuitamente": "Começar Gratuitamente",
     "lbl_ver_demo": "Ver Demo",
-    "lbl_privacidade_garantida": "Privacidade Garantida",
-    "lbl_ia_ultima_geracao": "IA de Última Geração",
-    "lbl_suporte": "Suporte 24/7",
+    "lbl_privacidade_garantida": "Tecnologia NeuroSync",
+    "lbl_ia_ultima_geracao": "Clone Virtual",
+    "lbl_suporte": "Parceria Global",
 
+    "title_software_mapeamento_cognitivo": "Software de Mapeamento Cognitivo Comportamental",
+    "txt_do_cerebro_a_nuvem": "Do cérebro à nuvem: sua mente imortalizada",
+
+    "title_card_cloud": "Legathum Cloud",
+    "texto_cloud_comment": "Armazene personalidade, memórias e expertise em servidores criptografados.",
+
+    "title_vector_cloud": "Meta Legathum",
+    "texto_vector_comment": "Rede social onde clones virtuais interagem como mentores, artistas ou familiares.",
+
+    "title_ampulheta_cloud":"My Conscience",
+    "texto_ampulheta_comment":"Plataforma de autoconhecimento que elimina crenças limitantes através de diálogo com sua melhor versão",
+
+    "texto_project_info": "| Projeto 'Jobs Eterno'",
+    "texto_span_highlight": "Case de Sucesso", 
+
+    "texto_main_title": "Mentorias com Steve Jobs Digital", 
+    "texto_description": "Recriação digital de Steve Jobs, permitindo mentorias baseadas em seus princípios, conhecimentos e personalidade.",
+
+    "title_parcerias_impactos": "Parcerias & Impacto",
+
+    "title_universidade_california": "Universidade da Califórnia",
+    "texto_universidade_california_comment": "Colaboração em pesquisas sobre neuroplasticidade e ética em IA.",
+
+    "title_universidade_ceara_cloud":"Universidade Federal do Ceará",
+    "texto_universidade_ceara_comment":"Validação científica com 98,8% de precisão no mapeamento de perfil comportamental.",
+
+    "title_kabhy_cloud":"Khaby Lame no Brasil",
+    "texto_kabhy_comment":"Campanha educativa sobre neurotecnologia com o influenciador, incluindo experiências em favelas.",
+
+    "title_fronteiras_consciencia": "Blog 'Fronteiras da Consciência'",
+
+    "text_title_card":"Comparativo",
+    "title_black_mirror": "Black Mirror ou Realidade?",
+    "texto_black_mirror_comment": "Como o NeuroSync UpTransfer pode superar a ficção. Comparativo entre o episódio 'Be Right Back' e os griefbots da Super Brain.",
+    "texto_footer_black_mirror": "Neurotech • 2025",
+
+    "text_title_etica": "Ética",
+    "title_etica":"Ética no Pós-Vida Digital",
+    "texto_etica_comment":"Brasileiro cria startup ao lado de cientistas da Universidade da Califórnia em Berkley para recriar a mentalidade de pessoas vivas ou mortas.",
+    "texto_footer_etica_comment":"Forbes • 2025",
+
+    "text_title_cultura_digital": "Cultura Digital",
+    "title_title_kabhy_lame":"Khaby Lame e a Democratização da Neurotecnologia",
+    "texto_cultura_digital_comment":"Como o TikToker está popularizando a IA pelo mundo com mais de 8 milhões de visualizações.",
+    "texto_footer_cultura_comment": "Neurotech • 2025",
+
+    "title_junte_revolucao":"Junte-se à Revolução", 
+
+    "title_card_empresa":"Para Empresas",
+    "texto_empresa_comment":"Preserve o legado de líderes e mentores com clones corporativos.",
+    "btn_empresa_especialistas": "Quero Conversar",
+
+    "title_card_investidores": "Para Investidores",
+    "texto_investidores_comment": "Financie o futuro da neurociência e inteligência artificial.", 
+    "btn_investidores": "Quero Investir",
+    
     "title_oque_e": "O que é?",
     "resp_oque_e": "Uma plataforma revolucionária que utiliza IA avançada para criar uma representação digital da sua mente e personalidade.",
     "title_como_funciona": "Como Funciona?",
     "resp_como_funciona": "Interaja com nossa IA, compartilhe suas experiências e deixe que ela aprenda e evolua com base em suas informações.",
     "title_para_quem": "Para quem é?",
     "resp_para_quem": "Para todos que desejam preservar seu legado e compartilhar suas experiências com futuras gerações.",
-    "title_oque_dizem_sobre_nos":"O que dizem sobre nós",
-    "txt_oque_dizem_sobre_nos": "Descubra como o Legathum está transformando a maneira como as pessoas preservam suas memórias e conhecimentos.",
+    "title_oque_dizem_sobre_nos":"Software de Mapeamento Cognitivo Comportamental",
+    "txt_oque_dizem_sobre_nos": "Do cérebo à núvem: sua mente imortalizada",
     "nome_maria_silva":"Maria Silva",
     "prof": "Professora",
-    "texto_maria": "Uma forma incrível de preservar<br/>conhecimento e experiências para as<br/>próximas gerações. A tecnologia é<br/>simplesmente fascinante!",
+    "texto_maria": "Armazene personalidade, memórias e expertise em servidores criptografados.",
     "nome_joao_santos": "João Santos",
     "empresario": "Empresário",
     "texto_joao": "O Legathum me permitiu criar uma <br /> versão digital de mim mesmo que poderá<br /> continuar compartilhando conhecimento<br />mesmo depois que eu partir.",
@@ -37,6 +93,9 @@
     "title_pronto_para_criar": "Pronto para criar seu legado<br/>digital?",
     "texto_comece_agora_transforme": "Começe agora e transforme suas experiências em uma IA única e personalizada.",
     "btn_comecar_agora": "Começar Agora",
+
+    "title_lista_espera": "Lista de Espera",
+    
 
     "lbl_transforme_memorias": "Transformando memórias em<br/>legados digitais eternos através da<br/>inteligência artificial.",
     "lbl_nevegacao": "Navegação",
