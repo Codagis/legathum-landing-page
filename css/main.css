@@ -209,18 +209,19 @@ select {
 
 .message-area {
 	font-size: 0.875rem;
-	margin-top: 0.5rem;
+	margin-top: 1rem;
 	margin-bottom: 0.5rem;
 	min-height: 1.25rem;
 }
 
 .message-success {
-	color: #16A34A;
+	color: #50AF69;
+	margin-top: 1rem;
 }
 
 .message-error {
-	color: #DC2626;
-	/* red-600 */
+	color: #FC4545;
+	margin-top: 1rem;
 }
 
 .spinner {
