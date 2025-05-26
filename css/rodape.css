@@ -1,4 +1,6 @@
 .final {
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -242,9 +244,9 @@ input:focus {
 
 input:focus+label,
 input:not(:placeholder-shown)+label {
-    top: -0.5rem;
+    top: -1.5rem;
     font-size: 0.8rem;
-    background: rgb(0, 0, 0);
+    background: rgb(0, 0, 0, 0.0);
     color: #ADAEBC;
     left: 0.8rem;
 }

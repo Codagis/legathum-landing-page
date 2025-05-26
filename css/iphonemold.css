@@ -10,7 +10,7 @@
 	background: #000;
 	border: 10px solid #333;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-	z-index: 3;
+	z-index: 4;
 }
 
 .iphone .notch {
@@ -53,6 +53,8 @@
 
 .back-button {
   position: absolute;
+  cursor: pointer;
+  z-index: 4;
   top: 32px;
   left: 16px;
   background: transparent;
@@ -70,3 +72,5 @@
 .back-button:hover {
   background: rgba(255, 255, 255, 0.1);
 }
+
+

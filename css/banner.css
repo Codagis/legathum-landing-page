@@ -21,7 +21,7 @@
   /* shorthand para top, right, bottom, left = 0 */
   background-color: rgba(0, 0, 0, 0.5);
   /* sombra preta translúcida */
-  height: 100vh;
+  height: 100%;
   z-index: 1;
 }
 
@@ -38,15 +38,16 @@
 
 /* Estilização principal dos componentes */
 .section-main {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 0px auto;
-  height: 100vh;
+  max-height: 100vh;
   padding-top: 20%;
   gap: 0px;
-  z-index: 3;
+  z-index: 2;
   scroll-snap-align: start;
 }
 
@@ -61,7 +62,7 @@
   align-items: center;
   gap: 5px;
   justify-content: space-around;
-  z-index: 3;
+  z-index: 2;
   cursor: pointer;
   padding: 10px;
 }
@@ -83,7 +84,7 @@
   color: #fff;
   font-size: 20px;
   text-align: center;
-  z-index: 3;
+  z-index: 2;
   margin-top: 10px;
 }
 
@@ -95,7 +96,7 @@
   justify-content: center;
   box-sizing: border-box;
   margin: 7px;
-  z-index: 3;
+  z-index: 2;
 }
 
 .gradiente {
@@ -108,9 +109,14 @@
 }
 
 
+.white {
+  color: #fff;
+}
+
+
 .buttons-demo-start-div {
   margin-top: 40px;
-  z-index: 3;
+  z-index: 2;
 
   display: flex;
   align-items: center;
@@ -154,22 +160,23 @@
   color: #fff;
   font-size: 18px;
   padding-top: 50px;
-  padding-bottom: 20%;
-  z-index: 3;
+  padding-bottom: 200px;
+  z-index: 2;
+
 }
 
 .entrar-devagar {
-  z-index: 3;
+  z-index: 2;
   animation: slideFadeIn 1.5s ease forwards;
 }
 
 .botao-esquerda {
-  z-index: 3;
+  z-index: 2;
   animation: virDaEsquerda 1.5s ease-out forwards;
 }
 
 .botao-direita {
-  z-index: 3;
+  z-index: 2;
   animation: virDaDireita 1.5s ease-out forwards;
 }
 
@@ -262,9 +269,6 @@
   }
 }
 
-
-
-
 /* ==================== TABLETS MAIORES E NOTEBOOKS (≤1280px) ==================== */
 @media (max-width: 1280px) {
   .main-block {
@@ -294,10 +298,9 @@
   }
 }
 
-/* ==================== TABLET (≤1024px) ==================== */
 @media (max-width: 1101px) {
   .buttons-demo-start-div {
-    
+
     gap: 16px;
     margin-top: 48px;
     font-size: 12px;
@@ -310,6 +313,7 @@
     height: 46px;
   }
 }
+
 @media (max-width: 1024px) {
   .main-block {
     background-image: url('../resources/background.svg');
@@ -370,6 +374,7 @@
     gap: 16px;
     font-size: 16px;
     padding-top: 40px;
+    padding-bottom: 5%;
   }
 }
 
@@ -490,6 +495,3 @@
     gap: 12px;
   }
 }
-
-
-

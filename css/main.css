@@ -120,6 +120,8 @@ body {
 	box-sizing: border-box;
 	scrollbar-width: thin;
 	scrollbar-color: #888 #f0f0f0;
+	scroll-behavior: smooth;
+  	overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
@@ -197,7 +199,7 @@ select {
 }
 
 .ocultado {
-	display: none;
+	display: none !important;
 }
 
 .none-background {
@@ -244,7 +246,10 @@ select {
 .left-align {
 	align-items: baseline;
 	justify-content: left;
-}.all-zindex-one,
+	text-align: left;
+}
+
+.all-zindex-one,
 .all-zindex-one * {
 	position: relative;
 	z-index: 1 !important;
