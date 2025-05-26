@@ -55,7 +55,6 @@
 
 .card {
   z-index: 3;
-  width: 379px;
   height: 208px;
   color: #fff;
   font-size: 16px;
@@ -64,7 +63,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 28px;
+  gap: 35px;
 }
 
 .card h3 {
