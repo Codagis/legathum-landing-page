@@ -1,54 +1,113 @@
 {
-    "btn_sobre": "Informazioni",
-    "btn_como_funciona": "Come Funziona",
+    "btn_sobre": "Chi siamo",
+    "btn_como_funciona": "Come funziona",
     "btn_precos": "Prezzi",
     "btn_login": "Lista d'attesa",
 
     "lbl_novo": "Nuovo",
     "btn_tec_rev_ia": "Tecnologia IA rivoluzionaria",
-    "title_meta": "Meta Homo Sapiens:",
-    "title_construa_legado": "Costruisci il Tuo Lascito",
+    "title_meta": "Eternizza la tua essenza.",
+    "title_construa_legado": "Connettiti al futuro",
     "title_digital": "Digitale",
-    "text_transforme_experiencias": "Trasforma le tue esperienze, conoscenze e ricordi in un'IA personalizzata<br/>che preserverà per sempre il tuo lascito.",
-    "lbl_comecar_gratuitamente": "Inizia Gratuitamente",
-    "lbl_ver_demo": "Guarda la Demo",
-    "lbl_privacidade_garantida": "Privacy Garantita",
-    "lbl_ia_ultima_geracao": "IA di Ultima Generazione",
-    "lbl_suporte": "Supporto 24/7",
+    "text_transforme_experiencias": "Immagina di preservare i tuoi ricordi, le tue conoscenze e la tua personalità per le<br/> generazioni future. Con la neurotecnologia Legathum, la coscienza umana<br/> trascende il tempo.",
+    "lbl_comecar_gratuitamente": "Inizia gratuitamente",
+    "lbl_ver_demo": "Guarda la demo",
+    "lbl_privacidade_garantida": "Tecnologia NeuroSync",
+    "lbl_ia_ultima_geracao": "Clone virtuale",
+    "lbl_suporte": "Partnership globale",
 
+    "title_software_mapeamento_cognitivo": "Software di mappatura cognitiva comportamentale",
+    "txt_do_cerebro_a_nuvem": "Dal cervello al cloud: la tua mente immortalata",
+
+    "title_card_cloud": "Legathum Cloud",
+    "texto_cloud_comment": "Archivia personalità, ricordi e competenze su server crittografati.",
+
+    "title_vector_cloud": "Meta Legathum",
+    "texto_vector_comment": "Social network in cui i cloni virtuali interagiscono come mentori, artisti o familiari.",
+
+    "title_ampulheta_cloud":"My Conscience",
+    "texto_ampulheta_comment":"Piattaforma di autoconsapevolezza che elimina le convinzioni limitanti attraverso il dialogo con la tua versione migliore",
+
+    "texto_project_info": "| Progetto 'Jobs Eterno'",
+    "texto_span_highlight": "Caso di successo",
+
+    "texto_main_title": "Mentoring con Steve Jobs Digitale",
+    "texto_description": "Ricreazione digitale di Steve Jobs, che consente mentoring basati sui suoi principi, conoscenze e personalità.",
+
+    "title_parcerias_impactos": "Partnership e impatto",
+
+    "title_universidade_california": "Università della California",
+    "texto_universidade_california_comment": "Collaborazione nella ricerca sulla neuroplasticità e l'etica nell'IA.",
+
+    "title_universidade_ceara_cloud":"Università Federale del Ceará",
+    "texto_universidade_ceara_comment":"Validazione scientifica con il 98,8% di precisione nella mappatura del profilo comportamentale.",
+
+    "title_kabhy_cloud":"Khaby Lame in Brasile",
+    "texto_kabhy_comment":"Campagna educativa sulla neurotecnologia con l'influencer, comprese esperienze nelle favelas.",
+
+    "title_fronteiras_consciencia": "Blog 'Frontiere della Coscienza'",
+
+    "text_title_card":"Confronto",
+    "title_black_mirror": "Black Mirror o Realtà?",
+    "texto_black_mirror_comment": "Come NeuroSync UpTransfer può superare la finzione. Confronto tra l'episodio 'Be Right Back' e i griefbot di Super Brain.",
+    "texto_footer_black_mirror": "Neurotech • 2025",
+
+    "text_title_etica": "Etica",
+    "title_etica":"Etica nell'aldilà digitale",
+    "texto_etica_comment":"Un brasiliano crea una startup insieme a scienziati dell'Università della California a Berkeley per ricreare la mentalità di persone vive o defunte.",
+    "texto_footer_etica_comment":"Forbes • 2025",
+
+    "text_title_cultura_digital": "Cultura digitale",
+    "title_title_kabhy_lame":"Khaby Lame e la democratizzazione della neurotecnologia",
+    "texto_cultura_digital_comment":"Come il TikToker sta diffondendo l'IA nel mondo con oltre 8 milioni di visualizzazioni.",
+    "texto_footer_cultura_comment": "Neurotech • 2025",
+
+    "title_junte_revolucao":"Unisciti alla Rivoluzione",
+
+    "title_card_empresa":"Per le aziende",
+    "texto_empresa_comment":"Preserva l'eredità di leader e mentori con cloni aziendali.",
+    "btn_empresa_especialistas": "Voglio parlare",
+
+    "title_card_investidores": "Per gli investitori",
+    "texto_investidores_comment": "Finanzia il futuro delle neuroscienze e dell'intelligenza artificiale.",
+    "btn_investidores": "Voglio investire",
+    
     "title_oque_e": "Cos'è?",
-    "resp_oque_e": "Una piattaforma rivoluzionaria che utilizza IA<br/>avanzata per creare una rappresentazione digitale<br/>della tua mente e personalità.",
-    "title_como_funciona": "Come Funziona?",
-    "resp_como_funciona": "Interagisci con la nostra IA, condividi le tue<br/>esperienze e lascia che impari ed evolva<br/>sulla base delle tue informazioni.",
+    "resp_oque_e": "Una piattaforma rivoluzionaria che utilizza l'IA avanzata per creare una rappresentazione digitale della tua mente e personalità.",
+    "title_como_funciona": "Come funziona?",
+    "resp_como_funciona": "Interagisci con la nostra IA, condividi le tue esperienze e lascia che impari ed evolva in base alle tue informazioni.",
     "title_para_quem": "Per chi è?",
-    "resp_para_quem": "Per tutti coloro che vogliono preservare il proprio lascito e condividere le proprie esperienze con le generazioni future.",
-    "title_oque_dizem_sobre_nos": "Cosa dicono di noi",
-    "txt_oque_dizem_sobre_nos": "Scopri come Legathum sta trasformando il modo<br/>in cui le persone conservano i loro ricordi e conoscenze.",
-    "nome_maria_silva": "Maria Silva",
+    "resp_para_quem": "Per tutti coloro che desiderano preservare la propria eredità e condividere le proprie esperienze con le generazioni future.",
+    "title_oque_dizem_sobre_nos":"Software di mappatura cognitiva comportamentale",
+    "txt_oque_dizem_sobre_nos": "Dal cervello al cloud: la tua mente immortalata",
+    "nome_maria_silva":"Maria Silva",
     "prof": "Insegnante",
-    "texto_maria": "Un modo incredibile per preservare<br/>conoscenze ed esperienze per le<br/>prossime generazioni. La tecnologia è<br/>semplicemente affascinante!",
+    "texto_maria": "Archivia personalità, ricordi e competenze su server crittografati.",
     "nome_joao_santos": "João Santos",
     "empresario": "Imprenditore",
-    "texto_joao": "Legathum mi ha permesso di creare una<br />versione digitale di me stesso che potrà<br />continuare a condividere conoscenza<br />anche dopo la mia partenza.",
+    "texto_joao": "Legathum mi ha permesso di creare una <br /> versione digitale di me stesso che potrà<br /> continuare a condividere conoscenze<br />anche dopo la mia scomparsa.",
     "nome_ana_oliveira": "Ana Oliveira",
     "escritora": "Scrittrice",
-    "texto_ana_oliv": "L'interfaccia è intuitiva e il processo di<br />creare il mio 'io digitale' è stato un viaggio di<br />autoscoperta affascinante.",
+    "texto_ana_oliv": "L'interfaccia è intuitiva e il processo di <br />creazione del mio 'io digitale' è stato un affascinante viaggio di<br /> auto-scoperta.",
 
-    "title_pronto_para_criar": "Pronto a creare il tuo lascito<br/>digitale?",
+    "title_pronto_para_criar": "Pronto a creare la tua eredità<br/>digitale?",
     "texto_comece_agora_transforme": "Inizia ora e trasforma le tue esperienze in un'IA unica e personalizzata.",
-    "btn_comecar_agora": "Inizia Ora",
+    "btn_comecar_agora": "Inizia ora",
 
-    "lbl_transforme_memorias": "Trasformare i ricordi in<br/>lasciti digitali eterni grazie<br/>all'intelligenza artificiale.",
+    "title_lista_espera": "Lista d'attesa",
+    
+
+    "lbl_transforme_memorias": "Trasformare i ricordi in<br/>eredità digitali eterne attraverso<br/>l'intelligenza artificiale.",
     "lbl_nevegacao": "Navigazione",
     "lbl_blog": "Blog",
     "lbl_legal": "Legale",
-    "lbl_termos_de_uso": "Termini di Utilizzo",
+    "lbl_termos_de_uso": "Termini di utilizzo",
     "lbl_privacidade": "Privacy",
     "lbl_cookies": "Cookie",
     "lbl_licencas": "Licenze",
     "lbl_seu_email": "La tua e-mail",
-    "lbl_newsletter": "Newsletter",
+    "lbl_newsletter":"Newsletter",
     "btn_inscrever_se": "Iscriviti",
     "lbl_copy": "© 2025 Legathum. Tutti i diritti riservati.",
-    "lbl_back": "&lt; Per tornare indietro"
+    "lbl_back": "&lt; Indietro"
 }
