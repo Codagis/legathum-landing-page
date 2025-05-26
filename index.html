@@ -21,10 +21,9 @@
             <img src="./resources/logo-colorida.svg" alt="Logo Legathum" class="botao-esquerda" />
 
             <nav class="botao-direita">
-                <a href="#" data-i18n="btn_sobre">Sobre</a>
-                <a href="#" data-i18n="btn_como_funciona">Como Funciona</a>
-                <a href="#" data-i18n="btn_precos">Preços</a>
-                <a href="#" data-i18n="btn_login">Lista de espera</a>
+                <a href="#sobre" data-i18n="btn_sobre">Sobre</a>
+                <a href="#comoFunciona" data-i18n="btn_como_funciona">Como Funciona</a>
+                <a href="#listaEspera" data-i18n="btn_login">Lista de espera</a>
             </nav>
 
             <div id="lang-dropdown" class="lang-dropdown">
@@ -95,7 +94,7 @@
 
         <section class="section-info tela">
             <div class="cards-zone">
-                <div class="card">
+                <div class="card" id="sobre">
                     <div class="circle-gradient">
                         <img src="./resources/brain.svg" alt="Ícone de um cérebro humano" />
                     </div>
@@ -106,7 +105,7 @@
                         da<br /> sua mente e personalidade.</p>
                 </div>
 
-                <div class="card">
+                <div class="card" id="comoFunciona">
                     <div class="circle-gradient">
                         <img src="./resources/enginners.svg" alt="Ícone de uma engrenagem" />
                     </div>
@@ -197,7 +196,7 @@
                         <p data-i18n="btn_comecar_agora">Começar Agora</p>
                     </div>
 
-                    <div class="demo-button reset-size-buttons botao-direita">
+                    <div class="demo-button reset-size-buttons botao-direita" onclick="recondicionandoRenderizacao()">
                         <img src="./resources/play-icon.svg" alt="Ícone de play" />
                         <p data-i18n="lbl_ver_demo">Ver Demo</p>
                     </div>
@@ -226,16 +225,12 @@
                             <p data-i18n="lbl_nevegacao">Navegação</p>
                             <nav>
                                 <span>
-                                    <img src="./resources/maior-que-icon.svg" /> <a href="#" data-i18n="btn_sobre">
+                                    <img src="./resources/maior-que-icon.svg" /> <a href="#sobre" data-i18n="btn_sobre">
                                         Sobre</a>
                                 </span>
                                 <span>
-                                    <img src="./resources/maior-que-icon.svg" /> <a href="#"
+                                    <img src="./resources/maior-que-icon.svg" /> <a href="#comoFunciona"
                                         data-i18n="btn_como_funciona"> Como Funciona</a>
-                                </span>
-                                <span>
-                                    <img src="./resources/maior-que-icon.svg" /> <a href="#" data-i18n="btn_precos">
-                                        Preços</a>
                                 </span>
                                 <span>
                                     <img src="./resources/maior-que-icon.svg" /> <a href="#" data-i18n="lbl_blog">
@@ -265,8 +260,8 @@
                                 </span>
                             </nav>
                         </div>
-                        <div class="news">
-                            <p data-i18n="lbl_newsletter">Newsletter</p>
+                        <div class="news" id="listaEspera">
+                            <p data-i18n="btn_login"></p>
 
                             <div class="buttons-div-rodape">
                                 <div class="input-group">
