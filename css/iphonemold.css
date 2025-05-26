@@ -46,31 +46,29 @@
 	justify-content: center;
 	align-items: center;
 	color: white;
-	font-family: sans-serif;
+	font-family: "poppins", sans-serif;
 	padding: 10px;
 	box-sizing: border-box;
 }
 
 .back-button {
-  position: absolute;
-  cursor: pointer;
-  z-index: 4;
-  top: 32px;
-  left: 16px;
-  background: transparent;
-  border: none;
-  color: white;
-  font-size: 18px;
-  font-weight: 500;
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  cursor: pointer;
-  padding: 8px 12px;
-  border-radius: 12px;
-  transition: background 0.2s ease;
+	position: absolute;
+	cursor: pointer;
+	z-index: 4;
+	top: 32px;
+	left: 16px;
+	background: transparent;
+	border: none;
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: "poppins", sans-serif;
+	cursor: pointer;
+	padding: 8px 12px;
+	border-radius: 12px;
+	transition: background 0.2s ease;
 }
 
 .back-button:hover {
-  background: rgba(255, 255, 255, 0.1);
+	background: rgba(255, 255, 255, 0.1);
 }
-
-
