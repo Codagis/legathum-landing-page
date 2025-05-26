@@ -3,12 +3,14 @@
     "btn_como_funciona": "Come funziona",
     "btn_precos": "Prezzi",
     "btn_login": "Lista d'attesa",
-
+    "lbl_eternize_essencia": "Eternizza la tua essenza",
+    "lbl_conecte_se_ao_futuro": "Connettiti al futuro.",
     "lbl_novo": "Nuovo",
     "btn_tec_rev_ia": "Tecnologia IA rivoluzionaria",
     "title_meta": "Eternizza la tua essenza.",
     "title_construa_legado": "Connettiti al futuro",
     "title_digital": "Digitale",
+    "text_imagine": "Immagina di preservare i tuoi ricordi, conoscenze e personalità per le<br/> generazioni future. Con la neurotecnologia di Legathum, la coscienza umana<br/> trascende il tempo.",
     "text_transforme_experiencias": "Immagina di preservare i tuoi ricordi, le tue conoscenze e la tua personalità per le<br/> generazioni future. Con la neurotecnologia Legathum, la coscienza umana<br/> trascende il tempo.",
     "lbl_comecar_gratuitamente": "Inizia gratuitamente",
     "lbl_ver_demo": "Guarda la demo",
@@ -72,6 +74,10 @@
     "texto_investidores_comment": "Finanzia il futuro delle neuroscienze e dell'intelligenza artificiale.",
     "btn_investidores": "Voglio investire",
     
+    "lbl_tecnologia_neuro_sync": "NeuroSync-technologie",
+    "lbl_clone_virtual": "Virtuele Clone",
+    "lbl_parceria_global": "Wereldwijde Samenwerking",
+        
     "title_oque_e": "Cos'è?",
     "resp_oque_e": "Una piattaforma rivoluzionaria che utilizza l'IA avanzata per creare una rappresentazione digitale della tua mente e personalità.",
     "title_como_funciona": "Come funziona?",
@@ -89,14 +95,12 @@
     "nome_ana_oliveira": "Ana Oliveira",
     "escritora": "Scrittrice",
     "texto_ana_oliv": "L'interfaccia è intuitiva e il processo di <br />creazione del mio 'io digitale' è stato un affascinante viaggio di<br /> auto-scoperta.",
-
     "title_pronto_para_criar": "Pronto a creare la tua eredità<br/>digitale?",
     "texto_comece_agora_transforme": "Inizia ora e trasforma le tue esperienze in un'IA unica e personalizzata.",
     "btn_comecar_agora": "Inizia ora",
 
     "title_lista_espera": "Lista d'attesa",
     
-
     "lbl_transforme_memorias": "Trasformare i ricordi in<br/>eredità digitali eterne attraverso<br/>l'intelligenza artificiale.",
     "lbl_nevegacao": "Navigazione",
     "lbl_blog": "Blog",

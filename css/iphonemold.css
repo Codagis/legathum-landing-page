@@ -4,13 +4,13 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 4;
 	width: 288px;
 	height: 502px;
 	border-radius: 40px;
 	background: #000;
 	border: 10px solid #333;
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	z-index: 3;
 }
 
 .iphone .notch {
@@ -21,7 +21,6 @@
 	height: 30px;
 	background: #000;
 	border-radius: 0 0 10px 10px;
-	z-index: 2;
 }
 
 .iphone .notch .speaker {
@@ -43,7 +42,6 @@
 	background: #111;
 	border-radius: 20px;
 	overflow: auto;
-	z-index: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -64,7 +62,6 @@
   font-weight: 500;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   cursor: pointer;
-  z-index: 3;
   padding: 8px 12px;
   border-radius: 12px;
   transition: background 0.2s ease;
