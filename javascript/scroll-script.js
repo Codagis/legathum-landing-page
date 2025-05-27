@@ -22,7 +22,7 @@ window.addEventListener("scroll", function () {
 
   if (typeof header === 'undefined' || !header) {
     console.error("Elemento header não definido ou não encontrado.");
-    return; 
+    return;
   }
 
   let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -40,4 +40,18 @@ window.addEventListener("scroll", function () {
     header.style.background = "#1E1E1E";
   }
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
+document.getElementById('btn-comecar-agora').addEventListener('click', () => {
+  document.getElementById('listaEspera').scrollIntoView({ behavior: 'smooth' });
+});
+document.getElementById('btn-comecar-agora-dois').addEventListener('click', () => {
+  document.getElementById('listaEspera').scrollIntoView({ behavior: 'smooth' });
+});
+document.getElementById('btn-quero-investir').addEventListener('click', () => {
+  document.getElementById('listaEspera').scrollIntoView({ behavior: 'smooth' });
+});
+
+document.getElementById('btn-quero-conversar').addEventListener('click', () => {
+  document.getElementById('listaEspera').scrollIntoView({ behavior: 'smooth' });
 });

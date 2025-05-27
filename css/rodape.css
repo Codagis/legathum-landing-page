@@ -1,6 +1,6 @@
 .final {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -155,12 +155,7 @@
     gap: 30px;
 }
 
-.comment-witing-list {
-    color: #9CA3AF;
-    font-size: 14px;
-}
-
-.tittle-witing-list,
+.news p,
 .navegacao p {
     font-size: 18px;
     color: #fff;
@@ -192,7 +187,7 @@
 
 input {
     width: 272px;
-    padding: 1.6rem 1rem 0.4rem;
+    padding: 1rem 1rem; 
     font-size: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 7px;
@@ -200,18 +195,18 @@ input {
     outline: none;
     color: #fff;
     box-sizing: border-box;
-    text-indent: 8px;
+    text-indent: 8px; 
 }
 
 label {
     position: absolute;
-    left: 1.2rem;
+    left: 1rem; 
     top: 1rem;
     font-size: 1rem;
     color: #ADAEBC;
     transition: all 0.2s ease;
     background: none;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 input:focus+label,
@@ -244,7 +239,7 @@ input:not(:placeholder-shown)+label {
 }
 
 input:focus {
-    border-color: rgba(255, 255, 255, 0.4);
+    border-color: rgba(255, 255, 255, 0.4); 
 }
 
 input:focus+label,
@@ -254,11 +249,6 @@ input:not(:placeholder-shown)+label {
     background: rgb(0, 0, 0, 0.0);
     color: #ADAEBC;
     left: 0.8rem;
-}
-
-.input-error {
-    border-color: #FC4545;
-    color: #FC4545;
 }
 
 /* --- ADIÇÃO DE RESPONSIVIDADE --- */
