@@ -165,17 +165,17 @@
 
 .entrar-devagar {
   z-index: 2;
-  animation: slideFadeIn 1.5s ease forwards;
+  animation: slideFadeIn 0.6s ease forwards;
 }
 
 .botao-esquerda {
   z-index: 2;
-  animation: virDaEsquerda 1.5s ease-out forwards;
+  animation: virDaEsquerda 0.6s ease-out forwards;
 }
 
 .botao-direita {
   z-index: 2;
-  animation: virDaDireita 1.5s ease-out forwards;
+  animation: virDaDireita 0.6ss ease-out forwards;
 }
 
 .anima-scroll {
