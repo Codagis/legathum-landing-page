@@ -1,5 +1,5 @@
 /*Estilizacao do iphone*/
-.iphone {
+/*.iphone {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -71,4 +71,139 @@
 
 .back-button:hover {
 	background: rgba(255, 255, 255, 0.1);
+}*/
+
+
+.iphone {
+	position: absolute;
+	top: 20%;
+	left: 35%;
+	display: flex;
+	gap: 20px;
+	z-index: 4;
+}
+
+/* Corpo do iPhone */
+.iphone-body {
+	width: 250px;
+	height: 500px;
+	background-color: #f2f2f2;
+	border: 2px solid #ccc;
+	border-radius: 30px;
+	position: relative;
+}
+
+/* Câmeras traseiras */
+.camera {
+	width: 20px;
+	height: 20px;
+	background-color: #000;
+	border-radius: 50%;
+	position: absolute;
+	left: 35px;
+	transform: translateX(-50%);
+}
+
+.cam1 {
+	top: 35px;
+}
+
+.cam2 {
+	top: 65px;
+}
+
+/* Tela */
+.iphone-screen {
+	width: 250px;
+	height: 500px;
+	background-color: #f2f2f2;
+	border: 2px solid #ccc;
+	border-radius: 30px;
+	margin-left: -150px;
+	position: relative;
+}
+
+.screen-border {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 242px;
+	height: 492px;
+	background-color: #1a1a1a;
+	border-radius: 30px;
+}
+
+.screen-inner {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 238px;
+	height: 488px;
+	background-color: #fff;
+	border-radius: 30px;
+}
+
+.screen-inner video {
+	border-radius: 30px;
+}
+
+.notch {
+	position: absolute;
+	top: 2px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 60px;
+	height: 20px;
+	background-color: #000;
+	border-radius: 10px;
+}
+
+.back-button {
+	cursor: pointer;
+	z-index: 4;
+	background: transparent;
+	border: none;
+	color: white;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: "poppins", sans-serif;
+	cursor: pointer;
+	padding: 12px 12px;
+	border-radius: 12px;
+	transition: background 0.2s ease;
+}
+
+@media(max-width: 768px) {
+	.iphone {
+		top: 10%;
+		left: 10%;
+	}
+}
+
+@media(max-width: 420px) {
+	.iphone {
+		left: 25%;
+	}
+
+	.iphone-body {
+		display: none;
+	}
+
+	.iphone-screen {
+		margin-left: 0px;
+	}
+}
+
+@media(max-width: 380px) {
+	.iphone {
+		left: 15%;
+	}
+
+	.iphone-body {
+		display: none;
+	}
+
+	.iphone-screen {
+		margin-left: 0px;
+	}
 }
