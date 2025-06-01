@@ -42,13 +42,10 @@ window.addEventListener("scroll", function () {
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
-document.getElementById('btn-comecar-agora-dois').addEventListener('click', () => {
-  document.getElementById('listaEspera').scrollIntoView({ behavior: 'smooth' });
-});
-document.getElementById('btn-quero-investir').addEventListener('click', () => {
+document.getElementById('btn-comecar-agora').addEventListener('click', () => {
   document.getElementById('listaEspera').scrollIntoView({ behavior: 'smooth' });
 });
 
-document.getElementById('btn-quero-conversar').addEventListener('click', () => {
+document.getElementById('btn-comecar-agora-dois').addEventListener('click', () => {
   document.getElementById('listaEspera').scrollIntoView({ behavior: 'smooth' });
 });

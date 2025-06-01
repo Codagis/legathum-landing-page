@@ -127,7 +127,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 315px;
+  width: auto;
   height: 58px;
   border-radius: 32px;
   color: #fff;
@@ -136,11 +136,15 @@
   cursor: pointer;
 }
 
+.start-button:hover {
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+}
+
 .demo-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 171px;
+  width: auto;
   height: 58px;
   gap: 7px;
   border-radius: 32px;
@@ -148,6 +152,7 @@
   font-size: 20px;
   color: #fff;
   cursor: pointer;
+  padding: 10px;
 }
 
 .icons-div {
