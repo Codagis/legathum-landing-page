@@ -1,6 +1,7 @@
 
 const emailModal = document.getElementById('emailModal');
 const openModalBtn = document.getElementById('btn-quero-conversar');
+const openModalBtnInvestidores = document.getElementById('btn-quero-investir');
 const closeModalBtn = document.getElementById('closeModalBtn');
 const sendEmailBtn = document.getElementById('sendEmailBtn');
 const emailMessageTextarea = document.getElementById('emailMessage');
@@ -16,6 +17,7 @@ function closeModal() {
 }
 
 openModalBtn.addEventListener('click', openModal);
+openModalBtnInvestidores.addEventListener('click', openModal);
 closeModalBtn.addEventListener('click', closeModal);
 
 window.addEventListener('click', function (event) {
