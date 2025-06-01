@@ -320,8 +320,8 @@ select {
 	padding: 30px 40px;
 	border-radius: 16px;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-	width: 90%;
-	max-width: 550px;
+	width: 100%;
+	max-width: 750px;
 	text-align: left;
 	position: relative;
 	border: 1px solid #3f3cbb;
@@ -394,4 +394,58 @@ select {
 .modal-submit-button:hover {
 	transform: translateY(-2px);
 	box-shadow: 0 6px 20px rgba(124, 58, 237, 0.5);
+}
+
+
+@media (max-width: 768px) {
+  .modal-overlay {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .modal-content {
+    width: 100%; 
+    padding: 25px 20px; 
+    margin: 0; 
+    border-radius: 12px;
+  }
+  
+  .modal-title {
+    font-size: 1.8em; 
+    margin-bottom: 20px;
+  }
+  
+  .modal-textarea {
+    min-height: 120px; 
+	width: 100%;
+    padding: 10px;
+    margin-bottom: 20px; 
+  }
+  
+  .modal-submit-button {
+    padding: 12px 15px; 
+    font-size: 1em; 
+  }
+  
+  .modal-close-button {
+    top: 10px;
+    right: 15px;
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 20px 15px; 
+  }
+  
+  .modal-title {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .modal-textarea {
+    min-height: 100px;
+    margin-bottom: 15px;
+  }
 }
