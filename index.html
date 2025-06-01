@@ -81,39 +81,34 @@
         </section>
 
         <section class="ocultado" id="iphone">
-            <button class="back-button" id="back-button" data-i18n="lbl_back"></button>
-            <div class="iphone">
-                <div class="iphone-body">
-                    <div class="camera cam1"></div>
-                    <div class="camera cam2"></div>
-                    <img src="./resources/icone-logo-colorida.png" />
-                </div>
-                <div class="iphone-screen">
-                    <div class="screen-border">
-                        <div class="screen-inner">
-                            <div class="notch"></div>
-                            <video id="demo-video" width="238px" height="488px" controls>
-                                <source src="https://storage.googleapis.com/legathum/video_demo_complete.mp4" type="video/mp4">
-                                Seu navegador não suporta a tag de vídeo.
-                            </video>
-
+            <center>
+                <div class="iphone-container">
+                    <button class="back-button" id="back-button" data-i18n="lbl_back"></button>
+                    <div class="iphone">
+                        <div class="iphone-body">
+                            <div class="camera cam1"></div>
+                            <div class="camera cam2"></div>
+                            <img src="./resources/icone-logo-colorida.png" />
                         </div>
+                        <center>
+                            <div class="iphone-screen">
+                                <div class="screen-border">
+                                    <div class="screen-inner">
+                                        <div class="notch"></div>
+                                        <video id="demo-video" width="238px" height="488px" controls>
+                                            <source
+                                                src="https://storage.googleapis.com/legathum/video_demo_complete.mp4"
+                                                type="video/mp4">
+                                            Seu navegador não suporta a tag de vídeo.
+                                        </video>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </center>
                     </div>
                 </div>
-            </div>
 
-            <!--<div class="iphone">
-                <div class="notch">
-                    <div class="speaker"></div>
-                </div>
-                <div class="screen">
-                    <button class="back-button" id="back-button" data-i18n="lbl_back"></button>
-                    <video id="demo-video" width="230px" height="432px" controls>
-                        <source src="./resources/videos/demo-video.mp4" type="video/mp4">
-                        Seu navegador não suporta a tag de vídeo.
-                    </video>
-                </div>
-            </div>-->
         </section>
 
 
@@ -663,8 +658,7 @@
                                 <button id="submitButton"
                                     class="start-button reset-size-buttons-rodape inscrever botao-direita"
                                     style="border: none;">
-                                    <span id="spanButaoSubmit" class="button-text"
-                                    style="color: #fff"
+                                    <span id="spanButaoSubmit" class="button-text" style="color: #fff"
                                         data-i18n="btn_inscrever_se">Inscrever-se</span>
                                     <div class="spinner hidden ml-2"></div>
                                 </button>
@@ -684,7 +678,8 @@
                 <button id="closeModalBtn" class="modal-close-button">&times;</button>
                 <h2 class="modal-title" data-i18n="title_modal_email">Entre em Contato Conosco</h2>
                 <textarea id="emailMessage" class="modal-textarea"></textarea>
-                <button id="sendEmailBtn" class="modal-submit-button" data-i18n="text_btn_modal_email">Enviar Mensagem</button>
+                <button id="sendEmailBtn" class="modal-submit-button" data-i18n="text_btn_modal_email">Enviar
+                    Mensagem</button>
             </div>
         </div>
     </main>

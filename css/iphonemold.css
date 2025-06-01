@@ -1,9 +1,18 @@
 /*Estilizacao do iphone*/
+/*Estilizacao do iphone*/
+.iphone-container {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 50px 20px; /* Espaço para o botão e margem */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .iphone {
 	position: absolute;
 	top: 20%;
-	left: 35%;
 	display: flex;
 	gap: 20px;
 	z-index: 4;
@@ -114,7 +123,6 @@
 .back-button {
 	position: absolute;
 	top: 10%;
-	left: 45%;
 	cursor: pointer;
 	z-index: 4;
 	background: transparent;
@@ -129,34 +137,8 @@
 	transition: background 0.2s ease;
 }
 
-@media(max-width: 768px) {
-	.iphone {
-		top: 10%;
-		left: 10%;
-	}
-	.back-button {
-		top: 0px;
-	}
-}
-
-@media(max-width: 420px) {
-	.iphone {
-		left: 25%;
-	}
-
-	.iphone-body {
-		display: none;
-	}
-
-	.iphone-screen {
-		margin-left: 0px;
-	}
-}
 
 @media(max-width: 380px) {
-	.iphone {
-		left: 15%;
-	}
 
 	.iphone-body {
 		display: none;
