@@ -4,23 +4,19 @@ const openModalBtnInvestidores = document.getElementById('btn-quero-investir');
 const closeModalBtn = document.getElementById('closeModalBtn');
 const sendEmailBtn = document.getElementById('sendEmailBtn');
 const emailMessageTextarea = document.getElementById('emailMessage');
-const body = document.body; // Referência ao elemento body
+const body = document.body; 
 
 const targetEmail = 'kauafrreira23@gmail.com';
 
 function openModal() {
     emailModal.style.display = 'flex';
-    // Desativa o scroll do body
     body.style.overflow = 'hidden';
-    // Opcional: Salva a posição atual do scroll
     body.dataset.scrollY = window.scrollY;
 }
 
 function closeModal() {
     emailModal.style.display = 'none';
-    // Reativa o scroll do body
     body.style.overflow = '';
-    // Opcional: Restaura a posição do scroll
     if (body.dataset.scrollY) {
         window.scrollTo(0, parseInt(body.dataset.scrollY));
         delete body.dataset.scrollY;
@@ -51,3 +47,5 @@ sendEmailBtn.addEventListener('click', function () {
 
     window.location.href = mailtoLink;
 });
+
+
