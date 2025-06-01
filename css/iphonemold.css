@@ -1,62 +1,122 @@
 /*Estilizacao do iphone*/
+
 .iphone {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 288px;
-	height: 502px;
-	border-radius: 40px;
-	background: #000;
-	border: 10px solid #333;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	top: 20%;
+	left: 35%;
+	display: flex;
+	gap: 20px;
 	z-index: 4;
 }
 
-.iphone .notch {
-	position: absolute;
-	top: 0;
-	left: 96px;
-	width: 80px;
-	height: 30px;
-	background: #000;
-	border-radius: 0 0 10px 10px;
-}
-
-.iphone .notch .speaker {
-	position: absolute;
-	top: 7px;
-	left: 30px;
-	width: 20px;
-	height: 6px;
-	background: #333;
-	border-radius: 3px;
-}
-
-.screen {
-	position: absolute;
-	top: 20px;
-	left: 10px;
+/* Câmeras traseiras */
+.iphone-body {
 	width: 250px;
-	height: 452px;
-	background: #111;
-	border-radius: 20px;
-	overflow: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: white;
-	font-family: "poppins", sans-serif;
-	padding: 10px;
-	box-sizing: border-box;
+	height: 500px;
+	background: linear-gradient(145deg, #3a2c4d, #5a4a6f);
+	border: 2px solid #5a4a6f;
+	border-radius: 30px;
+	position: relative;
+	box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.05),
+		inset 3px 3px 6px rgba(0, 0, 0, 0.5),
+		0 5px 20px rgba(0, 0, 0, 0.6);
 }
+
+.iphone-body img {
+	position: relative;
+	top: 200px;
+	left: 70px;
+	z-index: 1;
+}
+.camera {
+	width: 20px;
+	height: 20px;
+	background-color: #000;
+	border-radius: 50%;
+	position: absolute;
+	left: 35px;
+	transform: translateX(-50%);
+}
+
+.cam1 {
+	top: 35px;
+}
+
+.cam2 {
+	top: 65px;
+}
+
+/* Tela */
+.iphone-screen {
+	width: 250px;
+	height: 500px;
+	background: linear-gradient(145deg, #3a2c4d, #5a4a6f);
+	border: 2px solid #5a4a6f;
+	border-radius: 30px;
+	margin-left: -150px;
+	position: relative;
+	box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.05),
+	            inset 3px 3px 6px rgba(0, 0, 0, 0.5),
+	            0 5px 20px rgba(0, 0, 0, 0.6);
+				z-index: 3;
+}
+
+/* Moldura preta em volta da tela */
+.screen-border {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 242px;
+	height: 492px;
+	background-color: #1a1a1a;
+	border-radius: 30px;
+	box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+}
+
+/* Tela interna branca */
+.screen-inner {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 238px;
+	height: 488px;
+	background-color: #fff;
+	border-radius: 30px;
+	overflow: hidden;
+	box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Para qualquer vídeo ou conteúdo dentro da tela */
+.screen-inner video, 
+.screen-inner img, 
+.screen-inner iframe {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 30px;
+}
+
+/* Notch superior */
+.notch {
+	position: absolute;
+	z-index: 4;
+	top: 2px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 60px;
+	height: 20px;
+	background-color: #000;
+	border-radius: 10px;
+	box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
 
 .back-button {
 	position: absolute;
+	top: 10%;
+	left: 45%;
 	cursor: pointer;
 	z-index: 4;
-	top: 32px;
-	left: 16px;
 	background: transparent;
 	border: none;
 	color: white;
@@ -64,11 +124,45 @@
 	font-weight: 500;
 	font-family: "poppins", sans-serif;
 	cursor: pointer;
-	padding: 8px 12px;
+	padding: 12px 12px;
 	border-radius: 12px;
 	transition: background 0.2s ease;
 }
 
-.back-button:hover {
-	background: rgba(255, 255, 255, 0.1);
+@media(max-width: 768px) {
+	.iphone {
+		top: 10%;
+		left: 10%;
+	}
+	.back-button {
+		top: 0px;
+	}
+}
+
+@media(max-width: 420px) {
+	.iphone {
+		left: 25%;
+	}
+
+	.iphone-body {
+		display: none;
+	}
+
+	.iphone-screen {
+		margin-left: 0px;
+	}
+}
+
+@media(max-width: 380px) {
+	.iphone {
+		left: 15%;
+	}
+
+	.iphone-body {
+		display: none;
+	}
+
+	.iphone-screen {
+		margin-left: 0px;
+	}
 }

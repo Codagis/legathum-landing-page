@@ -81,7 +81,28 @@
         </section>
 
         <section class="ocultado" id="iphone">
+            <button class="back-button" id="back-button" data-i18n="lbl_back"></button>
             <div class="iphone">
+                <div class="iphone-body">
+                    <div class="camera cam1"></div>
+                    <div class="camera cam2"></div>
+                    <img src="./resources/icone-logo-colorida.png" />
+                </div>
+                <div class="iphone-screen">
+                    <div class="screen-border">
+                        <div class="screen-inner">
+                            <div class="notch"></div>
+                            <video id="demo-video" width="238px" height="488px" controls>
+                                <source src="https://storage.googleapis.com/legathum/video_demo_complete.mp4" type="video/mp4">
+                                Seu navegador não suporta a tag de vídeo.
+                            </video>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="iphone">
                 <div class="notch">
                     <div class="speaker"></div>
                 </div>
@@ -92,7 +113,7 @@
                         Seu navegador não suporta a tag de vídeo.
                     </video>
                 </div>
-            </div>
+            </div>-->
         </section>
 
 
@@ -187,21 +208,6 @@
             <section class="section-info espacing-vertical tela anima-scroll">
                 <div class="legathum-science-container">
                     <h1 data-i18n="legathum_science">O que é o <span class="highlight">Legathum Science?</span></h1>
-
-                    <p data-i18n="text_legathum_science_definition">
-                        <strong style="font-weight: bold; color: #18A5F8;">Legathum Science</strong> é
-                        uma revista científica para a publicação de trabalhos e
-                        artigos
-                        científicos, dedicada à disseminação do conhecimento científico mais atual e impactante.
-                    </p>
-                    <p data-i18n="text_legathum_science_ecosystem_mission">
-                        No nosso ecossistema, estamos constantemente à procura das mentes que estão a fazer
-                        avançar as fronteiras do conhecimento em
-                        várias disciplinas, desde a tecnologia ao desenvolvimento humano. Através da nossa
-                        revista de artigos científicos, oferecemos um espaço para que estes inovadores partilhem
-                        as suas descobertas e conhecimentos. É um lugar onde a ciência encontra o mundo real,
-                        onde as ideias se tornam acções e onde o futuro é moldado.
-                    </p>
                     <p data-i18n="text_legathum_ai_concept">
                         <strong>Legathum AI</strong> é uma plataforma inovadora que oferece o notável conceito de
                         Consciência
@@ -218,12 +224,13 @@
                         tempo. É onde a essência da vida encontra a promessa da tecnologia.
                     </p>
                     <p data-i18n="text_legathum_my_conscience_approach">
-                        Além disso, <strong>Legathum My Conscience</strong> representa uma abordagem revolucionária para
-                        a
-                        digitalização da mente humana, oferecendo auto melhoria e auto-descoberta, permitindo
-                        a comunicação com o nosso melhor eu, livre de limitações e ligações emocionais. Isto leva
-                        a uma experiência genuína de auto-consciência e crescimento pessoal, moldando o seu
-                        futuro com propósito e amor-próprio.
+                        My Conscience: A sua Consciência Digital. Conseguimos captar, digitalizar e armazenar a
+                        consciência para a eternidade. Através do nosso sistema de Consciência Digital, Legathum
+                        encapsula a própria essência de uma pessoa, preservando as suas experiências, memórias,
+                        conhecimento e sabedoria. Oferece uma forma de interagir c o m os entes queridos muito depois de
+                        terem falecido e apresenta uma abordagem única à preservação histórica, permitindo que as
+                        gerações futuras falem com réplicas digitais dos líderes de pensamento, inovadores e
+                        influenciadores atuais.
                     </p>
                     <p data-i18n="text_legathum_ambition">
                         Legathum não é apenas um produto, mas um esforço ambicioso para redefinir as
@@ -248,19 +255,19 @@
                     <div class="ecosystem-features">
                         <article class="feature-card">
                             <img src="./resources/legathum_social.svg" alt="Ícone Legathum Social Network">
-                            <h2 data-i18n="title_card_lsn">Legathum Social Network (LSN)</h2>
+                            <h2 data-i18n="title_card_lsn">Legathum Social Network</h2>
                             <p data-i18n="text_card_lsn_description">Nossa visão de criar um ecossistema de IA
                                 personalizado ganhou vida com o Legathum Social
                                 Network (LSN), que combina tecnologia e psicologia para oferecer aos usuários uma
-                                experiência única na interação com IA. Crie perfis, seus próprios "legathums" (chatbots
-                                de IA com perfis e seu comportamento) e interaja por meio de curtidas, comentários e
+                                experiência única na interação com IA. Crie perfis, seus próprios "legathums" (agentes
+                                de IA com o seu perfil e comportamento) e interaja por meio de curtidas, comentários e
                                 compartilhamentos.</p>
                         </article>
 
                         <article class="feature-card">
                             <img src="./resources/explore_mundo.svg" alt="Ícone Explore o Mundo">
-                            <h2 data-i18n="title_card_explore_world">Explore o Mundo</h2>
-                            <p data-i18n="text_card_explore_world_description">Um recurso inédito de espaços virtuais
+                            <h2 data-i18n="title_legathum_my_conscience">Legathum My Conscience</h2>
+                            <p data-i18n="text_legathum_my_conscience_exp">Um recurso inédito de espaços virtuais
                                 gamificados com realismo impressionante, criados
                                 na Unreal Engine 5. Descubra mundos digitais detalhados, explore, socialize e viva
                                 experiências ilimitadas de exploração e descoberta.</p>
@@ -269,19 +276,19 @@
                         <article class="feature-card">
                             <img src="./resources/legahtum_immortal.svg" alt="Ícone Legathum Immortals">
                             <h2 data-i18n="title_card_legathum_immortals">Legathum Immortals</h2>
-                            <p data-i18n="text_card_legathum_immortals_description">Coleção de avatares 3D
+                            <p data-i18n="text_card_legathum_immortals_description">Mentores virtuais
                                 hiper-realistas de celebridades e figuras históricas, que oferecem
                                 uma imersão biográfica interativa, vídeos, chats personalizados e tour virtual por
-                                museus digitais criados com Unreal Engine 5.</p>
+                                museus digitais imersivos.</p>
                         </article>
                     </div>
 
                     <section class="quote-section">
                         <div class="quote-image">
-                            <img src="./resources/imagem_deibson.png" alt="Delbson Silva, CEO & Founder">
+                            <img src="./resources/deibson_card.png" alt="Delbson Silva, CEO & Founder">
                         </div>
                         <div class="quote-text">
-                            <blockquote data-i18n="text_quote_delbson">
+                            <blockquote data-i18n="text_quote_deibson">
                                 With Legathum, we don't just envision the future; we create it.
                             </blockquote>
                             <p class="attribution" data-i18n="text_attribution_delbson">Delbson Silva, CEO & Founder</p>
@@ -359,7 +366,7 @@
                         <span style="color: #D1D5DB; font-size: 12px;" data-i18n="texto_project_info">| Projeto "Jobs
                             Eterno"</span>
                     </p>
-                    <h2 class="main-title" data-i18n="texto_main_title">Mentorias com Steve Jobs Digital</h2>
+                    <h2 class="main-title-mentoria" data-i18n="texto_main_title">Mentorias com Steve Jobs Digital</h2>
                     <p class="description" data-i18n="texto_description">Recriação digital de Steve Jobs, permitindo
                         mentorias baseadas em seus
                         princípios, conhecimentos e personalidade.</p>
@@ -374,9 +381,10 @@
             </div>
 
             <div class="card-sobre-nos">
-                <div class="card-aval secao-4">
-                    <div class="image-person">
-                        <img src="./resources/universidade.svg" alt="Uma imagem de uma nuvem azul" />
+                <div class="card-success-partner">
+                    <div>
+                        <img src="./resources/seal_of_University_of_California_Berkeley.svg"
+                            alt="Uma imagem de uma nuvem azul" />
                     </div>
                     <div class="card-text-detail">
                         <span class="white" style="font-size: 24px; margin-bottom: 15px;"
@@ -390,9 +398,9 @@
 
                 </div>
 
-                <div class="card-aval secao-4">
-                    <div class="image-person">
-                        <img src="./resources/universidade_ceara.svg" alt="Uma imagem de um vetor" />
+                <div class="card-success-partner">
+                    <div>
+                        <img src="./resources/ufc.png" alt="Uma imagem de um vetor" />
                     </div>
                     <div class="card-text-detail">
                         <span class="white" style="font-size: 24px; margin-bottom: 15px;"
@@ -405,9 +413,9 @@
                     </div>
                 </div>
 
-                <div class="card-aval secao-4">
-                    <div class="image-person">
-                        <img src="./resources/tiktok.svg" alt="Uma imagem de uma ampulheta azul" />
+                <div class="card-success-partner">
+                    <div class="image-khaby">
+                        <img src="./resources/kabhy-profile.png" alt="Uma imagem de uma ampulheta azul" />
                     </div>
                     <div class="card-text-detail">
                         <span class="white" style="font-size: 24px; margin-bottom: 15px;"
@@ -429,8 +437,9 @@
                 <h1 data-i18n="title_fronteiras_consciencia">Blog "Fronteiras da Consciência"</h1>
             </div>
 
-            <div class="card-sobre-nos">
-                <div class="card-aval-secao-4 left-align">
+            <div class="card-sobre-nos ">
+                <div class="card-aval-secao-4 left-align hover-card-effect"
+                    onclick="abrirNovaAba('https://forbes.com.br/forbes-insider/2020/09/black-mirror-da-vida-real-brasileiro-funda-startup-para-recriar-pessoas-mortas/')">
                     <div class="tittle-card">
                         <img src="./resources/pc.svg" alt="Uma imagem de uma ampulheta azul" />
                         <p data-i18n="text_title_card_black_mirror">Comparativo</p>
@@ -447,12 +456,12 @@
                             Back" e os griefbots da Super Brain.
                         </p>
                     </div>
-                    <p class="p-footer-card-secao-4 color-blue-footer-card" data-i18n="texto_footer_black_mirror">
-                        Neurotech • 2025
+                    <p class="p-footer-card-secao-4 color-blue-footer-card" data-i18n="texto_footer_etica_comment">
                     </p>
                 </div>
 
-                <div class="card-aval-secao-4 left-align">
+                <div class="card-aval-secao-4 left-align hover-card-effect"
+                    onclick="abrirNovaAba('https://tab.uol.com.br/noticias/redacao/2020/09/30/app-eterniza-legado-e-promete-chamada-de-video-com-versao-virtual-do-morto.htm')">
                     <div class="tittle-card">
                         <img src="./resources/etica.svg" alt="Uma imagem de uma ampulheta azul" />
                         <p data-i18n="text_title_etica">Ética</p>
@@ -469,12 +478,12 @@
                             recriar a mentalidade de pessoas vivas ou mortas.
                         </p>
                     </div>
-                    <p class="p-footer-card-secao-4 color-purple-footer-card" data-i18n="texto_footer_etica_comment">
-                        Forbes • 2025
+                    <p class="p-footer-card-secao-4 color-purple-footer-card" data-i18n="texto_footer_black_mirror">
                     </p>
                 </div>
 
-                <div class="card-aval-secao-4 left-align">
+                <div class="card-aval-secao-4 left-align hover-card-effect"
+                    onclick="abrirNovaAba('https://lorena.r7.com/categoria/Digital-Influencer/Khaby-Lame-maior-TikToker-do-mundo-desembarca-no-Brasil')">
                     <div class="tittle-card">
                         <img src="./resources/tiktok.svg" style="width: 21px; height: 24px;"
                             alt="Uma imagem de uma ampulheta azul" />
@@ -492,7 +501,6 @@
                         </p>
                     </div>
                     <p class="p-footer-card-secao-4 color-blue-footer-card" data-i18n="texto_footer_cultura_comment">
-                        Neurotech • 2025
                     </p>
                 </div>
             </div>
@@ -521,7 +529,8 @@
                         </p>
                         <center>
                             <div class="botoes-revolucao">
-                                <div class="start-button reset-size-buttons botao-esquerda" id="btn-quero-conversar" style="height: 48px;">
+                                <div class="start-button reset-size-buttons botao-esquerda" id="btn-quero-conversar"
+                                    style="height: 48px; width: auto;">
                                     <img src="./resources/icon_store.svg" alt="Ícone de foguete" />
                                     <p data-i18n="btn_empresa_especialistas">Falar com especialistas</p>
                                 </div>
@@ -544,7 +553,8 @@
                         </p>
                         <center>
                             <div class="botoes-revolucao">
-                                <div class="start-button reset-size-buttons botao-esquerda" id="btn-quero-investir" style="height: 48px;">
+                                <div class="start-button reset-size-buttons botao-esquerda" id="btn-quero-investir"
+                                    style="height: 48px; width: auto;">
                                     <img src="./resources/moedas.svg" alt="Ícone de foguete" />
                                     <p data-i18n="btn_investidores">Quero Investir</p>
                                 </div>
@@ -569,7 +579,7 @@
                 <div class="buttons-legacy">
                     <div class="start-button reset-size-buttons botao-esquerda" id="btn-comecar-agora-dois">
                         <img src="./resources/foguete-icon.svg" alt="Ícone de foguete" />
-                        <p data-i18n="btn_comecar_agora">Começar Agora</p>
+                        <p data-i18n="lbl_comecar_gratuitamente">Começar Agora</p>
                     </div>
 
                     <div class="demo-button reset-size-buttons botao-direita" onclick="recondicionandoRenderizacao()">
@@ -617,7 +627,7 @@
                         </div>
 
                         <div class="navegacao">
-                            <p data-i18n="lbl_legal">Legal</p>
+                            <p data-i18n="lbl_legal"><strong>Legal</strong></p>
                             <nav>
                                 <span>
                                     <img src="./resources/maior-que-icon.svg" /> <a href="#"
@@ -640,9 +650,9 @@
 
                         <div class="news" id="listaEspera">
                             <p class="tittle-witing-list" data-i18n="title_lista_espera">Lista de Espera</p>
-                            <p class="comment-witing-list" data-i18n="texto_waiting_list_comment">
+                            <span class="comment-witing-list" data-i18n="texto_waiting_list_comment">
                                 Receba novidades sobre IA<br /> e preservação digital.
-                            </p>
+                            </span>
                             <div class="buttons-div-rodape">
                                 <div class="input-group w-full">
                                     <input class="input-newsletter" type="text" id="emailInput" placeholder=" " />
@@ -651,8 +661,10 @@
                                 </div>
 
                                 <button id="submitButton"
-                                    class="start-button reset-size-buttons-rodape inscrever botao-direita">
+                                    class="start-button reset-size-buttons-rodape inscrever botao-direita"
+                                    style="border: none;">
                                     <span id="spanButaoSubmit" class="button-text"
+                                    style="color: #fff"
                                         data-i18n="btn_inscrever_se">Inscrever-se</span>
                                     <div class="spinner hidden ml-2"></div>
                                 </button>
@@ -666,12 +678,22 @@
                 </div>
             </footer>
         </section>
-    </main>
 
+        <div id="emailModal" class="modal-overlay">
+            <div class="modal-content">
+                <button id="closeModalBtn" class="modal-close-button">&times;</button>
+                <h2 class="modal-title" data-i18n="title_modal_email">Entre em Contato Conosco</h2>
+                <textarea id="emailMessage" class="modal-textarea"></textarea>
+                <button id="sendEmailBtn" class="modal-submit-button" data-i18n="text_btn_modal_email">Enviar Mensagem</button>
+            </div>
+        </div>
+    </main>
     <script src="./javascript/iphone-script.js"></script>
     <script src="./javascript/bandeiras-script.js"></script>
     <script src="./javascript/scroll-script.js"></script>
     <script src="./javascript/wainting-list.js"></script>
+    <script src="./javascript/click.js"></script>
+    <script src="./javascript/email-script.js"></script>
 
 </body>
 

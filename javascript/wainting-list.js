@@ -1,11 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const listaEspera = document.getElementById('listaEspera');
     const submitButton = document.getElementById('submitButton');
     const emailInput = document.getElementById('emailInput');
     const messageArea = document.getElementById('messageArea');
     const buttonText = submitButton.querySelector('.button-text');
     const spinner = submitButton.querySelector('.spinner');
-    
 
+    messageArea.classList.remove('message-area');
 
     const translations = {
         "pt-br": {
@@ -95,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function clearMessages() {
-        messageArea.classList.remove('message-error', 'message-success');
+        messageArea.classList.remove('message-error', 'message-success' );
         messageArea.textContent = '';
         emailInput.classList.remove('input-error');
     }
@@ -111,12 +112,6 @@ document.addEventListener('DOMContentLoaded', function () {
             messageArea.classList.add('message-success');
         }
 
-        if (autoClearSeconds > 0) {
-            setTimeout(() => {
-                clearMessages();
-                emailInput.value = '';
-            }, autoClearSeconds * 1000);
-        }
     }
 
     function setLoadingState(isLoading) {

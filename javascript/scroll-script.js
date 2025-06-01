@@ -45,13 +45,7 @@ window.addEventListener("scroll", function () {
 document.getElementById('btn-comecar-agora').addEventListener('click', () => {
   document.getElementById('listaEspera').scrollIntoView({ behavior: 'smooth' });
 });
-document.getElementById('btn-comecar-agora-dois').addEventListener('click', () => {
-  document.getElementById('listaEspera').scrollIntoView({ behavior: 'smooth' });
-});
-document.getElementById('btn-quero-investir').addEventListener('click', () => {
-  document.getElementById('listaEspera').scrollIntoView({ behavior: 'smooth' });
-});
 
-document.getElementById('btn-quero-conversar').addEventListener('click', () => {
+document.getElementById('btn-comecar-agora-dois').addEventListener('click', () => {
   document.getElementById('listaEspera').scrollIntoView({ behavior: 'smooth' });
 });
