@@ -96,7 +96,7 @@
                                 <source src="./resources/videos/demo-video.mp4" type="video/mp4">
                                 Seu navegador não suporta a tag de vídeo.
                             </video>
-                            
+
                         </div>
                     </div>
                 </div>
@@ -366,7 +366,7 @@
                         <span style="color: #D1D5DB; font-size: 12px;" data-i18n="texto_project_info">| Projeto "Jobs
                             Eterno"</span>
                     </p>
-                    <h2 class="main-title" data-i18n="texto_main_title">Mentorias com Steve Jobs Digital</h2>
+                    <h2 class="main-title-mentoria" data-i18n="texto_main_title">Mentorias com Steve Jobs Digital</h2>
                     <p class="description" data-i18n="texto_description">Recriação digital de Steve Jobs, permitindo
                         mentorias baseadas em seus
                         princípios, conhecimentos e personalidade.</p>
@@ -413,9 +413,9 @@
                     </div>
                 </div>
 
-                <div class="card-aval secao-4">
-                    <div class="image-person">
-                        <img src="./resources/tiktok.svg" alt="Uma imagem de uma ampulheta azul" />
+                <div class="card-success-partner">
+                    <div class="image-khaby">
+                        <img src="./resources/kabhy-profile.png" alt="Uma imagem de uma ampulheta azul" />
                     </div>
                     <div class="card-text-detail">
                         <span class="white" style="font-size: 24px; margin-bottom: 15px;"
@@ -437,8 +437,8 @@
                 <h1 data-i18n="title_fronteiras_consciencia">Blog "Fronteiras da Consciência"</h1>
             </div>
 
-            <div class="card-sobre-nos">
-                <div class="card-aval-secao-4 left-align"
+            <div class="card-sobre-nos ">
+                <div class="card-aval-secao-4 left-align hover-card-effect"
                     onclick="abrirNovaAba('https://forbes.com.br/forbes-insider/2020/09/black-mirror-da-vida-real-brasileiro-funda-startup-para-recriar-pessoas-mortas/')">
                     <div class="tittle-card">
                         <img src="./resources/pc.svg" alt="Uma imagem de uma ampulheta azul" />
@@ -460,7 +460,7 @@
                     </p>
                 </div>
 
-                <div class="card-aval-secao-4 left-align"
+                <div class="card-aval-secao-4 left-align hover-card-effect"
                     onclick="abrirNovaAba('https://tab.uol.com.br/noticias/redacao/2020/09/30/app-eterniza-legado-e-promete-chamada-de-video-com-versao-virtual-do-morto.htm')">
                     <div class="tittle-card">
                         <img src="./resources/etica.svg" alt="Uma imagem de uma ampulheta azul" />
@@ -482,7 +482,7 @@
                     </p>
                 </div>
 
-                <div class="card-aval-secao-4 left-align"
+                <div class="card-aval-secao-4 left-align hover-card-effect"
                     onclick="abrirNovaAba('https://lorena.r7.com/categoria/Digital-Influencer/Khaby-Lame-maior-TikToker-do-mundo-desembarca-no-Brasil')">
                     <div class="tittle-card">
                         <img src="./resources/tiktok.svg" style="width: 21px; height: 24px;"
@@ -530,7 +530,7 @@
                         <center>
                             <div class="botoes-revolucao">
                                 <div class="start-button reset-size-buttons botao-esquerda" id="btn-quero-conversar"
-                                    style="height: 48px;">
+                                    style="height: 48px; width: auto;">
                                     <img src="./resources/icon_store.svg" alt="Ícone de foguete" />
                                     <p data-i18n="btn_empresa_especialistas">Falar com especialistas</p>
                                 </div>
@@ -554,7 +554,7 @@
                         <center>
                             <div class="botoes-revolucao">
                                 <div class="start-button reset-size-buttons botao-esquerda" id="btn-quero-investir"
-                                    style="height: 48px;">
+                                    style="height: 48px; width: auto;">
                                     <img src="./resources/moedas.svg" alt="Ícone de foguete" />
                                     <p data-i18n="btn_investidores">Quero Investir</p>
                                 </div>
@@ -627,7 +627,7 @@
                         </div>
 
                         <div class="navegacao">
-                            <p data-i18n="lbl_legal">Legal</p>
+                            <p data-i18n="lbl_legal"><strong>Legal</strong></p>
                             <nav>
                                 <span>
                                     <img src="./resources/maior-que-icon.svg" /> <a href="#"
@@ -650,9 +650,9 @@
 
                         <div class="news" id="listaEspera">
                             <p class="tittle-witing-list" data-i18n="title_lista_espera">Lista de Espera</p>
-                            <p class="comment-witing-list" data-i18n="texto_waiting_list_comment">
+                            <span class="comment-witing-list" data-i18n="texto_waiting_list_comment">
                                 Receba novidades sobre IA<br /> e preservação digital.
-                            </p>
+                            </span>
                             <div class="buttons-div-rodape">
                                 <div class="input-group w-full">
                                     <input class="input-newsletter" type="text" id="emailInput" placeholder=" " />
@@ -661,8 +661,10 @@
                                 </div>
 
                                 <button id="submitButton"
-                                    class="start-button reset-size-buttons-rodape inscrever botao-direita">
+                                    class="start-button reset-size-buttons-rodape inscrever botao-direita"
+                                    style="border: none;">
                                     <span id="spanButaoSubmit" class="button-text"
+                                    style="color: #fff"
                                         data-i18n="btn_inscrever_se">Inscrever-se</span>
                                     <div class="spinner hidden ml-2"></div>
                                 </button>
@@ -676,62 +678,23 @@
                 </div>
             </footer>
         </section>
-          <div id="emailModal" class="modal-overlay">
-        <div class="modal-content">
-            <button id="closeModalBtn" class="modal-close-button">&times;</button>
-            <h2 class="modal-title">Entre em Contato</h2>
-            <textarea id="emailMessage" class="modal-textarea" placeholder="Escreva sua mensagem aqui..."></textarea>
-            <button id="sendEmailBtn" class="modal-submit-button">Enviar Mensagem</button>
+
+        <div id="emailModal" class="modal-overlay">
+            <div class="modal-content">
+                <button id="closeModalBtn" class="modal-close-button">&times;</button>
+                <h2 class="modal-title" data-i18n="title_modal_email">Entre em Contato Conosco</h2>
+                <textarea id="emailMessage" class="modal-textarea"></textarea>
+                <button id="sendEmailBtn" class="modal-submit-button" data-i18n="text_btn_modal_email">Enviar Mensagem</button>
+            </div>
         </div>
-    </div>
     </main>
- <script>
-        const emailModal = document.getElementById('emailModal');
-        const openModalBtn = document.getElementById('btn-quero-conversar');
-        const closeModalBtn = document.getElementById('closeModalBtn');
-        const sendEmailBtn = document.getElementById('sendEmailBtn');
-        const emailMessageTextarea = document.getElementById('emailMessage');
-
-        const targetEmail = 'kauafrreira23@gmail.com';
-
-        function openModal() {
-            emailModal.style.display = 'flex';
-        }
-
-        function closeModal() {
-            emailModal.style.display = 'none';
-        }
-
-        openModalBtn.addEventListener('click', openModal);
-        closeModalBtn.addEventListener('click', closeModal);
-
-        window.addEventListener('click', function(event) {
-            if (event.target === emailModal) {
-                closeModal();
-            }
-        });
-
-        sendEmailBtn.addEventListener('click', function() {
-            const subject = "Contato através do Modal da Página";
-            const body = emailMessageTextarea.value;
-
-            if (body.trim() === "") {
-                alert("Por favor, escreva uma mensagem.");
-                return;
-            }
-
-            const encodedBody = encodeURIComponent(body);
-            const mailtoLink = `mailto:${targetEmail}?subject=${encodeURIComponent(subject)}&body=${encodedBody}`;
-
-            window.location.href = mailtoLink;
-            alert("Seu cliente de e-mail será aberto para enviar a mensagem.");
-        });
-    </script>
     <script src="./javascript/iphone-script.js"></script>
     <script src="./javascript/bandeiras-script.js"></script>
     <script src="./javascript/scroll-script.js"></script>
-    <!-- <script src="./javascript/wainting-list.js"></script>
-    <script src="./javascript/click.js"></script> -->
+    <script src="./javascript/wainting-list.js"></script>
+    <script src="./javascript/click.js"></script>
+    <script src="./javascript/email-script.js"></script>
+
 </body>
 
 </html>

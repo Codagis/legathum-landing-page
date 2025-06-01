@@ -99,6 +99,7 @@
 /* Notch superior */
 .notch {
 	position: absolute;
+	z-index: 4;
 	top: 2px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -132,6 +133,9 @@
 	.iphone {
 		top: 10%;
 		left: 10%;
+	}
+	.back-button {
+		top: 0px;
 	}
 }
 

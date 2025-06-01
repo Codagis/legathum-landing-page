@@ -65,8 +65,11 @@
     box-sizing: border-box;
 }
 
+.start-button {
+    padding: 25px;
+}
+
 .reset-size-buttons {
-    max-width: 232px;
     border-radius: 32px;
 }
 
@@ -157,8 +160,14 @@
 
 .news p,
 .navegacao p {
-    font-size: 18px;
-    color: #fff;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.news span,
+.navegacao span {
+    font-size: 14px;
+    color: #9CA3AF;
 }
 
 .navegacao nav {
@@ -169,8 +178,8 @@
 
 .navegacao nav span a {
     text-decoration: none;
-    color: #fff;
     font-size: 16px;
+    color: #9CA3AF;
 }
 
 .reset-size-buttons-rodape {
@@ -187,7 +196,7 @@
 
 input {
     width: 272px;
-    padding: 1rem 1rem; 
+    padding: 1rem 1rem;
     font-size: 1rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 7px;
@@ -195,12 +204,12 @@ input {
     outline: none;
     color: #fff;
     box-sizing: border-box;
-    text-indent: 8px; 
+    text-indent: 8px;
 }
 
 label {
     position: absolute;
-    left: 1rem; 
+    left: 1rem;
     top: 1rem;
     font-size: 1rem;
     color: #ADAEBC;
@@ -220,6 +229,7 @@ input:not(:placeholder-shown)+label {
 
 .inscrever {
     border-radius: 7px;
+    z-index: 3;
 }
 
 .buttons-div-rodape {
@@ -239,7 +249,7 @@ input:not(:placeholder-shown)+label {
 }
 
 input:focus {
-    border-color: rgba(255, 255, 255, 0.4); 
+    border-color: rgba(255, 255, 255, 0.4);
 }
 
 input:focus+label,
@@ -249,6 +259,11 @@ input:not(:placeholder-shown)+label {
     background: rgb(0, 0, 0, 0.0);
     color: #ADAEBC;
     left: 0.8rem;
+}
+
+.tittle-witing-list {
+    font-size: 18px;
+    color: #FFFFFF;
 }
 
 /* --- ADIÇÃO DE RESPONSIVIDADE --- */
@@ -336,6 +351,7 @@ input:not(:placeholder-shown)+label {
     .start-button {
         width: 100%;
         text-align: center;
+        padding: 25px;
     }
 
     .copy {

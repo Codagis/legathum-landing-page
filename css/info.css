@@ -161,7 +161,8 @@
   margin-top: 20px;
 }
 
-.card-success-partner, .card-aval {
+.card-success-partner,
+.card-aval {
   background: linear-gradient(90deg, rgba(24, 165, 248, 0.2) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(154, 23, 148, 0.2) 100%);
   border-radius: 13px;
   z-index: 2;
@@ -169,7 +170,8 @@
   flex-direction: column;
   align-items: center;
   padding: 30px;
-
+  width: 450px;
+  height: 250px;
 }
 
 .card-success-partner {
@@ -296,7 +298,8 @@
   z-index: 2;
 }
 
-.success-case-card:hover {
+.hover-card-effect:hover {
+  transition: transform 0.3s ease;
   transform: translateY(-5px);
 }
 
@@ -330,6 +333,14 @@
   font-weight: bold;
   margin-bottom: 10px;
   line-height: 1.2;
+}
+
+.main-title-mentoria {
+  color: FFFFFF;
+  line-height: 24px;
+  letter-spacing: 0%;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .description {
@@ -372,6 +383,16 @@
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
+}
+
+.section-parcerias img {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 30px;
+}
+
+.image-khaby img {
+  border-radius: 28px;
 }
 
 .legathum-science-container {
@@ -709,12 +730,23 @@
     height: auto;
   }
 
-  .cards-zone,
-  .card-sobre-nos {
+  .cards-zone {
     flex-direction: column;
     width: 100%;
     gap: 10px;
     /* Espaço entre os cards */
+  }
+
+  .card-sobre-nos {
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+    /* Espaço entre os cards */
+  }
+
+  .card-success-partner {
+    width: 100%;
+    height: auto;
   }
 
   .card {
@@ -874,4 +906,15 @@
   .section-parcerias {
     margin-top: 20px;
   }
+
+  .section-parcerias {
+    padding: 10px;
+  }
+
+  .section-parcerias img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
 }
