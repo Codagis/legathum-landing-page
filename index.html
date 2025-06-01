@@ -676,13 +676,62 @@
                 </div>
             </footer>
         </section>
+          <div id="emailModal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="closeModalBtn" class="modal-close-button">&times;</button>
+            <h2 class="modal-title">Entre em Contato</h2>
+            <textarea id="emailMessage" class="modal-textarea" placeholder="Escreva sua mensagem aqui..."></textarea>
+            <button id="sendEmailBtn" class="modal-submit-button">Enviar Mensagem</button>
+        </div>
+    </div>
     </main>
+ <script>
+        const emailModal = document.getElementById('emailModal');
+        const openModalBtn = document.getElementById('btn-quero-conversar');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const sendEmailBtn = document.getElementById('sendEmailBtn');
+        const emailMessageTextarea = document.getElementById('emailMessage');
 
+        const targetEmail = 'kauafrreira23@gmail.com';
+
+        function openModal() {
+            emailModal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            emailModal.style.display = 'none';
+        }
+
+        openModalBtn.addEventListener('click', openModal);
+        closeModalBtn.addEventListener('click', closeModal);
+
+        window.addEventListener('click', function(event) {
+            if (event.target === emailModal) {
+                closeModal();
+            }
+        });
+
+        sendEmailBtn.addEventListener('click', function() {
+            const subject = "Contato através do Modal da Página";
+            const body = emailMessageTextarea.value;
+
+            if (body.trim() === "") {
+                alert("Por favor, escreva uma mensagem.");
+                return;
+            }
+
+            const encodedBody = encodeURIComponent(body);
+            const mailtoLink = `mailto:${targetEmail}?subject=${encodeURIComponent(subject)}&body=${encodedBody}`;
+
+            window.location.href = mailtoLink;
+            alert("Seu cliente de e-mail será aberto para enviar a mensagem.");
+        });
+    </script>
     <script src="./javascript/iphone-script.js"></script>
     <script src="./javascript/bandeiras-script.js"></script>
     <script src="./javascript/scroll-script.js"></script>
-    <script src="./javascript/wainting-list.js"></script>
-    <script src="./javascript/click.js"></script>
+    <!-- <script src="./javascript/wainting-list.js"></script>
+    <script src="./javascript/click.js"></script> -->
 </body>
 
 </html>
