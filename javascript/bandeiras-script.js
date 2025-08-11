@@ -138,11 +138,9 @@ function changeLanguage(lang) {
     renderLangButton();
     renderLangList();
     langList.classList.remove('show');
-    // Chama sua função de troca de idioma
     loadLanguage(lang);
 }
 
-// Eventos
 langButton.addEventListener('click', () => {
     toggleLangList();
 });
@@ -154,7 +152,6 @@ langList.addEventListener('click', (e) => {
     }
 });
 
-// Fechar dropdown ao clicar fora
 document.addEventListener('click', (e) => {
     if (!langButton.contains(e.target) && !langList.contains(e.target)) {
         langList.classList.remove('show');
@@ -162,7 +159,6 @@ document.addEventListener('click', (e) => {
     }
 });
 
-// Teclado para acessibilidade
 langList.addEventListener('keydown', (e) => {
     const focusableItems = Array.from(langList.querySelectorAll('li'));
     const index = focusableItems.indexOf(document.activeElement);
@@ -187,7 +183,6 @@ langList.addEventListener('keydown', (e) => {
     }
 });
 
-// Função loadLanguage que você já tem
 function loadLanguage(lang) {
     fetch(`./resources/languages/${lang}.json`)
         .then(response => {
